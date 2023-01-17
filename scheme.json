@@ -1,0 +1,543 @@
+{
+	"config": {
+		"step_by_step": "strict",
+		"modules": [
+			{
+				"name": "auth",
+				"enable": false
+			},
+			{
+				"name": "sign",
+				"enable": false
+			},
+			{
+				"name": "pay",
+				"enable": false
+			},
+			{
+				"name": "datepicker",
+				"enable": true,
+				"config": {
+					"locales": {
+						"relations": {
+							"ua": "uk",
+							"fr": "fr"
+						}
+					},
+					"forEachField": {
+						"format": "mm/dd/yyyy",
+						"autohide": true,
+						"todayHighlight": true
+					}
+				}
+			}
+		],
+		"apiUrl": "test.com:3100/api/",
+		"localization": {
+			"defaultLang": "en",
+			"availableLangs": ["en", "fr", "ua", "ru"]
+		},
+		"styles": {
+			"value": [
+				"form-widget-g .app { font-family: 'Proxima Nova Thin', sans-serif }",
+				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
+				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
+				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }"
+			]
+		},
+		"variables": {
+			"selectorCountryList": {
+				"AL": "#Alabama",
+				"AK": "#Alaska",
+				"AZ": "#Arizona",
+				"AR": "#Arkansas",
+				"CA": "#California",
+				"CO": "#Colorado",
+				"CT": "#Connecticut",
+				"DE": "#Delaware",
+				"DC": "#District Of Columbia",
+				"FL": "#Florida",
+				"GA": "#Georgia",
+				"HI": "#Hawaii",
+				"ID": "#Idaho",
+				"IL": "#Illinois",
+				"IN": "#Indiana",
+				"IA": "#Iowa",
+				"KS": "#Kansas",
+				"KY": "#Kentucky",
+				"LA": "#Louisiana",
+				"ME": "#Maine",
+				"MD": "#Maryland",
+				"MA": "#Massachusetts",
+				"MI": "#Michigan",
+				"MN": "#Minnesota",
+				"MS": "#Mississippi",
+				"MO": "#Missouri",
+				"MT": "#Montana",
+				"NE": "#Nebraska",
+				"NV": "#Nevada",
+				"NH": "#New Hampshire",
+				"NJ": "#New Jersey",
+				"NM": "#New Mexico",
+				"NY": "#New York",
+				"NC": "#North Carolina",
+				"ND": "#North Dakota",
+				"OH": "#Ohio",
+				"OK": "#Oklahoma",
+				"OR": "#Oregon",
+				"PA": "#Pennsylvania",
+				"RI": "#Rhode Island",
+				"SC": "#South Carolina",
+				"SD": "#South Dakota",
+				"TN": "#Tennessee",
+				"TX": "#Texas",
+				"UT": "#Utah",
+				"VT": "#Vermont",
+				"VA": "#Virginia",
+				"WA": "#Washington",
+				"WV": "#West Virginia",
+				"WI": "#Wisconsin",
+				"WY": "#Wyoming"
+			}
+		}
+	},
+	"pages": [
+		{
+			"id": 1,
+			"key": "welcome_1",
+			"type": "text_page",
+			"description": "Welcome",
+			"position": 1,
+			"common": {
+				"class": "home-page"
+			},
+
+			"components": [
+				{
+					"common": {
+						"type": "TextContainer",
+						"class": "main-page-text",
+						"enable": true
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "driver application"
+					},
+					"styles": {
+						"value": "form-widget-g .main-page-text {text-align: center; font-size: 1rem; text-align: center}"
+					}
+				},
+
+				{
+					"common": {
+						"type": "InputEmail",
+						"model": "email",
+						"enable": true
+					},
+					"validation": {
+						"required": true,
+						"pattern": "/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/",
+						"texts": {
+							"required": "#Please enter a valid email address."
+						}
+					},
+					"text": {
+						"placeholder": "#name@company.com",
+						"hint": "#E-mail Address"
+					}
+				},
+				{
+					"common": {
+						"type": "layoutContainer",
+						"class": "bordered-block",
+						"enable": true
+					},
+					"components": [
+						{
+							"common": {
+								"type": "TextContainer",
+								"class": "fieldset-title"
+							},
+							"custom": {
+								"tag": "p"
+							},
+							"text": {
+								"value": "#Full Legal Name (as it appears on your Driver's License)"
+							},
+							"styles": {
+								"value": ""
+							}
+						},
+
+						{
+							"common": {
+								"type": "layoutColumns"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "LayoutColumn"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "InputText",
+												"model": "firstName"
+											},
+											"custom": {
+												"pattern": "/^[a-zа-я_]{0,28}$/i"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#First name is required."
+												}
+											},
+											"text": {
+												"hint": "#First Name"
+											}
+										}
+									]
+								},
+								{
+									"common": {
+										"type": "LayoutColumn"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "InputText",
+												"model": "lastName"
+											},
+											"custom": {
+												"pattern": "/^[a-zа-я_]{0,28}$/i"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#Last name is required."
+												}
+											},
+											"text": {
+												"hint": "#Last Name"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"common": {
+						"type": "layoutColumns",
+						"enable": true
+					},
+					"components": [
+						{
+							"common": {
+								"type": "LayoutColumn"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "cellPhoneNumber"
+									},
+									"custom": {
+										"mask": "(###) ###-####"
+									},
+									"validation": {
+										"required": true,
+										"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
+										"texts": {
+											"required": "#Cell phone is required."
+										}
+									},
+									"text": {
+										"placeholder": "#(555) 555-5555",
+										"hint": "#Cell Phone Number"
+									}
+								},
+								{
+									"common": {
+										"type": "InputText",
+										"model": "streetAddress"
+									},
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#Street address is required."
+										}
+									},
+									"text": {
+										"placeholder": "#P.O. box, company name",
+										"hint": "#Street Address"
+									}
+								}
+							]
+						},
+						{
+							"common": {
+								"type": "LayoutColumn"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "homePhoneNumber"
+									},
+									"custom": {
+										"mask": "(###) ###-####"
+									},
+									"text": {
+										"placeholder": "#(555) 555-5555",
+										"hint": "#Home Phone Number"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"common": {
+						"type": "layoutColumns",
+						"enable": true
+					},
+					"components": [
+						{
+							"common": {
+								"type": "LayoutColumn"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "city"
+									},
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#City is required."
+										}
+									},
+									"text": {
+										"hint": "#City"
+									}
+								}
+							]
+						},
+						{
+							"common": {
+								"type": "LayoutColumn"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "Selector",
+										"model": "state"
+									},
+									"custom": {
+										"options": "$:selectorCountryList",
+										"defaultText": "#Select Your state"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#State is required."
+										}
+									},
+									"text": {
+										"hint": "#State *"
+									}
+								}
+							]
+						},
+						{
+							"common": {
+								"type": "LayoutColumn"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "zipCode"
+									},
+									"validation": {
+										"required": true,
+										"pattern": "/^.{1,35}$/",
+										"texts": {
+											"required": "#Zip Code is required."
+										}
+									},
+									"text": {
+										"placeholder": "",
+										"hint": "#Zip Code"
+									}
+								}
+							]
+						}
+					]
+				},
+
+				{
+					"common": {
+						"type": "InputDate",
+						"model": "birthDate",
+						"enable": true
+					},
+					"custom": {
+						"mask": "##/##/####"
+					},
+					"module": {
+						"minDate": "01/01/1920",
+						"maxDate": "09/27/2022",
+						"todayHighlight": false
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "#Date of Birth is required.",
+							"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
+							"notValid": "#This is not a valid date."
+						}
+					},
+					"text": {
+						"placeholder": "#format: mm/dd/yyyy     example: 01/25/1963",
+						"hint": "#Date of Birth"
+					}
+				},
+
+				{
+					"common": {
+						"type": "layoutColumns"
+					},
+					"styles": {
+						"justify-content": "center"
+					},
+					"components": [
+						{
+							"common": {
+								"type": "LayoutColumn",
+								"class": "middle-content-column"
+							},
+							"custom": {
+								"col": "6"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "MultiBox",
+										"model": "box1"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "Checkbox",
+												"model": "agree"
+											},
+											"custom": {
+												"bodyHTML": "#I have read and agreed with <a href='123' target='_blank'>the terms and conditions.</a>",
+												"action": {
+													"type": "TOGGLE_SHOW",
+													"container": "#eaheaea"
+												}
+											},
+											"validation": {
+												"required": true
+											}
+										},
+										{
+											"common": {
+												"type": "Radiobuttons",
+												"model": "cdlHolder",
+												"class": "standard-radio"
+											},
+											"custom": {
+												"defaultValue": "",
+												"options": [
+													{
+														"value": "yes",
+														"text": "#Yes",
+														"action": {
+															"type": "SHOW_CONTAINER",
+															"nextSibling": 1
+														}
+													},
+													{
+														"value": "no",
+														"text": "#No",
+														"action": {
+															"type": "HIDE_CONTAINER",
+															"nextSibling": 1
+														}
+													}
+												]
+											},
+											"text": {
+												"hint": "#Do you have a Commercial Driver's License? (Class A)"
+											},
+											"validation": {
+												"required": true,
+												"requiredOnlyIfVisible": true
+											}
+										},
+
+										{
+											"common": {
+												"type": "Selector",
+												"model": "cdlExperience"
+											},
+											"attrs": {
+												"container": {
+													"hidden": true
+												},
+												"component": {}
+											},
+											"custom": {
+												"options": {
+													"LessThan3Months": "#Less than 3 months",
+													"_4To6Months": "#4 to 6 months",
+													"MoreThan6Months": "#More than 6 months "
+												},
+												"defaultText": "#Select Your CDL Experience"
+											},
+											"validation": {
+												"required": true,
+												"requiredOnlyIfVisible": true,
+												"texts": {
+													"required": "#CDL Experience is required."
+												}
+											},
+											"text": {
+												"hint": "#CDL Experience *"
+											}
+										}
+									]
+								},
+
+								{
+									"common": {
+										"type": "ButtonSubmit"
+									},
+									"custom": {},
+									"text": {
+										"text": "#Submit"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

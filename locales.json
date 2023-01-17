@@ -1,0 +1,30 @@
+{
+	"en": {
+		"driver application": "Driver Application en",
+		"app-title": "title en",
+		"dir-1": {
+			"dir-1-1": "text en"
+		}
+	},
+	"fr": {
+		"driver application": "Driver Application fr",
+		"app-title": "title fr",
+		"dir-1": {
+			"dir-1-1": "text fr"
+		}
+	},
+	"ua": {
+		"driver application": "Driver Application ua",
+		"app-title": "title ua",
+		"dir-1": {
+			"dir-1-1": "text ua"
+		}
+	},
+	"ru": {
+		"driver application": "Driver Application ru",
+		"app-title": "title ru",
+		"dir-1": {
+			"dir-1-1": "text ru"
+		}
+	}
+}
