@@ -464,8 +464,7 @@
 										"hint": "#Do you have a Commercial Driver's License? (Class A)"
 									},
 									"validation": {
-										"required": true,
-										"requiredOnlyIfVisible": true
+										"required": true
 									}
 								},
 
@@ -497,6 +496,33 @@
 									},
 									"text": {
 										"hint": "#CDL Experience *"
+									}
+								},
+
+								{
+									"common": {
+										"type": "Radiobuttons",
+										"model": "drugTest",
+										"class": "standard-radio"
+									},
+									"custom": {
+										"defaultValue": "",
+										"options": [
+											{
+												"value": "yes",
+												"text": "#Yes"
+											},
+											{
+												"value": "no",
+												"text": "#No"
+											}
+										]
+									},
+									"text": {
+										"hint": "#Can you pass a drug test?"
+									},
+									"validation": {
+										"required": true
 									}
 								},
 
