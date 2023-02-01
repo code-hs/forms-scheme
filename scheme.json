@@ -528,6 +528,23 @@
 
 								{
 									"common": {
+										"type": "Checkbox",
+										"model": "agree"
+									},
+									"custom": {
+										"bodyHTML": "#I have read and agreed with <a href='123' target='_blank'>the terms and conditions.</a>",
+										"action": {
+											"type": "TOGGLE_SHOW",
+											"container": "#eaheaea"
+										}
+									},
+									"validation": {
+										"required": true
+									}
+								},
+
+								{
+									"common": {
 										"type": "ButtonSubmit"
 									},
 									"custom": {},
