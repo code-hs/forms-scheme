@@ -435,77 +435,69 @@
 							"components": [
 								{
 									"common": {
-										"type": "MultiBox",
-										"model": "box1"
+										"type": "Radiobuttons",
+										"model": "cdlHolder",
+										"class": "standard-radio"
 									},
-									"components": [
-										{
-											"common": {
-												"type": "Radiobuttons",
-												"model": "cdlHolder",
-												"class": "standard-radio"
-											},
-											"custom": {
-												"defaultValue": "",
-												"options": [
-													{
-														"value": "yes",
-														"text": "#Yes",
-														"action": {
-															"type": "SHOW_CONTAINER",
-															"nextSibling": 1
-														}
-													},
-													{
-														"value": "no",
-														"text": "#No",
-														"action": {
-															"type": "HIDE_CONTAINER",
-															"nextSibling": 1
-														}
-													}
-												]
-											},
-											"text": {
-												"hint": "#Do you have a Commercial Driver's License? (Class A)"
-											},
-											"validation": {
-												"required": true,
-												"requiredOnlyIfVisible": true
-											}
-										},
-
-										{
-											"common": {
-												"type": "Selector",
-												"model": "cdlExperience"
-											},
-											"attrs": {
-												"container": {
-													"hidden": true
-												},
-												"component": {}
-											},
-											"custom": {
-												"options": {
-													"LessThan3Months": "#Less than 3 months",
-													"_4To6Months": "#4 to 6 months",
-													"MoreThan6Months": "#More than 6 months "
-												},
-												"defaultText": "#Select Your CDL Experience"
-											},
-											"validation": {
-												"required": true,
-												"requiredOnlyIfVisible": true,
-												"texts": {
-													"required": "#CDL Experience is required."
+									"custom": {
+										"defaultValue": "",
+										"options": [
+											{
+												"value": "yes",
+												"text": "#Yes",
+												"action": {
+													"type": "SHOW_CONTAINER",
+													"nextSibling": 1
 												}
 											},
-											"text": {
-												"hint": "#CDL Experience *"
+											{
+												"value": "no",
+												"text": "#No",
+												"action": {
+													"type": "HIDE_CONTAINER",
+													"nextSibling": 1
+												}
 											}
+										]
+									},
+									"text": {
+										"hint": "#Do you have a Commercial Driver's License? (Class A)"
+									},
+									"validation": {
+										"required": true,
+										"requiredOnlyIfVisible": true
+									}
+								},
+
+								{
+									"common": {
+										"type": "Selector",
+										"model": "cdlExperience"
+									},
+									"attrs": {
+										"container": {
+											"hidden": true
+										},
+										"component": {}
+									},
+									"custom": {
+										"options": {
+											"LessThan3Months": "#Less than 3 months",
+											"_4To6Months": "#4 to 6 months",
+											"MoreThan6Months": "#More than 6 months "
+										},
+										"defaultText": "#Select Your CDL Experience"
+									},
+									"validation": {
+										"required": true,
+										"requiredOnlyIfVisible": true,
+										"texts": {
+											"required": "#CDL Experience is required."
 										}
-									]
+									},
+									"text": {
+										"hint": "#CDL Experience *"
+									}
 								},
 
 								{
