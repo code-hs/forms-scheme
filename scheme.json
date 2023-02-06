@@ -104,8 +104,7 @@
 	"pages": [
 		{
 			"id": 1,
-			"key": "welcome_1",
-			"type": "text_page",
+			"key": "welcome",
 			"description": "Welcome",
 			"position": 1,
 			"common": {
