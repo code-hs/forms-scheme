@@ -549,10 +549,11 @@
 				}
 			]
 		},
+
 		{
 			"id": 2,
-			"key": "driver-application",
-			"description": "Driver Application",
+			"key": "driver-application-confirm",
+			"description": "Driver Application, readonly fields",
 			"position": 2,
 			"common": {
 				"class": "driver-application"
@@ -566,7 +567,99 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "driver application"
+						"value": "#driver application confirm"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 3,
+			"key": "personal-information-text",
+			"description": "Personal information text",
+			"position": 3,
+			"common": {
+				"class": "personal-information-text"
+			},
+			"components": [
+				{
+					"common": {
+						"type": "TextContainer"
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#FMCSA Notification of Driver's Rights"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 4,
+			"key": "personal-information",
+			"description": "Personal Information form",
+			"position": 4,
+			"common": {
+				"class": "personal-information"
+			},
+			"components": [
+				{
+					"common": {
+						"type": "TextContainer"
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#Driver Application (Personal Information)"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 5,
+			"key": "work-history",
+			"description": "work history",
+			"position": 5,
+			"common": {
+				"class": "work-history"
+			},
+			"components": [
+				{
+					"common": {
+						"type": "TextContainer"
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#Driver Application (Work History)"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 6,
+			"key": "complete",
+			"description": "complete",
+			"position": 6,
+			"common": {
+				"class": "complete"
+			},
+			"components": [
+				{
+					"common": {
+						"type": "TextContainer"
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#Complete"
 					}
 				}
 			]
