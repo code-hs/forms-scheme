@@ -44,8 +44,8 @@
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
 				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }",
 				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
-				"form-widget-g .radio-one-col {  width: 250px; margin: 0 auto; }",
-				"form-widget-g .radio-one-col .field__hint { text-align: center;  }"
+				"form-widget-g .one-col {  width: 250px; margin: 0 auto; }",
+				"form-widget-g .middle-text .field__hint { text-align: center; }"
 			]
 		},
 		"variables": {
@@ -785,7 +785,7 @@
 							"common": {
 								"type": "Radiobuttons",
 								"model": "currentLicense",
-								"class": "standard-radio radio-one-col"
+								"class": "standard-radio one-col middle-text"
 							},
 							"custom": {
 								"defaultValue": "",
@@ -808,6 +808,28 @@
 							}
 						}
 					]
+				},
+
+				{
+					"common": {
+						"type": "InputText",
+						"model": "socialSecurityNumber",
+						"class": "one-col"
+					},
+					"custom": {
+						"mask": "###-##-####"
+					},
+					"validation": {
+						"required": true,
+						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
+						"texts": {
+							"required": "#Social Security Number is required."
+						}
+					},
+					"text": {
+						"placeholder": "#123-45-6789",
+						"hint": "#Social Security Number"
+					}
 				},
 
 				{
