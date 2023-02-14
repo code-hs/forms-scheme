@@ -394,8 +394,7 @@
 					},
 					"module": {
 						"minDate": "01/01/1920",
-						"maxDate": "09/27/2022",
-						"todayHighlight": false
+						"maxDate": "01/01/2005"
 					},
 					"validation": {
 						"required": true,
@@ -527,7 +526,7 @@
 										"model": "agree"
 									},
 									"custom": {
-										"bodyHTML": "#I have read and agreed with the terms and conditions."
+										"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
 									},
 									"validation": {
 										"required": true
@@ -552,6 +551,29 @@
 
 		{
 			"id": 2,
+			"key": "terms",
+			"description": "Terms and Conditions",
+			"position": 0,
+			"common": {
+				"class": "terms"
+			},
+			"components": [
+				{
+					"common": {
+						"type": "TextContainer"
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#Terms and Conditions"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 3,
 			"key": "driver-application-confirm",
 			"description": "Driver Application, readonly fields",
 			"position": 2,
@@ -574,7 +596,7 @@
 		},
 
 		{
-			"id": 3,
+			"id": 4,
 			"key": "personal-information-text",
 			"description": "Personal information text",
 			"position": 3,
@@ -597,7 +619,7 @@
 		},
 
 		{
-			"id": 4,
+			"id": 5,
 			"key": "personal-information",
 			"description": "Personal Information form",
 			"position": 4,
@@ -615,12 +637,212 @@
 					"text": {
 						"value": "#Driver Application (Personal Information)"
 					}
+				},
+				{
+					"common": {
+						"type": "MultiBox",
+						"model": "driversLicenses"
+					},
+					"components": [
+						{
+							"common": {
+								"type": "layoutColumns"
+							},
+							"components": [
+								{
+									"common": {
+										"enable": true,
+										"type": "LayoutColumn"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "Selector",
+												"model": "licenseState"
+											},
+											"custom": {
+												"options": "$:selectorCountryList",
+												"defaultText": "#Select D.L. State"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#State is required."
+												}
+											},
+											"text": {
+												"hint": "#Driver's License State *"
+											}
+										}
+									]
+								},
+								{
+									"common": {
+										"enable": true,
+										"type": "LayoutColumn"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "InputText",
+												"model": "number"
+											},
+											"custom": {
+												"pattern": "/^.{1,20}$/"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#Driver's License Number is required."
+												}
+											},
+											"text": {
+												"hint": "#Driver's License Number"
+											}
+										}
+									]
+								}
+							]
+						},
+
+						{
+							"common": {
+								"enable": true,
+								"type": "layoutColumns"
+							},
+							"components": [
+								{
+									"common": {
+										"enable": true,
+										"type": "LayoutColumn"
+									},
+									"components": [
+										{
+											"common": {
+												"enable": true,
+												"type": "InputDate",
+												"model": "expirationDate"
+											},
+											"custom": {
+												"mask": "##/##/####"
+											},
+											"module": {
+												"minDate": "01/01/1920"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#Expiration Date is required.",
+													"range": "#The date falls outside of the acceptable range. From 01/01/1920",
+													"notValid": "#This is not a valid date."
+												}
+											},
+											"text": {
+												"placeholder": "#format: mm/dd/yyyy",
+												"hint": "#D.L. Expiration Date D.L."
+											}
+										}
+									]
+								},
+								{
+									"common": {
+										"enable": true,
+										"type": "LayoutColumn"
+									},
+									"components": [
+										{
+											"common": {
+												"enable": true,
+												"type": "Selector",
+												"model": "licenseType"
+											},
+											"custom": {
+												"options": {
+													"State": "#State",
+													"CDL": "#CDL",
+													"CLP": "#CLP"
+												},
+												"defaultText": "#Select Type/Class"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#Driver's License Type/Class is required."
+												}
+											},
+											"text": {
+												"hint": "#Type/Class *"
+											}
+										}
+									]
+								}
+							]
+						},
+
+						{
+							"common": {
+								"type": "layoutColumns"
+							},
+							"styles": {
+								"justify-content": "center"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "LayoutColumn",
+										"class": "middle-content-column"
+									},
+									"custom": {
+										"col": "6"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "Radiobuttons",
+												"model": "drugTest",
+												"class": "standard-radio"
+											},
+											"custom": {
+												"defaultValue": "",
+												"options": [
+													{
+														"value": "yes",
+														"text": "#Yes"
+													},
+													{
+														"value": "no",
+														"text": "#No"
+													}
+												]
+											},
+											"text": {
+												"hint": "#Can you pass a drug test?"
+											},
+											"validation": {
+												"required": true
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+
+				{
+					"common": {
+						"type": "ButtonSubmit"
+					},
+					"custom": {},
+					"text": {
+						"text": "#Submit"
+					}
 				}
 			]
 		},
 
 		{
-			"id": 5,
+			"id": 6,
 			"key": "work-history",
 			"description": "work history",
 			"position": 5,
@@ -643,7 +865,7 @@
 		},
 
 		{
-			"id": 6,
+			"id": 7,
 			"key": "complete",
 			"description": "complete",
 			"position": 6,
