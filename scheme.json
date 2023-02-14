@@ -43,7 +43,9 @@
 				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
 				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }",
-				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}"
+				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
+				"form-widget-g .radio-one-col {  width: 250px; margin: 0 auto; }",
+				"form-widget-g .radio-one-col .field__hint { text-align: center;  }"
 			]
 		},
 		"variables": {
@@ -781,50 +783,29 @@
 
 						{
 							"common": {
-								"type": "layoutColumns"
+								"type": "Radiobuttons",
+								"model": "currentLicense",
+								"class": "standard-radio radio-one-col"
 							},
-							"styles": {
-								"justify-content": "center"
+							"custom": {
+								"defaultValue": "",
+								"options": [
+									{
+										"value": "yes",
+										"text": "#Yes"
+									},
+									{
+										"value": "no",
+										"text": "#No"
+									}
+								]
 							},
-							"components": [
-								{
-									"common": {
-										"type": "LayoutColumn",
-										"class": "middle-content-column"
-									},
-									"custom": {
-										"col": "6"
-									},
-									"components": [
-										{
-											"common": {
-												"type": "Radiobuttons",
-												"model": "drugTest",
-												"class": "standard-radio"
-											},
-											"custom": {
-												"defaultValue": "",
-												"options": [
-													{
-														"value": "yes",
-														"text": "#Yes"
-													},
-													{
-														"value": "no",
-														"text": "#No"
-													}
-												]
-											},
-											"text": {
-												"hint": "#Can you pass a drug test?"
-											},
-											"validation": {
-												"required": true
-											}
-										}
-									]
-								}
-							]
+							"text": {
+								"hint": "#Is this a current license?"
+							},
+							"validation": {
+								"required": true
+							}
 						}
 					]
 				},
