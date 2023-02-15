@@ -780,7 +780,6 @@
 								}
 							]
 						},
-
 						{
 							"common": {
 								"type": "Radiobuttons",
@@ -812,34 +811,56 @@
 
 				{
 					"common": {
-						"type": "InputText",
-						"model": "socialSecurityNumber",
-						"class": "one-col"
+						"enable": true,
+						"type": "layoutColumns"
 					},
-					"custom": {
-						"mask": "###-##-####"
+					"styles": {
+						"justify-content": "center"
 					},
-					"validation": {
-						"required": true,
-						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
-						"texts": {
-							"required": "#Social Security Number is required."
-						}
-					},
-					"text": {
-						"placeholder": "#123-45-6789",
-						"hint": "#Social Security Number"
-					}
-				},
+					"components": [
+						{
+							"common": {
+								"enable": true,
+								"type": "LayoutColumn"
+							},
+							"custom": {
+								"col": 6
+							},
 
-				{
-					"common": {
-						"type": "ButtonSubmit"
-					},
-					"custom": {},
-					"text": {
-						"text": "#Submit"
-					}
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "socialSecurityNumber"
+									},
+									"custom": {
+										"mask": "###-##-####"
+									},
+									"validation": {
+										"required": true,
+										"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
+										"texts": {
+											"required": "#Social Security Number is required."
+										}
+									},
+									"text": {
+										"placeholder": "#123-45-6789",
+										"hint": "#Social Security Number"
+									}
+								},
+
+								{
+									"common": {
+										"type": "ButtonSubmit"
+									},
+									"custom": {},
+									"text": {
+										"text": "#Submit"
+									}
+								}
+							]
+						}
+					]
 				}
 			]
 		},
