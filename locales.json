@@ -4,7 +4,8 @@
 		"app-title": "title",
 		"dir-1": {
 			"dir-1-1": "text"
-		}
+		},
+		"add": "Add"
 	},
 	"fr": {
 		"driver application": "Driver Application",
