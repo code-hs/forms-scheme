@@ -645,6 +645,9 @@
 						"type": "MultiBox",
 						"model": "driversLicenses"
 					},
+					"text": {
+						"value": "#Add another driver's license."
+					},
 					"components": [
 						{
 							"common": {
