@@ -777,36 +777,6 @@
 								}
 							]
 						},
-						{
-							"common": {
-								"enable": false,
-								"type": "Radiobuttons",
-								"model": "currentLicense",
-								"class": {
-									"container": "standard-radio one-col middle-text"
-								}
-							},
-							"custom": {
-								"defaultValue": "",
-								"options": [
-									{
-										"value": "yes",
-										"text": "#Yes"
-									},
-									{
-										"value": "no",
-										"text": "#No"
-									}
-								],
-								"equalNameInMultibox": true
-							},
-							"text": {
-								"hint": "#Is this a current license?"
-							},
-							"validation": {
-								"required": true
-							}
-						},
 
 						{
 							"common": {
@@ -818,7 +788,6 @@
 							},
 							"custom": {
 								"bodyHTML": "#Is this a current license?",
-								"equalNameInMultibox": true,
 								"action": {
 									"type": "UNCHECK_ANOTHERS",
 									"container": ".checkbox-only-one-active"
