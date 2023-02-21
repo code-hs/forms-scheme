@@ -110,10 +110,6 @@
 			"key": "welcome",
 			"description": "Welcome",
 			"position": 1,
-			"common": {
-				"class": "home-page"
-			},
-
 			"components": [
 				{
 					"common": {
@@ -148,14 +144,18 @@
 				{
 					"common": {
 						"type": "layoutContainer",
-						"class": "bordered-block",
+						"class": {
+							"container": "bordered-block"
+						},
 						"enable": true
 					},
 					"components": [
 						{
 							"common": {
 								"type": "TextContainer",
-								"class": "fieldset-title"
+								"class": {
+									"container": "fieldset-title"
+								}
 							},
 							"custom": {
 								"tag": "p"
@@ -423,7 +423,9 @@
 						{
 							"common": {
 								"type": "LayoutColumn",
-								"class": "middle-content-column"
+								"class": {
+									"container": "middle-content-column"
+								}
 							},
 							"custom": {
 								"col": "6"
@@ -433,7 +435,9 @@
 									"common": {
 										"type": "Radiobuttons",
 										"model": "cdlHolder",
-										"class": "standard-radio"
+										"class": {
+											"container": "standard-radio"
+										}
 									},
 									"custom": {
 										"defaultValue": "",
@@ -499,7 +503,9 @@
 									"common": {
 										"type": "Radiobuttons",
 										"model": "drugTest",
-										"class": "standard-radio"
+										"class": {
+											"container": "standard-radio"
+										}
 									},
 									"custom": {
 										"defaultValue": "",
@@ -556,9 +562,6 @@
 			"key": "terms",
 			"description": "Terms and Conditions",
 			"position": 0,
-			"common": {
-				"class": "terms"
-			},
 			"components": [
 				{
 					"common": {
@@ -579,9 +582,6 @@
 			"key": "driver-application-confirm",
 			"description": "Driver Application, readonly fields",
 			"position": 2,
-			"common": {
-				"class": "driver-application"
-			},
 			"components": [
 				{
 					"common": {
@@ -602,9 +602,6 @@
 			"key": "personal-information-text",
 			"description": "Personal information text",
 			"position": 3,
-			"common": {
-				"class": "personal-information-text"
-			},
 			"components": [
 				{
 					"common": {
@@ -625,9 +622,6 @@
 			"key": "personal-information",
 			"description": "Personal Information form",
 			"position": 4,
-			"common": {
-				"class": "personal-information"
-			},
 			"components": [
 				{
 					"common": {
@@ -693,7 +687,7 @@
 												"model": "number"
 											},
 											"custom": {
-												"pattern": "/^.{1,20}$/"
+												"pattern": "/^.{0,20}$/"
 											},
 											"validation": {
 												"required": true,
@@ -785,9 +779,12 @@
 						},
 						{
 							"common": {
+								"enable": false,
 								"type": "Radiobuttons",
 								"model": "currentLicense",
-								"class": "standard-radio one-col middle-text"
+								"class": {
+									"container": "standard-radio one-col middle-text"
+								}
 							},
 							"custom": {
 								"defaultValue": "",
@@ -800,13 +797,32 @@
 										"value": "no",
 										"text": "#No"
 									}
-								]
+								],
+								"equalNameInMultibox": true
 							},
 							"text": {
 								"hint": "#Is this a current license?"
 							},
 							"validation": {
 								"required": true
+							}
+						},
+
+						{
+							"common": {
+								"type": "Checkbox",
+								"model": "currentLicense",
+								"class": {
+									"element": "checkbox-only-one-active"
+								}
+							},
+							"custom": {
+								"bodyHTML": "#Is this a current license?",
+								"equalNameInMultibox": true,
+								"action": {
+									"type": "UNCHECK_ANOTHERS",
+									"container": ".checkbox-only-one-active"
+								}
 							}
 						}
 					]
@@ -873,9 +889,6 @@
 			"key": "work-history",
 			"description": "work history",
 			"position": 5,
-			"common": {
-				"class": "work-history"
-			},
 			"components": [
 				{
 					"common": {
@@ -896,9 +909,6 @@
 			"key": "complete",
 			"description": "complete",
 			"position": 6,
-			"common": {
-				"class": "complete"
-			},
 			"components": [
 				{
 					"common": {
