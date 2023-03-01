@@ -44,7 +44,7 @@
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
 				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }",
 				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
-				"form-widget-g .one-col {  width: 250px; margin: 0 auto; }",
+				"form-widget-g .one-col-middle {  width: 250px; margin: 0 auto; }",
 				"form-widget-g .middle-text .field__hint { text-align: center; }"
 			]
 		},
@@ -783,6 +783,7 @@
 								"type": "Checkbox",
 								"model": "currentLicense",
 								"class": {
+									"container": "one-col-middle",
 									"element": "checkbox-only-one-active"
 								}
 							},
