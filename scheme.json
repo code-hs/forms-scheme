@@ -45,7 +45,10 @@
 				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }",
 				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
 				"form-widget-g .one-col-middle {  width: 250px; margin: 0 auto; }",
-				"form-widget-g .middle-text .field__hint { text-align: center; }"
+				"form-widget-g .two-col-middle {  width: 300px; margin: 0 auto; }",
+				"form-widget-g .three-col-middle {  width: 350px; margin: 0 auto; }",
+				"form-widget-g .middle-text .field__hint { text-align: center; }",
+				"form-widget-g .submit-btn { width: 250px; margin: 0 auto;}"
 			]
 		},
 		"variables": {
@@ -543,7 +546,10 @@
 
 								{
 									"common": {
-										"type": "ButtonSubmit"
+										"type": "ButtonSubmit",
+										"class": {
+											"container": "submit-btn"
+										}
 									},
 									"custom": {},
 									"text": {
@@ -840,7 +846,10 @@
 
 								{
 									"common": {
-										"type": "ButtonSubmit"
+										"type": "ButtonSubmit",
+										"class": {
+											"container": "submit-btn"
+										}
 									},
 									"custom": {},
 									"text": {
@@ -869,6 +878,93 @@
 					},
 					"text": {
 						"value": "#Driver Application (Work History)"
+					}
+				},
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "hasBeenCreDriver",
+						"class": {
+							"container": "standard-radio three-col-middle"
+						}
+					},
+					"custom": {
+						"defaultValue": "no",
+						"options": [
+							{
+								"value": "yes",
+								"text": "#Yes"
+							},
+							{
+								"value": "no",
+								"text": "#No"
+							}
+						]
+					},
+					"text": {
+						"hint": "#Have you ever been employed as a company driver or independent contractor for WTA Global?"
+					}
+				},
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "hasTruckDrivingSchool",
+						"class": {
+							"container": "standard-radio three-col-middle"
+						}
+					},
+					"custom": {
+						"defaultValue": "no",
+						"options": [
+							{
+								"value": "yes",
+								"text": "#Yes"
+							},
+							{
+								"value": "no",
+								"text": "#No"
+							}
+						]
+					},
+					"text": {
+						"hint": "#Have you ever been to any truck driving school in the last 5 years?"
+					}
+				},
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "hasFailedDrugScreen",
+						"class": {
+							"container": "standard-radio three-col-middle"
+						}
+					},
+					"custom": {
+						"defaultValue": "no",
+						"options": [
+							{
+								"value": "yes",
+								"text": "#Yes"
+							},
+							{
+								"value": "no",
+								"text": "#No"
+							}
+						]
+					},
+					"text": {
+						"hint": "#Have you ever failed or refused a DOT drug screen?"
+					}
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "submit-btn"
+						}
+					},
+					"custom": {},
+					"text": {
+						"text": "#Submit"
 					}
 				}
 			]
