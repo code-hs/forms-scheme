@@ -975,6 +975,10 @@
 						"type": "MultiBox",
 						"model": "workRecords"
 					},
+					"custom": {
+						"title": "#Employer #",
+						"addIndex": true
+					},
 					"text": {
 						"value": "#Add another employer."
 					},
