@@ -68,7 +68,6 @@
 		},
 		"styles": {
 			"value": [
-				"form-widget-g .app { font-family: 'Montserrat', sans-serif }",
 				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
 				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }",
