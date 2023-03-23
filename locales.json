@@ -5,13 +5,24 @@
 		"dir-1": {
 			"dir-1-1": "text"
 		},
-		"add": "Add"
+		"add": "Add",
+		"menu": {
+			"welcome": "Welcome page",
+			"terms": "Terms and Conditions page",
+			"personal": "Personal Information form",
+			"complete": "Complete page"
+		}
 	},
 	"fr": {
 		"driver application": "Driver Application",
 		"app-title": "title fr",
 		"dir-1": {
 			"dir-1-1": "text fr"
+		},
+		"menu": {
+			"welcome": "Page d'accueil",
+			"terms": "Page Termes et Conditions",
+			"complete": "Page complète"
 		}
 	},
 	"ua": {

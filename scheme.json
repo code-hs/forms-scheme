@@ -35,27 +35,34 @@
 				"name": "menu",
 				"enable": true,
 				"config": {
-					"pages": [
+					"list": [
 						{
 							"id": 1,
 							"pageId": 1,
 							"position": 0,
 							"enable": true,
-							"title": "Welcome page"
+							"title": "menu.welcome"
 						},
 						{
 							"id": 2,
 							"pageId": 2,
 							"position": 1,
 							"enable": true,
-							"title": "Terms and Conditions page"
+							"title": "menu.terms"
 						},
 						{
 							"id": 3,
-							"pageId": 7,
+							"pageId": 5,
 							"position": 2,
+							"enable": false,
+							"title": "menu.personal"
+						},
+						{
+							"id": 4,
+							"pageId": 7,
+							"position": 3,
 							"enable": true,
-							"title": "Complete page"
+							"title": "menu.complete"
 						}
 					]
 				}
