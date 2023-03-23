@@ -103,9 +103,13 @@
 				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
 				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }",
-				"form-widget-g h2 {text-align: center; font-size: 1.5rem; font-weight: 400;}",
-				"form-widget-g .one-col {  width: 250px; margin: 0 auto; }",
-				"form-widget-g .middle-text .field__hint { text-align: center; }"
+				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
+				"form-widget-g .one-col-middle {  width: 250px; margin: 0 auto; }",
+				"form-widget-g .two-col-middle {  width: 300px; margin: 0 auto; }",
+				"form-widget-g .three-col-middle {  width: 350px; margin: 0 auto; }",
+				"form-widget-g .middle-text .field__hint { text-align: center; }",
+				"form-widget-g .submit-btn { width: 250px; margin: 30px auto;}",
+				"form-widget-g .text-center { text-align: center; }"
 			]
 		},
 		"variables": {
@@ -603,7 +607,10 @@
 
 								{
 									"common": {
-										"type": "ButtonSubmit"
+										"type": "ButtonSubmit",
+										"class": {
+											"container": "submit-btn"
+										}
 									},
 									"custom": {},
 									"text": {
@@ -843,6 +850,7 @@
 								"type": "Checkbox",
 								"model": "currentLicense",
 								"class": {
+									"container": "one-col-middle",
 									"element": "checkbox-only-one-active"
 								}
 							},
@@ -899,7 +907,10 @@
 
 								{
 									"common": {
-										"type": "ButtonSubmit"
+										"type": "ButtonSubmit",
+										"class": {
+											"container": "submit-btn"
+										}
 									},
 									"custom": {},
 									"text": {
@@ -928,6 +939,183 @@
 					},
 					"text": {
 						"value": "#Driver Application (Work History)"
+					}
+				},
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "hasBeenCreDriver",
+						"class": {
+							"container": "standard-radio three-col-middle"
+						}
+					},
+					"custom": {
+						"defaultValue": "no",
+						"options": [
+							{
+								"value": "yes",
+								"text": "#Yes"
+							},
+							{
+								"value": "no",
+								"text": "#No"
+							}
+						]
+					},
+					"text": {
+						"hint": "#Have you ever been employed as a company driver or independent contractor for WTA Global?"
+					}
+				},
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "hasTruckDrivingSchool",
+						"class": {
+							"container": "standard-radio three-col-middle"
+						}
+					},
+					"custom": {
+						"defaultValue": "no",
+						"options": [
+							{
+								"value": "yes",
+								"text": "#Yes"
+							},
+							{
+								"value": "no",
+								"text": "#No"
+							}
+						]
+					},
+					"text": {
+						"hint": "#Have you ever been to any truck driving school in the last 5 years?"
+					}
+				},
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "hasFailedDrugScreen",
+						"class": {
+							"container": "standard-radio three-col-middle"
+						}
+					},
+					"custom": {
+						"defaultValue": "no",
+						"options": [
+							{
+								"value": "yes",
+								"text": "#Yes"
+							},
+							{
+								"value": "no",
+								"text": "#No"
+							}
+						]
+					},
+					"text": {
+						"hint": "#Have you ever failed or refused a DOT drug screen?"
+					}
+				},
+				{
+					"common": {
+						"type": "TextContainer",
+						"class": {
+							"container": "text-center"
+						}
+					},
+					"custom": {
+						"tag": "p"
+					},
+					"text": {
+						"value": "#Please provide the last 10 years of work history"
+					}
+				},
+				{
+					"common": {
+						"type": "MultiBox",
+						"model": "workRecords"
+					},
+					"custom": {
+						"title": "#Employer #",
+						"addIndex": true
+					},
+					"text": {
+						"value": "#Add another employer."
+					},
+					"components": [
+						{
+							"common": {
+								"type": "layoutColumns"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "LayoutColumn"
+									},
+									"custom": {
+										"col": "8"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "InputText",
+												"model": "companyName"
+											},
+											"custom": {
+												"pattern": "/^.{0,99}$/i"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#This field is required."
+												}
+											},
+											"text": {
+												"hint": "#Company Name"
+											}
+										}
+									]
+								},
+								{
+									"common": {
+										"type": "LayoutColumn"
+									},
+									"custom": {
+										"col": "4"
+									},
+									"components": [
+										{
+											"common": {
+												"type": "Checkbox",
+												"model": "UnemploymentRecord",
+												"class": {
+													"element": ""
+												}
+											},
+											"custom": {
+												"bodyHTML": "#Period of Unemployment",
+												"action": {
+													"type": "UNCHECK_ANOTHERS",
+													"container": ".checkbox-only-one-active"
+												}
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "submit-btn"
+						}
+					},
+					"custom": {},
+					"text": {
+						"text": "#Submit"
 					}
 				}
 			]
