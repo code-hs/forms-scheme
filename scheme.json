@@ -39,28 +39,53 @@
 						{
 							"id": 1,
 							"pageId": 1,
-							"position": 0,
+							"position": 1,
 							"enable": true,
 							"title": "menu.welcome"
 						},
 						{
 							"id": 2,
 							"pageId": 2,
-							"position": 1,
+							"position": 2,
 							"enable": true,
 							"title": "menu.terms"
 						},
 						{
 							"id": 3,
-							"pageId": 5,
-							"position": 2,
-							"enable": false,
-							"title": "menu.personal"
+							"pageId": 3,
+							"position": 3,
+							"enable": true,
+							"title": "#Driver Application, readonly fields,"
 						},
+
 						{
 							"id": 4,
+							"pageId": 4,
+							"position":4,
+							"enable": true,
+							"title": "#Personal information text"
+						},
+
+						{
+							"id": 5,
+							"pageId": 5,
+							"position": 5,
+							"enable": true,
+							"title": "menu.personal"
+						},
+
+						{
+							"id": 6,
+							"pageId": 6,
+							"position": 6,
+							"enable": true,
+							"title": "#work history"
+						},
+
+						{
+							"id": 7,
 							"pageId": 7,
-							"position": 3,
+							"position": 7,
 							"enable": true,
 							"title": "menu.complete"
 						}

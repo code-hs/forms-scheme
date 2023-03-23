@@ -1,10 +1,6 @@
 {
 	"en": {
 		"driver application": "Driver Application",
-		"app-title": "title",
-		"dir-1": {
-			"dir-1-1": "text"
-		},
 		"add": "Add",
 		"menu": {
 			"welcome": "Welcome page",
@@ -15,10 +11,6 @@
 	},
 	"fr": {
 		"driver application": "Driver Application",
-		"app-title": "title fr",
-		"dir-1": {
-			"dir-1-1": "text fr"
-		},
 		"menu": {
 			"welcome": "Page d'accueil",
 			"terms": "Page Termes et Conditions",
@@ -26,17 +18,9 @@
 		}
 	},
 	"ua": {
-		"driver application": "Driver Application",
-		"app-title": "title ua",
-		"dir-1": {
-			"dir-1-1": "text ua"
-		}
+		"driver application": "Driver Application"
 	},
 	"ru": {
-		"driver application": "Driver Application",
-		"app-title": "title ru",
-		"dir-1": {
-			"dir-1-1": "text ru"
-		}
+		"driver application": "Driver Application"
 	}
 }
