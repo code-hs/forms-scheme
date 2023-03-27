@@ -61,7 +61,7 @@
 						{
 							"id": 4,
 							"pageId": 4,
-							"position":4,
+							"position": 4,
 							"enable": true,
 							"title": "#Personal information text"
 						},
@@ -1036,7 +1036,7 @@
 						"model": "workRecords"
 					},
 					"custom": {
-						"title": "#Employer #",
+						"title": "pages.work-history.employer-#",
 						"addIndex": true
 					},
 					"text": {

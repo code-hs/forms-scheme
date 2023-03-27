@@ -7,6 +7,11 @@
 			"terms": "Terms and Conditions page",
 			"personal": "Personal Information form",
 			"complete": "Complete page"
+		},
+		"pages": {
+			"work-history": {
+				"employer-#": "Employer #"
+			}
 		}
 	},
 	"fr": {
@@ -21,6 +26,11 @@
 		"driver application": "Driver Application"
 	},
 	"ru": {
-		"driver application": "Driver Application"
+		"driver application": "Driver Application",
+		"pages": {
+			"work-history": {
+				"employer-#": "Работа #"
+			}
+		}
 	}
 }
