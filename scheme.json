@@ -1052,9 +1052,6 @@
 									"common": {
 										"type": "LayoutColumn"
 									},
-									"custom": {
-										"col": "8"
-									},
 									"components": [
 										{
 											"common": {
@@ -1080,24 +1077,95 @@
 									"common": {
 										"type": "LayoutColumn"
 									},
-									"custom": {
-										"col": "4"
+									"components": [
+										{
+											"common": {
+												"type": "InputText",
+												"model": "jobTitle"
+											},
+											"custom": {
+												"pattern": "/^.{0,40}$/i"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#This field is required."
+												}
+											},
+											"text": {
+												"hint": "#Job title"
+											}
+										}
+									]
+								}
+							]
+						},
+
+						{
+							"common": {
+								"type": "layoutColumns"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "LayoutColumn"
 									},
 									"components": [
 										{
 											"common": {
-												"type": "Checkbox",
-												"model": "UnemploymentRecord",
-												"class": {
-													"element": ""
-												}
+												"enable": true,
+												"type": "InputDate",
+												"model": "startDate"
 											},
 											"custom": {
-												"bodyHTML": "#Period of Unemployment",
-												"action": {
-													"type": "UNCHECK_ANOTHERS",
-													"container": ".checkbox-only-one-active"
+												"mask": "##/##/####"
+											},
+											"module": {
+												"minDate": "01/01/1920"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#Start Date is required.",
+													"range": "#The date falls outside of the acceptable range.",
+													"notValid": "#This is not a valid date."
 												}
+											},
+											"text": {
+												"placeholder": "#format: mm/dd/yyyy",
+												"hint": "#Start Date"
+											}
+										}
+									]
+								},
+								{
+									"common": {
+										"type": "LayoutColumn"
+									},
+									"components": [
+										{
+											"common": {
+												"enable": true,
+												"type": "InputDate",
+												"model": "endDate"
+											},
+											"custom": {
+												"mask": "##/##/####"
+											},
+											"module": {
+												"minDate": "01/01/1920"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#End Date is required.",
+													"range": "#The date falls outside of the acceptable range.",
+													"notValid": "#This is not a valid date."
+												}
+											},
+											"text": {
+												"placeholder": "#format: mm/dd/yyyy",
+												"hint": "#End Date"
 											}
 										}
 									]
