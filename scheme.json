@@ -367,84 +367,66 @@
 				},
 				{
 					"common": {
-						"type": "layoutColumns",
-						"enable": true
+						"type": "layoutContainer",
+						"enable": true,
+						"class": {
+							"container": "g-3-col"
+						}
 					},
 					"components": [
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "InputText",
+								"model": "city"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "city"
-									},
-									"custom": {
-										"pattern": "/^.{0,40}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "#City is required."
-										}
-									},
-									"text": {
-										"hint": "#City"
-									}
+							"custom": {
+								"pattern": "/^.{0,40}$/i"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#City is required."
 								}
-							]
+							},
+							"text": {
+								"hint": "#City"
+							}
 						},
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "Selector",
+								"model": "state"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "Selector",
-										"model": "state"
-									},
-									"custom": {
-										"options": "$:selectorCountryList",
-										"defaultText": "#Select Your state"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "#State is required."
-										}
-									},
-									"text": {
-										"hint": "#State *"
-									}
+							"custom": {
+								"options": "$:selectorCountryList",
+								"defaultText": "#Select Your state"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#State is required."
 								}
-							]
+							},
+							"text": {
+								"hint": "#State *"
+							}
 						},
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "InputText",
+								"model": "zipCode"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "zipCode"
-									},
-									"validation": {
-										"required": true,
-										"pattern": "/^.{1,35}$/",
-										"texts": {
-											"required": "#Zip Code is required."
-										}
-									},
-									"text": {
-										"placeholder": "",
-										"hint": "#Zip Code"
-									}
+							"validation": {
+								"required": true,
+								"pattern": "/^.{1,35}$/",
+								"texts": {
+									"required": "#Zip Code is required."
 								}
-							]
+							},
+							"text": {
+								"placeholder": "",
+								"hint": "#Zip Code"
+							}
 						}
 					]
 				},
