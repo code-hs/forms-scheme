@@ -360,6 +360,32 @@
 										"placeholder": "#(555) 555-5555",
 										"hint": "#Home Phone Number"
 									}
+								},
+								{
+									"common": {
+										"type": "InputDate",
+										"model": "birthDate",
+										"enable": true
+									},
+									"custom": {
+										"mask": "##/##/####"
+									},
+									"module": {
+										"minDate": "01/01/1920",
+										"maxDate": "01/01/2005"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#Date of Birth is required.",
+											"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
+											"notValid": "#This is not a valid date."
+										}
+									},
+									"text": {
+										"placeholder": "#format: mm/dd/yyyy     example: 01/25/1963",
+										"hint": "#Date of Birth"
+									}
 								}
 							]
 						}
@@ -447,33 +473,6 @@
 							]
 						}
 					]
-				},
-
-				{
-					"common": {
-						"type": "InputDate",
-						"model": "birthDate",
-						"enable": true
-					},
-					"custom": {
-						"mask": "##/##/####"
-					},
-					"module": {
-						"minDate": "01/01/1920",
-						"maxDate": "01/01/2005"
-					},
-					"validation": {
-						"required": true,
-						"texts": {
-							"required": "#Date of Birth is required.",
-							"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
-							"notValid": "#This is not a valid date."
-						}
-					},
-					"text": {
-						"placeholder": "#format: mm/dd/yyyy     example: 01/25/1963",
-						"hint": "#Date of Birth"
-					}
 				},
 
 				{
