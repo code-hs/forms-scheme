@@ -202,7 +202,7 @@
 					},
 					"text": {
 						"placeholder": "#name@company.com",
-						"hint": "#E-mail Address"
+						"label": "#E-mail Address"
 					}
 				},
 				{
@@ -257,7 +257,7 @@
 												}
 											},
 											"text": {
-												"hint": "#First Name"
+												"label": "#First Name"
 											}
 										}
 									]
@@ -282,7 +282,7 @@
 												}
 											},
 											"text": {
-												"hint": "#Last Name"
+												"label": "#Last Name"
 											}
 										}
 									]
@@ -319,7 +319,7 @@
 									},
 									"text": {
 										"placeholder": "#(555) 555-5555",
-										"hint": "#Cell Phone Number"
+										"label": "#Cell Phone Number"
 									}
 								},
 								{
@@ -338,7 +338,7 @@
 									},
 									"text": {
 										"placeholder": "#P.O. box, company name",
-										"hint": "#Street Address"
+										"label": "#Street Address"
 									}
 								}
 							]
@@ -358,7 +358,7 @@
 									},
 									"text": {
 										"placeholder": "#(555) 555-5555",
-										"hint": "#Home Phone Number"
+										"label": "#Home Phone Number"
 									}
 								},
 								{
@@ -385,7 +385,7 @@
 									},
 									"text": {
 										"placeholder": "#example: 01/25/1963",
-										"hint": "#Date of Birth"
+										"label": "#Date of Birth"
 									}
 								}
 							]
@@ -416,7 +416,7 @@
 								}
 							},
 							"text": {
-								"hint": "#City"
+								"label": "#City"
 							}
 						},
 						{
@@ -435,7 +435,7 @@
 								}
 							},
 							"text": {
-								"hint": "#State *"
+								"label": "#State *"
 							}
 						},
 						{
@@ -452,7 +452,7 @@
 							},
 							"text": {
 								"placeholder": "",
-								"hint": "#Zip Code"
+								"label": "#Zip Code"
 							}
 						}
 					]
@@ -507,7 +507,7 @@
 										]
 									},
 									"text": {
-										"hint": "#Do you have a Commercial Driver's License? (Class A)"
+										"label": "#Do you have a Commercial Driver's License? (Class A)"
 									},
 									"validation": {
 										"required": true
@@ -541,7 +541,7 @@
 										}
 									},
 									"text": {
-										"hint": "#CDL Experience *"
+										"label": "#CDL Experience *"
 									}
 								},
 
@@ -567,7 +567,7 @@
 										]
 									},
 									"text": {
-										"hint": "#Can you pass a drug test?"
+										"label": "#Can you pass a drug test?"
 									},
 									"validation": {
 										"required": true
@@ -719,7 +719,7 @@
 												}
 											},
 											"text": {
-												"hint": "#Driver's License State *"
+												"label": "#Driver's License State *"
 											}
 										}
 									]
@@ -745,7 +745,7 @@
 												}
 											},
 											"text": {
-												"hint": "#Driver's License Number"
+												"label": "#Driver's License Number"
 											}
 										}
 									]
@@ -787,7 +787,7 @@
 											},
 											"text": {
 												"placeholder": "#format: mm/dd/yyyy",
-												"hint": "#D.L. Expiration Date D.L."
+												"label": "#D.L. Expiration Date D.L."
 											}
 										}
 									]
@@ -819,7 +819,7 @@
 												}
 											},
 											"text": {
-												"hint": "#Type/Class *"
+												"label": "#Type/Class *"
 											}
 										}
 									]
@@ -883,7 +883,7 @@
 									},
 									"text": {
 										"placeholder": "#123-45-6789",
-										"hint": "#Social Security Number"
+										"label": "#Social Security Number"
 									}
 								},
 
@@ -945,7 +945,7 @@
 						]
 					},
 					"text": {
-						"hint": "#Have you ever been employed as a company driver or independent contractor for WTA Global?"
+						"label": "#Have you ever been employed as a company driver or independent contractor for WTA Global?"
 					}
 				},
 				{
@@ -970,7 +970,7 @@
 						]
 					},
 					"text": {
-						"hint": "#Have you ever been to any truck driving school in the last 5 years?"
+						"label": "#Have you ever been to any truck driving school in the last 5 years?"
 					}
 				},
 				{
@@ -995,7 +995,7 @@
 						]
 					},
 					"text": {
-						"hint": "#Have you ever failed or refused a DOT drug screen?"
+						"label": "#Have you ever failed or refused a DOT drug screen?"
 					}
 				},
 				{
@@ -1050,7 +1050,7 @@
 												}
 											},
 											"text": {
-												"hint": "#Company Name"
+												"label": "#Company Name"
 											}
 										}
 									]
@@ -1075,7 +1075,7 @@
 												}
 											},
 											"text": {
-												"hint": "#Job title"
+												"label": "#Job title"
 											}
 										}
 									]
@@ -1116,7 +1116,7 @@
 									},
 									"text": {
 										"placeholder": "#format: mm/dd/yyyy",
-										"hint": "#Start Date"
+										"label": "#Start Date"
 									}
 								},
 								{
@@ -1144,7 +1144,7 @@
 									},
 									"text": {
 										"placeholder": "#format: mm/dd/yyyy",
-										"hint": "#End Date"
+										"label": "#End Date"
 									}
 								}
 							]
