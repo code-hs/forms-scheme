@@ -368,7 +368,8 @@
 										"enable": true
 									},
 									"custom": {
-										"mask": "##/##/####"
+										"mask": "##/##/####",
+										"hint": "#format: mm/dd/yyyy"
 									},
 									"module": {
 										"minDate": "01/01/1920",
@@ -383,7 +384,7 @@
 										}
 									},
 									"text": {
-										"placeholder": "#format: mm/dd/yyyy     example: 01/25/1963",
+										"placeholder": "#example: 01/25/1963",
 										"hint": "#Date of Birth"
 									}
 								}
