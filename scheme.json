@@ -393,84 +393,66 @@
 				},
 				{
 					"common": {
-						"type": "layoutColumns",
-						"enable": true
+						"type": "layoutContainer",
+						"enable": true,
+						"class": {
+							"container": "g-3-col"
+						}
 					},
 					"components": [
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "InputText",
+								"model": "city"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "city"
-									},
-									"custom": {
-										"pattern": "/^.{0,40}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "#City is required."
-										}
-									},
-									"text": {
-										"hint": "#City"
-									}
+							"custom": {
+								"pattern": "/^.{0,40}$/i"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#City is required."
 								}
-							]
+							},
+							"text": {
+								"hint": "#City"
+							}
 						},
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "Selector",
+								"model": "state"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "Selector",
-										"model": "state"
-									},
-									"custom": {
-										"options": "$:selectorCountryList",
-										"defaultText": "#Select Your state"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "#State is required."
-										}
-									},
-									"text": {
-										"hint": "#State *"
-									}
+							"custom": {
+								"options": "$:selectorCountryList",
+								"defaultText": "#Select Your state"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#State is required."
 								}
-							]
+							},
+							"text": {
+								"hint": "#State *"
+							}
 						},
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "InputText",
+								"model": "zipCode"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "zipCode"
-									},
-									"validation": {
-										"required": true,
-										"pattern": "/^.{1,35}$/",
-										"texts": {
-											"required": "#Zip Code is required."
-										}
-									},
-									"text": {
-										"placeholder": "",
-										"hint": "#Zip Code"
-									}
+							"validation": {
+								"required": true,
+								"pattern": "/^.{1,35}$/",
+								"texts": {
+									"required": "#Zip Code is required."
 								}
-							]
+							},
+							"text": {
+								"placeholder": "",
+								"hint": "#Zip Code"
+							}
 						}
 					]
 				},
@@ -1051,9 +1033,6 @@
 									"common": {
 										"type": "LayoutColumn"
 									},
-									"custom": {
-										"col": "8"
-									},
 									"components": [
 										{
 											"common": {
@@ -1079,27 +1058,93 @@
 									"common": {
 										"type": "LayoutColumn"
 									},
-									"custom": {
-										"col": "4"
-									},
 									"components": [
 										{
 											"common": {
-												"type": "Checkbox",
-												"model": "UnemploymentRecord",
-												"class": {
-													"element": ""
-												}
+												"type": "InputText",
+												"model": "jobTitle"
 											},
 											"custom": {
-												"bodyHTML": "#Period of Unemployment",
-												"action": {
-													"type": "UNCHECK_ANOTHERS",
-													"container": ".checkbox-only-one-active"
+												"pattern": "/^.{0,40}$/i"
+											},
+											"validation": {
+												"required": true,
+												"texts": {
+													"required": "#This field is required."
 												}
+											},
+											"text": {
+												"hint": "#Job title"
 											}
 										}
 									]
+								}
+							]
+						},
+
+						{
+							"common": {
+								"type": "layoutContainer",
+								"class": {
+									"container": "g-2-col"
+								}
+							},
+							"components": [
+								{
+									"common": {
+										"enable": true,
+										"type": "InputDate",
+										"model": "startDate"
+									},
+									"custom": {
+										"mask": "##/##/####",
+										"workTogether": {
+											"endDate": "nextSibling"
+										}
+									},
+									"module": {
+										"minDate": "01/01/1920"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#Start Date is required.",
+											"range": "#The date falls outside of the acceptable range.",
+											"notValid": "#This is not a valid date."
+										}
+									},
+									"text": {
+										"placeholder": "#format: mm/dd/yyyy",
+										"hint": "#Start Date"
+									}
+								},
+								{
+									"common": {
+										"enable": true,
+										"type": "InputDate",
+										"model": "endDate"
+									},
+									"custom": {
+										"mask": "##/##/####",
+										"workTogether": {
+											"startDate": "prevSibling"
+										}
+									},
+									"module": {
+										"minDate": "01/01/1920"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#End Date is required.",
+											"range": "#The date falls outside of the acceptable range.",
+											"notValid": "#This is not a valid date."
+										}
+									},
+									"text": {
+										"placeholder": "#format: mm/dd/yyyy",
+										"hint": "#End Date"
+									}
 								}
 							]
 						}
