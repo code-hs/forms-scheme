@@ -1100,7 +1100,9 @@
 									"custom": {
 										"mask": "##/##/####",
 										"workTogether": {
-											"endDate": "nextSibling"
+											"selfIdentify": "START",
+											"purposeModel": "endDate",
+											"validateText": "#Start date can't be bigger than finish date."
 										}
 									},
 									"module": {
@@ -1128,7 +1130,9 @@
 									"custom": {
 										"mask": "##/##/####",
 										"workTogether": {
-											"startDate": "prevSibling"
+											"selfIdentify": "END",
+											"purposeModel": "startDate",
+											"validateText": "#Finish date can't be smaller than start date"
 										}
 									},
 									"module": {
