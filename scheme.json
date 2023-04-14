@@ -1152,6 +1152,121 @@
 									}
 								}
 							]
+						},
+
+						{
+							"common": {
+								"type": "layoutContainer",
+								"enable": true,
+								"class": {
+									"container": "g-3-col"
+								}
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "city"
+									},
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#City is required."
+										}
+									},
+									"text": {
+										"label": "#City"
+									}
+								},
+								{
+									"common": {
+										"type": "Selector",
+										"model": "state"
+									},
+									"custom": {
+										"options": "$:selectorCountryList",
+										"defaultText": "#Select Your state"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#State is required."
+										}
+									},
+									"text": {
+										"label": "#State *"
+									}
+								},
+								{
+									"common": {
+										"type": "InputText",
+										"model": "zipCode"
+									},
+									"validation": {
+										"required": true,
+										"pattern": "/^.{1,35}$/",
+										"texts": {
+											"required": "#Zip Code is required."
+										}
+									},
+									"text": {
+										"placeholder": "",
+										"label": "#Zip Code"
+									}
+								}
+							]
+						},
+
+						{
+							"common": {
+								"type": "layoutContainer",
+								"class": {
+									"container": "g-2-col"
+								}
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "address_1"
+									},
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#Address is required."
+										}
+									},
+									"text": {
+										"placeholder": "#street, P.O. box, company",
+										"label": "#Address Line 1"
+									}
+								},
+								{
+									"common": {
+										"type": "InputText",
+										"model": "address_2"
+									},
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#Address is required."
+										}
+									},
+									"text": {
+										"placeholder": "#building, unit, floor, etc",
+										"label": "#Address Line 2"
+									}
+								}
+							]
 						}
 					]
 				},
