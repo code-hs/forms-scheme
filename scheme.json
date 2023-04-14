@@ -689,7 +689,7 @@
 						"model": "driversLicenses"
 					},
 					"text": {
-						"value": "#Add another driver's license."
+						"addButton": "#Add another driver's license."
 					},
 					"components": [
 						{
@@ -1267,6 +1267,45 @@
 									}
 								}
 							]
+						},
+						{
+							"common": {
+								"type": "InputText",
+								"model": "phoneNumber"
+							},
+							"custom": {
+								"mask": "(###) ###-####"
+							},
+							"text": {
+								"placeholder": "#(555) 555-5555",
+								"label": "#Phone Number"
+							},
+							"validation": {
+								"required": true,
+								"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
+								"texts": {
+									"required": "#Phone is required."
+								}
+							}
+						},
+						{
+							"common": {
+								"type": "Textarea",
+								"model": "description"
+							},
+							"custom": {
+								"rows": 5,
+								"pattern": "/^.{0,320}$/i"
+							},
+							"text": {
+								"label": "#Description"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#Description is required."
+								}
+							}
 						}
 					]
 				},
