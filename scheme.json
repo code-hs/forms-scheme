@@ -109,7 +109,8 @@
 				"form-widget-g .three-col-middle {  width: 350px; margin: 0 auto; }",
 				"form-widget-g .middle-text .field__hint { text-align: center; }",
 				"form-widget-g .submit-btn { width: 250px; margin: 30px auto;}",
-				"form-widget-g .text-center { text-align: center; }"
+				"form-widget-g .text-center { text-align: center; }",
+				"form-widget-g .text-under-field { font-size: 0.7rem; }"
 			]
 		},
 		"variables": {
@@ -689,7 +690,7 @@
 						"model": "driversLicenses"
 					},
 					"text": {
-						"addButton": "#Add another driver's license."
+						"addButton": "#Add another driver's license"
 					},
 					"components": [
 						{
@@ -928,7 +929,7 @@
 						"type": "Radiobuttons",
 						"model": "hasBeenCreDriver",
 						"class": {
-							"container": "standard-radio three-col-middle"
+							"container": "standard-radio col-9 col-10-sm col-middle"
 						}
 					},
 					"custom": {
@@ -953,7 +954,7 @@
 						"type": "Radiobuttons",
 						"model": "hasTruckDrivingSchool",
 						"class": {
-							"container": "standard-radio three-col-middle"
+							"container": "standard-radio col-9 col-10-sm col-middle"
 						}
 					},
 					"custom": {
@@ -978,7 +979,7 @@
 						"type": "Radiobuttons",
 						"model": "hasFailedDrugScreen",
 						"class": {
-							"container": "standard-radio three-col-middle"
+							"container": "standard-radio col-9 col-10-sm col-middle"
 						}
 					},
 					"custom": {
@@ -1022,7 +1023,7 @@
 						"addIndex": true
 					},
 					"text": {
-						"addButton": "#Add another employer."
+						"addButton": "#Add another employer"
 					},
 					"components": [
 						{
@@ -1306,6 +1307,169 @@
 									"required": "#Description is required."
 								}
 							}
+						},
+						{
+							"common": {
+								"type": "Selector",
+								"model": "reasonForLeaving"
+							},
+							"custom": {
+								"options": {
+									"LaidOff": "#Laid Off",
+									"LeaveOfAbsense": "#Leave of Absense",
+									"OutOfBusiness": "#Out of Business",
+									"PresentEmployer": "#Present Employer",
+									"Quit": "#Quit",
+									"Reassigned": "#Reassigned",
+									"Relocation": "#Relocation",
+									"Retired": "#Retired",
+									"Terminated": "#Terminated",
+									"TermServiceEnd": "#Term Service End"
+								},
+								"defaultText": "#Select Your reason"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#Reason for Leaving is required."
+								}
+							},
+							"text": {
+								"label": "#Reason for Leaving *"
+							}
+						},
+						{
+							"common": {
+								"type": "Radiobuttons",
+								"model": "isDrivingJob",
+								"class": {
+									"container": "standard-radio three-col-middle"
+								}
+							},
+							"custom": {
+								"defaultValue": "yes",
+								"options": [
+									{
+										"value": "yes",
+										"text": "#Yes",
+										"action": {
+											"type": "SHOW_CONTAINER",
+											"nextSibling": 1
+										}
+									},
+									{
+										"value": "no",
+										"text": "#No",
+										"action": {
+											"type": "HIDE_CONTAINER",
+											"nextSibling": 1
+										}
+									}
+								]
+							},
+							"text": {
+								"label": "#Did you operate a commercial motor vehicle for this job?"
+							}
+						},
+						{
+							"common": {
+								"type": "layoutContainer",
+								"class": {
+									"container": "three-col-middle"
+								}
+							},
+
+							"components": [
+								{
+									"common": {
+										"type": "Selector",
+										"model": "typeOfEquipment"
+									},
+									"custom": {
+										"options": {
+											"StraightTruck": "#Straight Truck",
+											"TractorAndSemiTrailers": "#Tractor and Semi Trailers",
+											"TractorAndTwoTrailers": "#Tractor and Two Trailers",
+											"Other": "#Other"
+										},
+										"defaultText": "#Select equipment type"
+									},
+									"validation": {
+										"required": true,
+										"requiredOnlyIfVisible": true,
+										"texts": {
+											"required": "#This field is required."
+										}
+									},
+									"text": {
+										"label": "#Type of equipment You operated *"
+									}
+								},
+								{
+									"common": {
+										"type": "Radiobuttons",
+										"model": "trailerLength",
+										"class": {
+											"container": "standard-radio three-col-middle"
+										}
+									},
+									"custom": {
+										"defaultValue": "over40Feet",
+										"options": [
+											{
+												"value": "under40Feet",
+												"text": "#Under 40 Feet"
+											},
+											{
+												"value": "over40Feet",
+												"text": "#Over 40 Feet"
+											}
+										]
+									},
+									"text": {
+										"label": "#Trailer length?"
+									}
+								},
+								{
+									"common": {
+										"type": "Radiobuttons",
+										"model": "subjectToFMCSR",
+										"class": {
+											"container": "standard-radio three-col-middle"
+										}
+									},
+									"custom": {
+										"defaultValue": "yes",
+										"options": [
+											{
+												"value": "yes",
+												"text": "#Yes"
+											},
+											{
+												"value": "no",
+												"text": "#No"
+											}
+										]
+									},
+									"text": {
+										"label": "#Were you subject to the FMCSR?"
+									}
+								},
+								{
+									"common": {
+										"type": "TextContainer",
+										"class": {
+											"container": "three-col-middle text-under-field"
+										}
+									},
+									"custom": {
+										"tag": "p"
+									},
+									"text": {
+										"value": "#The information you provide here may be used, and your previous employers will be contacted"
+									}
+								}
+							]
 						}
 					]
 				},
