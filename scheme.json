@@ -102,8 +102,8 @@
 			"value": [
 				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
+
 				"form-widget-g .middle-text .field__hint { text-align: center; }",
-				"form-widget-g .submit-btn { width: 250px; margin: 30px auto;}",
 				"form-widget-g .text-center { text-align: center; }",
 				"form-widget-g .text-under-field { font-size: 0.7rem; }"
 			]
@@ -582,23 +582,22 @@
 									"validation": {
 										"required": true
 									}
-								},
-
-								{
-									"common": {
-										"type": "ButtonSubmit",
-										"class": {
-											"container": "submit-btn"
-										}
-									},
-									"custom": {},
-									"text": {
-										"text": "#Submit"
-									}
 								}
 							]
 						}
 					]
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm col-middle"
+						}
+					},
+					"custom": {},
+					"text": {
+						"text": "#Submit"
+					}
 				}
 			]
 		},
@@ -894,23 +893,22 @@
 										"placeholder": "#123-45-6789",
 										"label": "#Social Security Number"
 									}
-								},
-
-								{
-									"common": {
-										"type": "ButtonSubmit",
-										"class": {
-											"container": "submit-btn"
-										}
-									},
-									"custom": {},
-									"text": {
-										"text": "#Submit"
-									}
 								}
 							]
 						}
 					]
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm col-middle"
+						}
+					},
+					"custom": {},
+					"text": {
+						"text": "#Submit"
+					}
 				}
 			]
 		},
@@ -1488,7 +1486,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "submit-btn"
+							"container": "col-5 col-5-sm col-middle"
 						}
 					},
 					"custom": {},
