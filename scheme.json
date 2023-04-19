@@ -394,7 +394,7 @@
 						"type": "layoutContainer",
 						"enable": true,
 						"class": {
-							"container": "g-3-col"
+							"container": "g-3-cols"
 						}
 					},
 					"components": [
@@ -1082,7 +1082,7 @@
 							"common": {
 								"type": "layoutContainer",
 								"class": {
-									"container": "g-2-col"
+									"container": "g-2-cols"
 								}
 							},
 							"components": [
@@ -1154,7 +1154,7 @@
 								"type": "layoutContainer",
 								"enable": true,
 								"class": {
-									"container": "g-3-col"
+									"container": "g-3-cols"
 								}
 							},
 							"components": [
@@ -1219,7 +1219,7 @@
 							"common": {
 								"type": "layoutContainer",
 								"class": {
-									"container": "g-2-col"
+									"container": "g-2-cols"
 								}
 							},
 							"components": [
