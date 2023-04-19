@@ -106,7 +106,6 @@
 				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
 				"form-widget-g .one-col-middle {  width: 250px; margin: 0 auto; }",
 				"form-widget-g .two-col-middle {  width: 300px; margin: 0 auto; }",
-				"form-widget-g .three-col-middle {  width: 350px; margin: 0 auto; }",
 				"form-widget-g .middle-text .field__hint { text-align: center; }",
 				"form-widget-g .submit-btn { width: 250px; margin: 30px auto;}",
 				"form-widget-g .text-center { text-align: center; }",
@@ -1343,7 +1342,7 @@
 								"type": "Radiobuttons",
 								"model": "isDrivingJob",
 								"class": {
-									"container": "standard-radio three-col-middle"
+									"container": "standard-radio col-9 col-10-sm col-middle"
 								}
 							},
 							"custom": {
@@ -1375,7 +1374,7 @@
 							"common": {
 								"type": "layoutContainer",
 								"class": {
-									"container": "three-col-middle"
+									"container": "col-9 col-10-sm col-middle"
 								}
 							},
 
@@ -1410,7 +1409,7 @@
 										"type": "Radiobuttons",
 										"model": "trailerLength",
 										"class": {
-											"container": "standard-radio three-col-middle"
+											"container": "standard-radio"
 										}
 									},
 									"custom": {
@@ -1435,7 +1434,7 @@
 										"type": "Radiobuttons",
 										"model": "subjectToFMCSR",
 										"class": {
-											"container": "standard-radio three-col-middle"
+											"container": "standard-radio"
 										}
 									},
 									"custom": {
@@ -1459,7 +1458,7 @@
 									"common": {
 										"type": "TextContainer",
 										"class": {
-											"container": "three-col-middle text-under-field"
+											"container": "text-under-field"
 										}
 									},
 									"custom": {
