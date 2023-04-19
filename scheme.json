@@ -102,9 +102,7 @@
 			"value": [
 				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
-				"form-widget-g .standard-radio .inputs { display: flex; justify-content: space-evenly; }",
 				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
-				"form-widget-g .two-col-middle {  width: 300px; margin: 0 auto; }",
 				"form-widget-g .middle-text .field__hint { text-align: center; }",
 				"form-widget-g .submit-btn { width: 250px; margin: 30px auto;}",
 				"form-widget-g .text-center { text-align: center; }",
@@ -481,7 +479,7 @@
 										"type": "Radiobuttons",
 										"model": "cdlHolder",
 										"class": {
-											"container": "standard-radio"
+											"container": "--radio-space-evenly"
 										}
 									},
 									"custom": {
@@ -549,7 +547,7 @@
 										"type": "Radiobuttons",
 										"model": "drugTest",
 										"class": {
-											"container": "standard-radio"
+											"container": "--radio-space-evenly"
 										}
 									},
 									"custom": {
@@ -927,7 +925,7 @@
 						"type": "Radiobuttons",
 						"model": "hasBeenCreDriver",
 						"class": {
-							"container": "standard-radio col-9 col-10-sm col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm col-middle"
 						}
 					},
 					"custom": {
@@ -952,7 +950,7 @@
 						"type": "Radiobuttons",
 						"model": "hasTruckDrivingSchool",
 						"class": {
-							"container": "standard-radio col-9 col-10-sm col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm col-middle"
 						}
 					},
 					"custom": {
@@ -977,7 +975,7 @@
 						"type": "Radiobuttons",
 						"model": "hasFailedDrugScreen",
 						"class": {
-							"container": "standard-radio col-9 col-10-sm col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm col-middle"
 						}
 					},
 					"custom": {
@@ -1341,7 +1339,7 @@
 								"type": "Radiobuttons",
 								"model": "isDrivingJob",
 								"class": {
-									"container": "standard-radio col-9 col-10-sm col-middle"
+									"container": "--radio-space-evenly col-9 col-10-sm col-middle"
 								}
 							},
 							"custom": {
@@ -1408,7 +1406,7 @@
 										"type": "Radiobuttons",
 										"model": "trailerLength",
 										"class": {
-											"container": "standard-radio"
+											"container": "--radio-space-evenly"
 										}
 									},
 									"custom": {
@@ -1433,7 +1431,7 @@
 										"type": "Radiobuttons",
 										"model": "subjectToFMCSR",
 										"class": {
-											"container": "standard-radio"
+											"container": "--radio-space-evenly"
 										}
 									},
 									"custom": {
