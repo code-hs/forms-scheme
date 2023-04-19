@@ -102,7 +102,6 @@
 			"value": [
 				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
-				"form-widget-g h2 {text-align: center; font-size: 1.5rem;}",
 				"form-widget-g .middle-text .field__hint { text-align: center; }",
 				"form-widget-g .submit-btn { width: 250px; margin: 30px auto;}",
 				"form-widget-g .text-center { text-align: center; }",
@@ -174,7 +173,10 @@
 			"components": [
 				{
 					"common": {
-						"type": "TextContainer"
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
 					},
 					"custom": {
 						"tag": "h2"
@@ -609,7 +611,10 @@
 			"components": [
 				{
 					"common": {
-						"type": "TextContainer"
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
 					},
 					"custom": {
 						"tag": "h2"
@@ -629,7 +634,10 @@
 			"components": [
 				{
 					"common": {
-						"type": "TextContainer"
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
 					},
 					"custom": {
 						"tag": "h2"
@@ -649,7 +657,10 @@
 			"components": [
 				{
 					"common": {
-						"type": "TextContainer"
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
 					},
 					"custom": {
 						"tag": "h2"
@@ -669,7 +680,10 @@
 			"components": [
 				{
 					"common": {
-						"type": "TextContainer"
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
 					},
 					"custom": {
 						"tag": "h2"
@@ -909,7 +923,10 @@
 			"components": [
 				{
 					"common": {
-						"type": "TextContainer"
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
 					},
 					"custom": {
 						"tag": "h2"
@@ -1490,7 +1507,10 @@
 			"components": [
 				{
 					"common": {
-						"type": "TextContainer"
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
 					},
 					"custom": {
 						"tag": "h2"
