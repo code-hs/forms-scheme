@@ -230,161 +230,139 @@
 
 						{
 							"common": {
-								"type": "layoutColumns"
+								"type": "layoutContainer",
+								"class": {
+									"container": "g-2-cols"
+								}
 							},
 							"components": [
 								{
 									"common": {
-										"type": "LayoutColumn"
+										"type": "InputText",
+										"model": "firstName"
 									},
-									"components": [
-										{
-											"common": {
-												"type": "InputText",
-												"model": "firstName"
-											},
-											"custom": {
-												"pattern": "/^[a-zа-я_]{0,28}$/i"
-											},
-											"validation": {
-												"required": true,
-												"texts": {
-													"required": "#First name is required."
-												}
-											},
-											"text": {
-												"label": "#First Name"
-											}
+									"custom": {
+										"pattern": "/^[a-zа-я_]{0,28}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#First name is required."
 										}
-									]
+									},
+									"text": {
+										"label": "#First Name"
+									}
 								},
 								{
 									"common": {
-										"type": "LayoutColumn"
+										"type": "InputText",
+										"model": "lastName"
 									},
-									"components": [
-										{
-											"common": {
-												"type": "InputText",
-												"model": "lastName"
-											},
-											"custom": {
-												"pattern": "/^[a-zа-я_]{0,28}$/i"
-											},
-											"validation": {
-												"required": true,
-												"texts": {
-													"required": "#Last name is required."
-												}
-											},
-											"text": {
-												"label": "#Last Name"
-											}
+									"custom": {
+										"pattern": "/^[a-zа-я_]{0,28}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#Last name is required."
 										}
-									]
+									},
+									"text": {
+										"label": "#Last Name"
+									}
 								}
 							]
 						}
 					]
 				},
+
 				{
 					"common": {
-						"type": "layoutColumns",
-						"enable": true
+						"type": "layoutContainer",
+						"class": {
+							"container": "g-2-cols"
+						}
 					},
 					"components": [
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "InputText",
+								"model": "cellPhoneNumber"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "cellPhoneNumber"
-									},
-									"custom": {
-										"mask": "(###) ###-####"
-									},
-									"validation": {
-										"required": true,
-										"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
-										"texts": {
-											"required": "#Cell phone is required."
-										}
-									},
-									"text": {
-										"placeholder": "#(555) 555-5555",
-										"label": "#Cell Phone Number"
-									}
-								},
-								{
-									"common": {
-										"type": "InputText",
-										"model": "streetAddress"
-									},
-									"custom": {
-										"pattern": "/^.{0,40}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "#Street address is required."
-										}
-									},
-									"text": {
-										"placeholder": "#P.O. box, company name",
-										"label": "#Street Address"
-									}
+							"custom": {
+								"mask": "(###) ###-####"
+							},
+							"validation": {
+								"required": true,
+								"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
+								"texts": {
+									"required": "#Cell phone is required."
 								}
-							]
+							},
+							"text": {
+								"placeholder": "#(555) 555-5555",
+								"label": "#Cell Phone Number"
+							}
 						},
 						{
 							"common": {
-								"type": "LayoutColumn"
+								"type": "InputText",
+								"model": "homePhoneNumber"
 							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "homePhoneNumber"
-									},
-									"custom": {
-										"mask": "(###) ###-####"
-									},
-									"text": {
-										"placeholder": "#(555) 555-5555",
-										"label": "#Home Phone Number"
-									}
-								},
-								{
-									"common": {
-										"type": "InputDate",
-										"model": "birthDate",
-										"enable": true
-									},
-									"custom": {
-										"mask": "##/##/####",
-										"hint": "#format: mm/dd/yyyy"
-									},
-									"module": {
-										"minDate": "01/01/1920",
-										"maxDate": "01/01/2005"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "#Date of Birth is required.",
-											"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
-											"notValid": "#This is not a valid date."
-										}
-									},
-									"text": {
-										"placeholder": "#example: 01/25/1963",
-										"label": "#Date of Birth"
-									}
+							"custom": {
+								"mask": "(###) ###-####"
+							},
+							"text": {
+								"placeholder": "#(555) 555-5555",
+								"label": "#Home Phone Number"
+							}
+						},
+						{
+							"common": {
+								"type": "InputText",
+								"model": "streetAddress"
+							},
+							"custom": {
+								"pattern": "/^.{0,40}$/i"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#Street address is required."
 								}
-							]
+							},
+							"text": {
+								"placeholder": "#P.O. box, company name",
+								"label": "#Street Address"
+							}
+						},
+						{
+							"common": {
+								"type": "InputDate",
+								"model": "birthDate",
+								"enable": true
+							},
+							"custom": {
+								"mask": "##/##/####",
+								"hint": "#format: mm/dd/yyyy"
+							},
+							"module": {
+								"minDate": "01/01/1920",
+								"maxDate": "01/01/2005"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "#Date of Birth is required.",
+									"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
+									"notValid": "#This is not a valid date."
+								}
+							},
+							"text": {
+								"placeholder": "#example: 01/25/1963",
+								"label": "#Date of Birth"
+							}
 						}
 					]
 				},
