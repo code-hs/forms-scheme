@@ -854,47 +854,28 @@
 
 				{
 					"common": {
-						"enable": true,
-						"type": "layoutColumns"
-					},
-					"styles": {
-						"justify-content": "center"
-					},
-					"components": [
-						{
-							"common": {
-								"enable": true,
-								"type": "LayoutColumn"
-							},
-							"custom": {
-								"col": 6
-							},
-
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "socialSecurityNumber"
-									},
-									"custom": {
-										"mask": "###-##-####"
-									},
-									"validation": {
-										"required": true,
-										"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
-										"texts": {
-											"required": "#Social Security Number is required."
-										}
-									},
-									"text": {
-										"placeholder": "#123-45-6789",
-										"label": "#Social Security Number"
-									}
-								}
-							]
+						"type": "InputText",
+						"model": "socialSecurityNumber",
+						"class": {
+							"container": "col-9 col-10-sm col-middle"
 						}
-					]
+					},
+					"custom": {
+						"mask": "###-##-####"
+					},
+					"validation": {
+						"required": true,
+						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
+						"texts": {
+							"required": "#Social Security Number is required."
+						}
+					},
+					"text": {
+						"placeholder": "#123-45-6789",
+						"label": "#Social Security Number"
+					}
 				},
+
 				{
 					"common": {
 						"type": "ButtonSubmit",
@@ -902,7 +883,6 @@
 							"container": "col-5 col-5-sm col-middle"
 						}
 					},
-					"custom": {},
 					"text": {
 						"text": "#Submit"
 					}
