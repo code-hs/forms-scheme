@@ -102,10 +102,7 @@
 			"value": [
 				"form-widget-g .fieldset-title p { margin-bottom: 20px; }",
 				"form-widget-g .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
-
-				"form-widget-g .middle-text .field__hint { text-align: center; }",
-				"form-widget-g .text-center { text-align: center; }",
-				"form-widget-g .text-under-field { font-size: 0.7rem; }"
+				"form-widget-g .field-inform-text { font-size: 0.7rem; }"
 			]
 		},
 		"variables": {
@@ -1012,7 +1009,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "text-center"
+							"container": "--center"
 						}
 					},
 					"custom": {
@@ -1468,7 +1465,7 @@
 									"common": {
 										"type": "TextContainer",
 										"class": {
-											"container": "text-under-field"
+											"container": "field-inform-text"
 										}
 									},
 									"custom": {
