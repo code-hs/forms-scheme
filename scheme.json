@@ -1034,58 +1034,48 @@
 					"components": [
 						{
 							"common": {
-								"type": "layoutColumns"
+								"type": "layoutContainer",
+								"class": {
+									"container": "g-2-cols"
+								}
 							},
 							"components": [
 								{
 									"common": {
-										"type": "LayoutColumn"
+										"type": "InputText",
+										"model": "companyName"
 									},
-									"components": [
-										{
-											"common": {
-												"type": "InputText",
-												"model": "companyName"
-											},
-											"custom": {
-												"pattern": "/^.{0,99}$/i"
-											},
-											"validation": {
-												"required": true,
-												"texts": {
-													"required": "#This field is required."
-												}
-											},
-											"text": {
-												"label": "#Company Name"
-											}
+									"custom": {
+										"pattern": "/^.{0,99}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#This field is required."
 										}
-									]
+									},
+									"text": {
+										"label": "#Company Name"
+									}
 								},
+
 								{
 									"common": {
-										"type": "LayoutColumn"
+										"type": "InputText",
+										"model": "jobTitle"
 									},
-									"components": [
-										{
-											"common": {
-												"type": "InputText",
-												"model": "jobTitle"
-											},
-											"custom": {
-												"pattern": "/^.{0,40}$/i"
-											},
-											"validation": {
-												"required": true,
-												"texts": {
-													"required": "#This field is required."
-												}
-											},
-											"text": {
-												"label": "#Job title"
-											}
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "#This field is required."
 										}
-									]
+									},
+									"text": {
+										"label": "#Job title"
+									}
 								}
 							]
 						},
