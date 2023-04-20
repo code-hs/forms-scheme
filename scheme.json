@@ -456,134 +456,121 @@
 
 				{
 					"common": {
-						"type": "layoutColumns"
-					},
-					"styles": {
-						"justify-content": "center"
+						"type": "layoutContainer",
+						"class": {
+							"container": "col-7 col-9-sm --col-middle"
+						}
 					},
 					"components": [
 						{
 							"common": {
-								"type": "LayoutColumn",
+								"type": "Radiobuttons",
+								"model": "cdlHolder",
 								"class": {
-									"container": "middle-content-column"
+									"container": "--radio-space-evenly"
 								}
 							},
 							"custom": {
-								"col": "6"
+								"options": [
+									{
+										"value": "yes",
+										"text": "#Yes",
+										"action": {
+											"type": "SHOW_CONTAINER",
+											"nextSibling": 1
+										}
+									},
+									{
+										"value": "no",
+										"text": "#No",
+										"action": {
+											"type": "HIDE_CONTAINER",
+											"nextSibling": 1
+										}
+									}
+								]
 							},
-							"components": [
-								{
-									"common": {
-										"type": "Radiobuttons",
-										"model": "cdlHolder",
-										"class": {
-											"container": "--radio-space-evenly"
-										}
-									},
-									"custom": {
-										"options": [
-											{
-												"value": "yes",
-												"text": "#Yes",
-												"action": {
-													"type": "SHOW_CONTAINER",
-													"nextSibling": 1
-												}
-											},
-											{
-												"value": "no",
-												"text": "#No",
-												"action": {
-													"type": "HIDE_CONTAINER",
-													"nextSibling": 1
-												}
-											}
-										]
-									},
-									"text": {
-										"label": "#Do you have a Commercial Driver's License? (Class A)"
-									},
-									"validation": {
-										"required": true
-									}
+							"text": {
+								"label": "#Do you have a Commercial Driver's License? (Class A)"
+							},
+							"validation": {
+								"required": true
+							}
+						},
+						{
+							"common": {
+								"type": "Selector",
+								"model": "cdlExperience"
+							},
+							"attrs": {
+								"container": {
+									"hidden": true
 								},
-
-								{
-									"common": {
-										"type": "Selector",
-										"model": "cdlExperience"
-									},
-									"attrs": {
-										"container": {
-											"hidden": true
-										},
-										"component": {}
-									},
-									"custom": {
-										"options": {
-											"LessThan3Months": "#Less than 3 months",
-											"_4To6Months": "#4 to 6 months",
-											"MoreThan6Months": "#More than 6 months "
-										},
-										"defaultText": "#Select Your CDL Experience"
-									},
-									"validation": {
-										"required": true,
-										"requiredOnlyIfVisible": true,
-										"texts": {
-											"required": "#CDL Experience is required."
-										}
-									},
-									"text": {
-										"label": "#CDL Experience *"
-									}
+								"component": {}
+							},
+							"custom": {
+								"options": {
+									"LessThan3Months": "#Less than 3 months",
+									"_4To6Months": "#4 to 6 months",
+									"MoreThan6Months": "#More than 6 months "
 								},
-
-								{
-									"common": {
-										"type": "Radiobuttons",
-										"model": "drugTest",
-										"class": {
-											"container": "--radio-space-evenly"
-										}
-									},
-									"custom": {
-										"options": [
-											{
-												"value": "yes",
-												"text": "#Yes"
-											},
-											{
-												"value": "no",
-												"text": "#No"
-											}
-										]
-									},
-									"text": {
-										"label": "#Can you pass a drug test?"
-									},
-									"validation": {
-										"required": true
-									}
-								},
-
-								{
-									"common": {
-										"type": "Checkbox",
-										"model": "agree"
-									},
-									"custom": {
-										"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
-									},
-									"validation": {
-										"required": true
-									}
+								"defaultText": "#Select Your CDL Experience"
+							},
+							"validation": {
+								"required": true,
+								"requiredOnlyIfVisible": true,
+								"texts": {
+									"required": "#CDL Experience is required."
 								}
-							]
+							},
+							"text": {
+								"label": "#CDL Experience *"
+							}
+						},
+
+						{
+							"common": {
+								"type": "Radiobuttons",
+								"model": "drugTest",
+								"class": {
+									"container": "--radio-space-evenly"
+								}
+							},
+							"custom": {
+								"options": [
+									{
+										"value": "yes",
+										"text": "#Yes"
+									},
+									{
+										"value": "no",
+										"text": "#No"
+									}
+								]
+							},
+							"text": {
+								"label": "#Can you pass a drug test?"
+							},
+							"validation": {
+								"required": true
+							}
+						},
+
+						{
+							"common": {
+								"type": "Checkbox",
+								"model": "agree"
+							},
+							"custom": {
+								"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
+							},
+							"validation": {
+								"required": true
+							}
 						}
 					]
 				},
+
 				{
 					"common": {
 						"type": "ButtonSubmit",
