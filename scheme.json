@@ -553,7 +553,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm col-middle"
+							"container": "col-5 col-5-sm --col-middle"
 						}
 					},
 					"custom": {},
@@ -775,7 +775,7 @@
 								"type": "Checkbox",
 								"model": "currentLicense",
 								"class": {
-									"container": "col-6 col-middle",
+									"container": "col-6 --col-middle",
 									"element": "checkbox-only-one-active"
 								}
 							},
@@ -795,7 +795,7 @@
 						"type": "InputText",
 						"model": "socialSecurityNumber",
 						"class": {
-							"container": "col-9 col-10-sm col-middle"
+							"container": "col-9 col-10-sm ---col-middle"
 						}
 					},
 					"custom": {
@@ -818,7 +818,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm col-middle"
+							"container": "col-5 col-5-sm --col-middle"
 						}
 					},
 					"text": {
@@ -853,7 +853,7 @@
 						"type": "Radiobuttons",
 						"model": "hasBeenCreDriver",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
 						}
 					},
 					"custom": {
@@ -878,7 +878,7 @@
 						"type": "Radiobuttons",
 						"model": "hasTruckDrivingSchool",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
 						}
 					},
 					"custom": {
@@ -903,7 +903,7 @@
 						"type": "Radiobuttons",
 						"model": "hasFailedDrugScreen",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
 						}
 					},
 					"custom": {
@@ -1257,7 +1257,7 @@
 								"type": "Radiobuttons",
 								"model": "isDrivingJob",
 								"class": {
-									"container": "--radio-space-evenly col-9 col-10-sm col-middle"
+									"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
 								}
 							},
 							"custom": {
@@ -1289,7 +1289,7 @@
 							"common": {
 								"type": "layoutContainer",
 								"class": {
-									"container": "col-9 col-10-sm col-middle"
+									"container": "col-9 col-10-sm --col-middle"
 								}
 							},
 
@@ -1391,7 +1391,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm col-middle"
+							"container": "col-5 col-5-sm --col-middle"
 						}
 					},
 					"custom": {},
