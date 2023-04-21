@@ -12,6 +12,9 @@
 			"work-history": {
 				"employer-#": "Employer #"
 			}
+		},
+		"errors": {
+			"required": "This field is required."
 		}
 	},
 	"fr": {

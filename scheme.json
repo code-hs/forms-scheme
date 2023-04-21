@@ -247,7 +247,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#First name is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -265,7 +265,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Last name is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -297,7 +297,7 @@
 								"required": true,
 								"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
 								"texts": {
-									"required": "#Cell phone is required."
+									"required": "errors.required"
 								}
 							},
 							"text": {
@@ -329,7 +329,7 @@
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#Street address is required."
+									"required": "errors.required"
 								}
 							},
 							"text": {
@@ -354,7 +354,7 @@
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#Date of birth is required.",
+									"required": "errors.required",
 									"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
 									"notValid": "#This is not a valid date."
 								}
@@ -386,7 +386,7 @@
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#City is required."
+									"required": "errors.required"
 								}
 							},
 							"text": {
@@ -405,7 +405,7 @@
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#State is required."
+									"required": "errors.required"
 								}
 							},
 							"text": {
@@ -417,11 +417,13 @@
 								"type": "InputText",
 								"model": "zipCode"
 							},
+							"custom": {
+								"pattern": "/^.{0,35}$/i"
+							},
 							"validation": {
 								"required": true,
-								"pattern": "/^.{1,35}$/",
 								"texts": {
-									"required": "#Zip code is required."
+									"required": "errors.required"
 								}
 							},
 							"text": {
@@ -498,7 +500,7 @@
 								"required": true,
 								"requiredOnlyIfVisible": true,
 								"texts": {
-									"required": "#CDL experience is required."
+									"required": "errors.required"
 								}
 							},
 							"text": {
@@ -682,7 +684,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#State is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -700,7 +702,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Driver's license number is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -733,7 +735,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Expiration date is required.",
+											"required": "errors.required",
 											"range": "#The date falls outside of the acceptable range. From 01/01/1920",
 											"notValid": "#This is not a valid date."
 										}
@@ -760,7 +762,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Driver's license type/class is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -805,7 +807,7 @@
 						"required": true,
 						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
 						"texts": {
-							"required": "#Social security number is required."
+							"required": "errors.required"
 						}
 					},
 					"text": {
@@ -969,7 +971,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#This field is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -988,7 +990,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#This field is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -1026,7 +1028,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Start date is required.",
+											"required": "errors.required",
 											"range": "#The date falls outside of the acceptable range.",
 											"notValid": "#This is not a valid date."
 										}
@@ -1056,7 +1058,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#End date is required.",
+											"required": "errors.required",
 											"range": "#The date falls outside of the acceptable range.",
 											"notValid": "#This is not a valid date."
 										}
@@ -1089,7 +1091,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#City is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -1108,7 +1110,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#State is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -1120,11 +1122,13 @@
 										"type": "InputText",
 										"model": "zipCode"
 									},
+									"custom": {
+										"pattern": "/^.{0,35}$/i"
+									},
 									"validation": {
 										"required": true,
-										"pattern": "/^.{1,35}$/",
 										"texts": {
-											"required": "#Zip code is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -1154,7 +1158,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Address is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -1173,7 +1177,7 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Address is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
@@ -1199,7 +1203,7 @@
 								"required": true,
 								"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
 								"texts": {
-									"required": "#Phone is required."
+									"required": "errors.required"
 								}
 							}
 						},
@@ -1218,7 +1222,7 @@
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#Description is required."
+									"required": "errors.required"
 								}
 							}
 						},
@@ -1245,7 +1249,7 @@
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#Reason for leaving is required."
+									"required": "errors.required"
 								}
 							},
 							"text": {
@@ -1312,7 +1316,7 @@
 										"required": true,
 										"requiredOnlyIfVisible": true,
 										"texts": {
-											"required": "#This field is required."
+											"required": "errors.required"
 										}
 									},
 									"text": {
