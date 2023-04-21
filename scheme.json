@@ -198,7 +198,7 @@
 					},
 					"text": {
 						"placeholder": "#name@company.com",
-						"label": "#E-mail Address"
+						"label": "#E-mail address"
 					}
 				},
 				{
@@ -221,7 +221,7 @@
 								"tag": "p"
 							},
 							"text": {
-								"value": "#Full Legal Name (as it appears on your Driver's License)"
+								"value": "#Full legal name (as it appears on your driver's license)"
 							},
 							"styles": {
 								"value": ""
@@ -251,7 +251,7 @@
 										}
 									},
 									"text": {
-										"label": "#First Name"
+										"label": "#First name"
 									}
 								},
 								{
@@ -269,7 +269,7 @@
 										}
 									},
 									"text": {
-										"label": "#Last Name"
+										"label": "#Last name"
 									}
 								}
 							]
@@ -302,7 +302,7 @@
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Cell Phone Number"
+								"label": "#Cell phone number"
 							}
 						},
 						{
@@ -315,7 +315,7 @@
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Home Phone Number"
+								"label": "#Home phone number"
 							}
 						},
 						{
@@ -334,7 +334,7 @@
 							},
 							"text": {
 								"placeholder": "#P.O. box, company name",
-								"label": "#Street Address"
+								"label": "#Street address"
 							}
 						},
 						{
@@ -354,14 +354,14 @@
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#Date of Birth is required.",
+									"required": "#Date of birth is required.",
 									"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
 									"notValid": "#This is not a valid date."
 								}
 							},
 							"text": {
 								"placeholder": "#example: 01/25/1963",
-								"label": "#Date of Birth"
+								"label": "#Date of birth"
 							}
 						}
 					]
@@ -421,12 +421,12 @@
 								"required": true,
 								"pattern": "/^.{1,35}$/",
 								"texts": {
-									"required": "#Zip Code is required."
+									"required": "#Zip code is required."
 								}
 							},
 							"text": {
 								"placeholder": "",
-								"label": "#Zip Code"
+								"label": "#Zip code"
 							}
 						}
 					]
@@ -469,7 +469,7 @@
 								]
 							},
 							"text": {
-								"label": "#Do you have a Commercial Driver's License? (Class A)"
+								"label": "#Do you have a commercial driver's license? (class A)"
 							},
 							"validation": {
 								"required": true
@@ -492,17 +492,17 @@
 									"_4To6Months": "#4 to 6 months",
 									"MoreThan6Months": "#More than 6 months "
 								},
-								"defaultText": "#Select Your CDL Experience"
+								"defaultText": "#Select Your CDL experience"
 							},
 							"validation": {
 								"required": true,
 								"requiredOnlyIfVisible": true,
 								"texts": {
-									"required": "#CDL Experience is required."
+									"required": "#CDL experience is required."
 								}
 							},
 							"text": {
-								"label": "#CDL Experience *"
+								"label": "#CDL experience *"
 							}
 						},
 
@@ -581,7 +581,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Terms and Conditions"
+						"value": "#Terms and conditions"
 					}
 				}
 			]
@@ -627,7 +627,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#FMCSA Notification of Driver's Rights"
+						"value": "#FMCSA notification of driver's rights"
 					}
 				}
 			]
@@ -650,7 +650,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Driver Application (Personal Information)"
+						"value": "#Driver application (personal information)"
 					}
 				},
 				{
@@ -677,7 +677,7 @@
 									},
 									"custom": {
 										"options": "$:selectorCountryList",
-										"defaultText": "#Select D.L. State"
+										"defaultText": "#Select D.L. state"
 									},
 									"validation": {
 										"required": true,
@@ -686,7 +686,7 @@
 										}
 									},
 									"text": {
-										"label": "#Driver's License State *"
+										"label": "#Driver's license state *"
 									}
 								},
 								{
@@ -700,11 +700,11 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Driver's License Number is required."
+											"required": "#Driver's license number is required."
 										}
 									},
 									"text": {
-										"label": "#Driver's License Number"
+										"label": "#Driver's license number"
 									}
 								}
 							]
@@ -733,14 +733,14 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Expiration Date is required.",
+											"required": "#Expiration date is required.",
 											"range": "#The date falls outside of the acceptable range. From 01/01/1920",
 											"notValid": "#This is not a valid date."
 										}
 									},
 									"text": {
 										"placeholder": "#format: mm/dd/yyyy",
-										"label": "#D.L. Expiration Date D.L."
+										"label": "#D.L. expiration date D.L."
 									}
 								},
 								{
@@ -755,12 +755,12 @@
 											"CDL": "#CDL",
 											"CLP": "#CLP"
 										},
-										"defaultText": "#Select Type/Class"
+										"defaultText": "#Select type/class"
 									},
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Driver's License Type/Class is required."
+											"required": "#Driver's license type/class is required."
 										}
 									},
 									"text": {
@@ -795,7 +795,7 @@
 						"type": "InputText",
 						"model": "socialSecurityNumber",
 						"class": {
-							"container": "col-9 col-10-sm ---col-middle"
+							"container": "col-9 col-8-sm --col-middle"
 						}
 					},
 					"custom": {
@@ -805,12 +805,12 @@
 						"required": true,
 						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
 						"texts": {
-							"required": "#Social Security Number is required."
+							"required": "#Social security number is required."
 						}
 					},
 					"text": {
 						"placeholder": "#123-45-6789",
-						"label": "#Social Security Number"
+						"label": "#Social security number"
 					}
 				},
 
@@ -845,7 +845,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Driver Application (Work History)"
+						"value": "#Driver application (work history)"
 					}
 				},
 				{
@@ -973,7 +973,7 @@
 										}
 									},
 									"text": {
-										"label": "#Company Name"
+										"label": "#Company name"
 									}
 								},
 
@@ -1026,14 +1026,14 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#Start Date is required.",
+											"required": "#Start date is required.",
 											"range": "#The date falls outside of the acceptable range.",
 											"notValid": "#This is not a valid date."
 										}
 									},
 									"text": {
 										"placeholder": "#format: mm/dd/yyyy",
-										"label": "#Start Date"
+										"label": "#Start date"
 									}
 								},
 								{
@@ -1056,14 +1056,14 @@
 									"validation": {
 										"required": true,
 										"texts": {
-											"required": "#End Date is required.",
+											"required": "#End date is required.",
 											"range": "#The date falls outside of the acceptable range.",
 											"notValid": "#This is not a valid date."
 										}
 									},
 									"text": {
 										"placeholder": "#format: mm/dd/yyyy",
-										"label": "#End Date"
+										"label": "#End date"
 									}
 								}
 							]
@@ -1124,12 +1124,12 @@
 										"required": true,
 										"pattern": "/^.{1,35}$/",
 										"texts": {
-											"required": "#Zip Code is required."
+											"required": "#Zip code is required."
 										}
 									},
 									"text": {
 										"placeholder": "",
-										"label": "#Zip Code"
+										"label": "#Zip code"
 									}
 								}
 							]
@@ -1159,7 +1159,7 @@
 									},
 									"text": {
 										"placeholder": "#street, P.O. box, company",
-										"label": "#Address Line 1"
+										"label": "#Address line 1"
 									}
 								},
 								{
@@ -1178,7 +1178,7 @@
 									},
 									"text": {
 										"placeholder": "#building, unit, floor, etc",
-										"label": "#Address Line 2"
+										"label": "#Address line 2"
 									}
 								}
 							]
@@ -1193,7 +1193,7 @@
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Phone Number"
+								"label": "#Phone number"
 							},
 							"validation": {
 								"required": true,
@@ -1229,27 +1229,27 @@
 							},
 							"custom": {
 								"options": {
-									"LaidOff": "#Laid Off",
-									"LeaveOfAbsense": "#Leave of Absense",
-									"OutOfBusiness": "#Out of Business",
-									"PresentEmployer": "#Present Employer",
+									"LaidOff": "#Laid off",
+									"LeaveOfAbsense": "#Leave of absense",
+									"OutOfBusiness": "#Out of business",
+									"PresentEmployer": "#Present employer",
 									"Quit": "#Quit",
 									"Reassigned": "#Reassigned",
 									"Relocation": "#Relocation",
 									"Retired": "#Retired",
 									"Terminated": "#Terminated",
-									"TermServiceEnd": "#Term Service End"
+									"TermServiceEnd": "#Term service end"
 								},
 								"defaultText": "#Select Your reason"
 							},
 							"validation": {
 								"required": true,
 								"texts": {
-									"required": "#Reason for Leaving is required."
+									"required": "#Reason for leaving is required."
 								}
 							},
 							"text": {
-								"label": "#Reason for Leaving *"
+								"label": "#Reason for leaving *"
 							}
 						},
 						{
@@ -1332,11 +1332,11 @@
 										"options": [
 											{
 												"value": "under40Feet",
-												"text": "#Under 40 Feet"
+												"text": "#Under 40 feet"
 											},
 											{
 												"value": "over40Feet",
-												"text": "#Over 40 Feet"
+												"text": "#Over 40 feet"
 											}
 										]
 									},
