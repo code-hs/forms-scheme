@@ -727,7 +727,8 @@
 										"model": "expirationDate"
 									},
 									"custom": {
-										"mask": "##/##/####"
+										"mask": "##/##/####",
+										"hint": "#format: mm/dd/yyyy"
 									},
 									"module": {
 										"minDate": "01/01/1920"
@@ -741,7 +742,7 @@
 										}
 									},
 									"text": {
-										"placeholder": "#format: mm/dd/yyyy",
+										"placeholder": "#example: 12/25/2000",
 										"label": "#D.L. expiration date D.L."
 									}
 								},
@@ -1016,6 +1017,7 @@
 									},
 									"custom": {
 										"mask": "##/##/####",
+										"hint": "#format: mm/dd/yyyy",
 										"workTogether": {
 											"selfIdentify": "START",
 											"purposeModel": "endDate",
@@ -1034,7 +1036,7 @@
 										}
 									},
 									"text": {
-										"placeholder": "#format: mm/dd/yyyy",
+										"placeholder": "#example: 12/25/2000",
 										"label": "#Start date"
 									}
 								},
@@ -1046,6 +1048,7 @@
 									},
 									"custom": {
 										"mask": "##/##/####",
+										"hint": "#format: mm/dd/yyyy",
 										"workTogether": {
 											"selfIdentify": "END",
 											"purposeModel": "startDate",
@@ -1064,7 +1067,7 @@
 										}
 									},
 									"text": {
-										"placeholder": "#format: mm/dd/yyyy",
+										"placeholder": "#example: 12/25/2000",
 										"label": "#End date"
 									}
 								}
