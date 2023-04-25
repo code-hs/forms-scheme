@@ -55,7 +55,7 @@
 							"pageId": 3,
 							"position": 3,
 							"enable": true,
-							"title": "#Driver Application, readonly fields,"
+							"title": "#Driver Application"
 						},
 
 						{
@@ -63,7 +63,7 @@
 							"pageId": 4,
 							"position": 4,
 							"enable": true,
-							"title": "#Personal information text"
+							"title": "#Personal information"
 						},
 
 						{
@@ -79,7 +79,7 @@
 							"pageId": 6,
 							"position": 6,
 							"enable": true,
-							"title": "#Work history"
+							"title": "menu.work-history"
 						},
 
 						{
@@ -652,7 +652,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Driver application (personal information)"
+						"value": "#Personal information"
 					}
 				},
 				{
@@ -848,7 +848,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Driver application (work history)"
+						"value": "#Work history"
 					}
 				},
 				{
@@ -873,7 +873,7 @@
 						]
 					},
 					"text": {
-						"label": "#Have you ever been employed as a company driver or independent contractor for WTA Global?"
+						"label": "#Have you ever been employed as a company driver or independent contractor for Truck Global?"
 					}
 				},
 				{

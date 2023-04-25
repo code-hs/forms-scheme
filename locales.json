@@ -4,10 +4,12 @@
 		"add": "Add",
 		"menu": {
 			"welcome": "Welcome page",
-			"terms": "Terms and Conditions page",
-			"personal": "Personal Information form",
+			"terms": "Terms and Conditions",
+			"personal": "Personal Information",
+			"work-history": "Work History", 
 			"complete": "Complete page"
 		},
+
 		"pages": {
 			"work-history": {
 				"employer-#": "Employer #"
