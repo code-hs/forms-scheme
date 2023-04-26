@@ -6,7 +6,7 @@
 			"welcome": "Welcome page",
 			"terms": "Terms and Conditions",
 			"personal": "Personal Information",
-			"work-history": "Work History", 
+			"work-history": "Work History",
 			"complete": "Complete page"
 		},
 
@@ -16,7 +16,7 @@
 			}
 		},
 		"errors": {
-			"required": "This field is required."
+			"required": "This field is required"
 		}
 	},
 	"fr": {
