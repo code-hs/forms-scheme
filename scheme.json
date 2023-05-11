@@ -93,7 +93,7 @@
 				}
 			}
 		],
-		"apiUrl": "test.com:3100/api/",
+		"apiBaseUrl": "http://localhost:8081/api/",
 		"localization": {
 			"defaultLang": "en",
 			"availableLangs": ["en", "fr", "ua", "ru"]
@@ -166,7 +166,6 @@
 			"id": 1,
 			"key": "welcome",
 			"description": "Welcome",
-			"position": 1,
 			"components": [
 				{
 					"common": {
@@ -572,7 +571,6 @@
 			"id": 2,
 			"key": "terms",
 			"description": "Terms and Conditions",
-			"position": 0,
 			"components": [
 				{
 					"common": {
@@ -595,7 +593,6 @@
 			"id": 3,
 			"key": "driver-application-confirm",
 			"description": "Driver Application, readonly fields",
-			"position": 2,
 			"components": [
 				{
 					"common": {
@@ -618,7 +615,6 @@
 			"id": 4,
 			"key": "personal-information-text",
 			"description": "Personal information text",
-			"position": 3,
 			"components": [
 				{
 					"common": {
@@ -641,7 +637,7 @@
 			"id": 5,
 			"key": "personal-information",
 			"description": "Personal Information form",
-			"position": 4,
+			"submitActionUrl1": "form/personal-information",
 			"components": [
 				{
 					"common": {
@@ -745,7 +741,7 @@
 									},
 									"text": {
 										"placeholder": "#example: 12/25/2000",
-										"label": "#D.L. expiration date D.L."
+										"label": "#Expiration date D.L."
 									}
 								},
 								{
@@ -838,7 +834,6 @@
 			"id": 6,
 			"key": "work-history",
 			"description": "work history",
-			"position": 5,
 			"components": [
 				{
 					"common": {
@@ -1416,7 +1411,6 @@
 			"id": 7,
 			"key": "complete",
 			"description": "complete",
-			"position": 6,
 			"components": [
 				{
 					"common": {
