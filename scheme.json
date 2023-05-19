@@ -1425,6 +1425,65 @@
 					"text": {
 						"value": "#Complete"
 					}
+				},
+				{
+					"common": {
+						"type": "layoutColumns"
+					},
+					"components": [
+						{
+							"common": {
+								"type": "LayoutColumn"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "address_1"
+									},
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "errors.required"
+										}
+									},
+									"text": {
+										"placeholder": "#building, unit, floor, etc",
+										"label": "#Address line 1"
+									}
+								}
+							]
+						},
+						{
+							"common": {
+								"type": "LayoutColumn"
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputText",
+										"model": "address_2"
+									},
+									"custom": {
+										"pattern": "/^.{0,40}$/i"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "errors.required"
+										}
+									},
+									"text": {
+										"placeholder": "#building, unit, floor, etc",
+										"label": "#Address line 2"
+									}
+								}
+							]
+						}
+					]
 				}
 			]
 		}
