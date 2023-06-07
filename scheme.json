@@ -1428,7 +1428,7 @@
 				},
 				{
 					"common": {
-						"type": "layoutColumns"
+						"type": "LayoutColumns"
 					},
 					"components": [
 						{
