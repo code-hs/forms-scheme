@@ -203,7 +203,7 @@
 				},
 				{
 					"common": {
-						"type": "layoutContainer",
+						"type": "LayoutContainer",
 						"class": {
 							"container": "bordered-block"
 						},
@@ -230,7 +230,7 @@
 
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"class": {
 									"container": "g-2-cols"
 								}
@@ -279,7 +279,7 @@
 
 				{
 					"common": {
-						"type": "layoutContainer",
+						"type": "LayoutContainer",
 						"class": {
 							"container": "g-2-cols"
 						}
@@ -369,7 +369,7 @@
 				},
 				{
 					"common": {
-						"type": "layoutContainer",
+						"type": "LayoutContainer",
 						"enable": true,
 						"class": {
 							"container": "g-3-cols"
@@ -437,7 +437,7 @@
 
 				{
 					"common": {
-						"type": "layoutContainer",
+						"type": "LayoutContainer",
 						"class": {
 							"container": "col-7 col-9-sm --col-middle"
 						}
@@ -664,7 +664,7 @@
 					"components": [
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"class": {
 									"container": "g-2-cols"
 								}
@@ -712,7 +712,7 @@
 
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"class": {
 									"container": "g-2-cols"
 								}
@@ -953,7 +953,7 @@
 					"components": [
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"class": {
 									"container": "g-2-cols"
 								}
@@ -1001,7 +1001,7 @@
 
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"class": {
 									"container": "g-2-cols"
 								}
@@ -1074,7 +1074,7 @@
 
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"enable": true,
 								"class": {
 									"container": "g-3-cols"
@@ -1142,7 +1142,7 @@
 
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"class": {
 									"container": "g-2-cols"
 								}
@@ -1292,7 +1292,7 @@
 						},
 						{
 							"common": {
-								"type": "layoutContainer",
+								"type": "LayoutContainer",
 								"class": {
 									"container": "col-9 col-10-sm --col-middle"
 								}
