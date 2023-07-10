@@ -356,7 +356,7 @@
 								"required": true,
 								"texts": {
 									"required": "errors.required",
-									"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 09/27/2022",
+									"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
 									"notValid": "#This is not a valid date."
 								}
 							},
@@ -476,6 +476,35 @@
 							},
 							"validation": {
 								"required": true
+							}
+						},
+
+						{
+							"common": {
+								"enable": true,
+								"type": "Checkbox",
+								"model": "currentLicense",
+								"class": {
+									"container": "col-6 --col-middle",
+									"element": "checkbox-only-one-active"
+								}
+							},
+							"custom": {
+								"bodyHTML": "#Do you have a commercial driver's license? (class A",
+								"actions": {
+									"check": {
+										"action": {
+											"type": "SHOW_CONTAINER",
+											"nextSibling": 1
+										}
+									},
+									"uncheck": {
+										"action": {
+											"type": "HIDE_CONTAINER",
+											"nextSibling": 1
+										}
+									}
+								}
 							}
 						},
 						{
@@ -729,13 +758,14 @@
 										"hint": "#format: mm/dd/yyyy"
 									},
 									"module": {
-										"minDate": "01/01/1920"
+										"minDate": "01/01/1920",
+										"maxDate": "01/01/2005"
 									},
 									"validation": {
 										"required": true,
 										"texts": {
 											"required": "errors.required",
-											"range": "#The date falls outside of the acceptable range. From 01/01/1920",
+											"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
 											"notValid": "#This is not a valid date."
 										}
 									},
@@ -782,9 +812,13 @@
 							},
 							"custom": {
 								"bodyHTML": "#Is this a current license?",
-								"action": {
-									"type": "UNCHECK_ANOTHERS",
-									"container": ".checkbox-only-one-active"
+								"actions": {
+									"check": {
+										"action": {
+											"type": "UNCHECK_ANOTHERS",
+											"container": ".checkbox-only-one-active"
+										}
+									}
 								}
 							}
 						}
