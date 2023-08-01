@@ -478,35 +478,6 @@
 								"required": true
 							}
 						},
-
-						{
-							"common": {
-								"enable": true,
-								"type": "Checkbox",
-								"model": "currentLicense",
-								"class": {
-									"container": "col-6 --col-middle",
-									"element": "checkbox-only-one-active"
-								}
-							},
-							"custom": {
-								"bodyHTML": "#Do you have a commercial driver's license? (class A",
-								"actions": {
-									"check": {
-										"action": {
-											"type": "SHOW_CONTAINER",
-											"nextSibling": 1
-										}
-									},
-									"uncheck": {
-										"action": {
-											"type": "HIDE_CONTAINER",
-											"nextSibling": 1
-										}
-									}
-								}
-							}
-						},
 						{
 							"common": {
 								"type": "Selector",
