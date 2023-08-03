@@ -242,7 +242,7 @@
 										"model": "firstName"
 									},
 									"custom": {
-										"pattern": "/^[a-zа-я_]{0,28}$/i"
+										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
 									"validation": {
 										"required": true,
@@ -260,7 +260,7 @@
 										"model": "lastName"
 									},
 									"custom": {
-										"pattern": "/^[a-zа-я_]{0,28}$/i"
+										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
 									"validation": {
 										"required": true,
