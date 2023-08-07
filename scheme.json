@@ -561,7 +561,7 @@
 					},
 					"custom": {},
 					"text": {
-						"text": "#Submit"
+						"value": "#Submit"
 					}
 				}
 			]
@@ -829,7 +829,7 @@
 						}
 					},
 					"text": {
-						"text": "#Submit"
+						"value": "#Submit"
 					}
 				}
 			]
@@ -1404,9 +1404,8 @@
 							"container": "col-5 col-5-sm --col-middle"
 						}
 					},
-					"custom": {},
 					"text": {
-						"text": "#Submit"
+						"value": "#Submit"
 					}
 				}
 			]
