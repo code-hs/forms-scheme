@@ -41,7 +41,7 @@
 							"pageId": 1,
 							"position": 1,
 							"enable": true,
-							"title": "menu.welcome"
+							"title": "menu.driver-application"
 						},
 						{
 							"id": 2,
@@ -55,7 +55,7 @@
 							"pageId": 3,
 							"position": 3,
 							"enable": true,
-							"title": "#Driver Application"
+							"title": "menu.confirm"
 						},
 
 						{
@@ -164,8 +164,8 @@
 	"pages": [
 		{
 			"id": 1,
-			"key": "welcome",
-			"description": "Welcome",
+			"key": "driver-application",
+			"description": "Driver Application",
 			"components": [
 				{
 					"common": {
@@ -178,7 +178,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "driver application"
+						"value": "pages.driver-application.title"
 					}
 				},
 
@@ -605,7 +605,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#driver application confirm"
+						"value": "pages.driver-application-confirm.title"
 					}
 				}
 			]

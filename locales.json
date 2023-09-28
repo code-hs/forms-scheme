@@ -1,16 +1,22 @@
 {
 	"en": {
-		"driver application": "Driver Application",
 		"add": "Add",
 		"menu": {
-			"welcome": "Welcome page",
+			"driver-application": "Driver Application",
 			"terms": "Terms and Conditions",
+			"confirm": "Confirm",
 			"personal": "Personal Information",
 			"work-history": "Work History",
 			"complete": "Complete page"
 		},
 
 		"pages": {
+			"driver-application": {
+				"title": "Driver Application"
+			},
+			"driver-application-confirm": {
+				"title": "Driver Application confirm"
+			},
 			"work-history": {
 				"employer-#": "Employer #"
 			}
