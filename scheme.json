@@ -956,7 +956,7 @@
 							},
 							"attrs": {
 								"component": {
-									"disabled": true
+									"readonly": true
 								}
 							}
 						},
@@ -1023,7 +1023,7 @@
 							},
 							"attrs": {
 								"component": {
-									"disabled": true
+									"readonly": true
 								}
 							}
 						},
