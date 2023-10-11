@@ -674,9 +674,6 @@
 										"page-key": "driver-application",
 										"field-model-name": "firstName"
 									},
-									"custom": {
-										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
-									},
 									"text": {
 										"label": "#First name"
 									},
@@ -696,9 +693,6 @@
 										"source-key": "saved-page-model",
 										"page-key": "driver-application",
 										"field-model-name": "lastName"
-									},
-									"custom": {
-										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
 									"text": {
 										"label": "#Last name"
@@ -733,9 +727,6 @@
 								"page-key": "driver-application",
 								"field-model-name": "cellPhoneNumber"
 							},
-							"custom": {
-								"mask": "(###) ###-####"
-							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
 								"label": "#Cell phone number"
@@ -757,9 +748,6 @@
 								"page-key": "driver-application",
 								"field-model-name": "homePhoneNumber"
 							},
-							"custom": {
-								"mask": "(###) ###-####"
-							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
 								"label": "#Home phone number"
@@ -780,9 +768,6 @@
 								"source-key": "saved-page-model",
 								"page-key": "driver-application",
 								"field-model-name": "streetAddress"
-							},
-							"custom": {
-								"pattern": "/^.{0,40}$/i"
 							},
 							"text": {
 								"placeholder": "#P.O. box, company name",
@@ -809,10 +794,6 @@
 							"custom": {
 								"mask": "##/##/####",
 								"hint": "#format: mm/dd/yyyy"
-							},
-							"module": {
-								"minDate": "01/01/1920",
-								"maxDate": "01/01/2005"
 							},
 							"text": {
 								"placeholder": "#example: 01/25/1963",
@@ -846,9 +827,6 @@
 								"page-key": "driver-application",
 								"field-model-name": "city"
 							},
-							"custom": {
-								"pattern": "/^.{0,40}$/i"
-							},
 							"text": {
 								"label": "#City"
 							},
@@ -870,8 +848,7 @@
 								"field-model-name": "state"
 							},
 							"custom": {
-								"options": "$:selectorCountryList",
-								"defaultText": "#Select Your state"
+								"options": "$:selectorCountryList"
 							},
 							"text": {
 								"label": "#State *"
@@ -892,9 +869,6 @@
 								"source-key": "saved-page-model",
 								"page-key": "driver-application",
 								"field-model-name": "zipCode"
-							},
-							"custom": {
-								"pattern": "/^.{0,35}$/i"
 							},
 							"text": {
 								"placeholder": "",
