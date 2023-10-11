@@ -185,8 +185,7 @@
 				{
 					"common": {
 						"type": "InputEmail",
-						"model": "email",
-						"enable": true
+						"model": "email"
 					},
 					"validation": {
 						"required": true,
@@ -206,8 +205,7 @@
 						"type": "LayoutContainer",
 						"class": {
 							"container": "bordered-block"
-						},
-						"enable": true
+						}
 					},
 					"components": [
 						{
@@ -341,8 +339,7 @@
 						{
 							"common": {
 								"type": "InputDate",
-								"model": "birthDate",
-								"enable": true
+								"model": "birthDate"
 							},
 							"custom": {
 								"mask": "##/##/####",
@@ -370,7 +367,6 @@
 				{
 					"common": {
 						"type": "LayoutContainer",
-						"enable": true,
 						"class": {
 							"container": "g-3-cols"
 						}
@@ -612,8 +608,7 @@
 				{
 					"common": {
 						"type": "InputEmail",
-						"model": "email",
-						"enable": true
+						"model": "email"
 					},
 					"initialize": {
 						"source-from": "STORAGE",
@@ -636,8 +631,7 @@
 						"type": "LayoutContainer",
 						"class": {
 							"container": "bordered-block"
-						},
-						"enable": true
+						}
 					},
 					"components": [
 						{
@@ -782,8 +776,7 @@
 						{
 							"common": {
 								"type": "InputDate",
-								"model": "birthDate",
-								"enable": true
+								"model": "birthDate"
 							},
 							"initialize": {
 								"source-from": "STORAGE",
@@ -810,7 +803,6 @@
 				{
 					"common": {
 						"type": "LayoutContainer",
-						"enable": true,
 						"class": {
 							"container": "g-3-cols"
 						}
@@ -1149,7 +1141,6 @@
 							"components": [
 								{
 									"common": {
-										"enable": true,
 										"type": "InputDate",
 										"model": "expirationDate"
 									},
@@ -1176,7 +1167,6 @@
 								},
 								{
 									"common": {
-										"enable": true,
 										"type": "Selector",
 										"model": "licenseType"
 									},
@@ -1443,7 +1433,6 @@
 							"components": [
 								{
 									"common": {
-										"enable": true,
 										"type": "InputDate",
 										"model": "startDate"
 									},
@@ -1474,7 +1463,6 @@
 								},
 								{
 									"common": {
-										"enable": true,
 										"type": "InputDate",
 										"model": "endDate"
 									},
@@ -1509,7 +1497,6 @@
 						{
 							"common": {
 								"type": "LayoutContainer",
-								"enable": true,
 								"class": {
 									"container": "g-3-cols"
 								}
