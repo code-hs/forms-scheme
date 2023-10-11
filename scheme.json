@@ -615,14 +615,6 @@
 						"model": "email",
 						"enable": true
 					},
-					"validation": {
-						"required": true,
-						"pattern": "/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/",
-						"texts": {
-							"required": "errors.required",
-							"pattern": "#Please enter a valid email address"
-						}
-					},
 					"text": {
 						"placeholder": "#name@company.com",
 						"label": "#E-mail address"
@@ -673,12 +665,6 @@
 									"custom": {
 										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "errors.required"
-										}
-									},
 									"text": {
 										"label": "#First name"
 									},
@@ -695,12 +681,6 @@
 									},
 									"custom": {
 										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "errors.required"
-										}
 									},
 									"text": {
 										"label": "#Last name"
@@ -731,14 +711,6 @@
 							},
 							"custom": {
 								"mask": "(###) ###-####"
-							},
-							"validation": {
-								"required": true,
-								"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
-								"texts": {
-									"required": "errors.required",
-									"pattern": "#Please enter a valid phone number"
-								}
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
@@ -776,12 +748,6 @@
 							"custom": {
 								"pattern": "/^.{0,40}$/i"
 							},
-							"validation": {
-								"required": true,
-								"texts": {
-									"required": "errors.required"
-								}
-							},
 							"text": {
 								"placeholder": "#P.O. box, company name",
 								"label": "#Street address"
@@ -805,14 +771,6 @@
 							"module": {
 								"minDate": "01/01/1920",
 								"maxDate": "01/01/2005"
-							},
-							"validation": {
-								"required": true,
-								"texts": {
-									"required": "errors.required",
-									"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
-									"notValid": "#This is not a valid date."
-								}
 							},
 							"text": {
 								"placeholder": "#example: 01/25/1963",
@@ -843,12 +801,6 @@
 							"custom": {
 								"pattern": "/^.{0,40}$/i"
 							},
-							"validation": {
-								"required": true,
-								"texts": {
-									"required": "errors.required"
-								}
-							},
 							"text": {
 								"label": "#City"
 							},
@@ -867,12 +819,6 @@
 								"options": "$:selectorCountryList",
 								"defaultText": "#Select Your state"
 							},
-							"validation": {
-								"required": true,
-								"texts": {
-									"required": "errors.required"
-								}
-							},
 							"text": {
 								"label": "#State *"
 							},
@@ -889,12 +835,6 @@
 							},
 							"custom": {
 								"pattern": "/^.{0,35}$/i"
-							},
-							"validation": {
-								"required": true,
-								"texts": {
-									"required": "errors.required"
-								}
 							},
 							"text": {
 								"placeholder": "",
@@ -948,9 +888,7 @@
 							"text": {
 								"label": "#Do you have a commercial driver's license? (class A)"
 							},
-							"validation": {
-								"required": true
-							},
+
 							"attrs": {
 								"component": {
 									"disabled": true
@@ -977,13 +915,6 @@
 									"MoreThan6Months": "#More than 6 months "
 								},
 								"defaultText": "#Select Your CDL experience"
-							},
-							"validation": {
-								"required": true,
-								"requiredOnlyIfVisible": true,
-								"texts": {
-									"required": "errors.required"
-								}
 							},
 							"text": {
 								"label": "#CDL experience *"
@@ -1013,9 +944,6 @@
 							"text": {
 								"label": "#Can you pass a drug test?"
 							},
-							"validation": {
-								"required": true
-							},
 							"attrs": {
 								"component": {
 									"disabled": true
@@ -1030,9 +958,6 @@
 							},
 							"custom": {
 								"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
-							},
-							"validation": {
-								"required": true
 							},
 							"attrs": {
 								"component": {
