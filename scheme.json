@@ -615,6 +615,12 @@
 						"model": "email",
 						"enable": true
 					},
+					"initialize": {
+						"source-from": "STORAGE",
+						"source-key": "saved-page-model",
+						"page-key": "driver-application",
+						"field-model-name": "email"
+					},
 					"text": {
 						"placeholder": "#name@company.com",
 						"label": "#E-mail address"
@@ -662,6 +668,12 @@
 										"type": "InputText",
 										"model": "firstName"
 									},
+									"initialize": {
+										"source-from": "STORAGE",
+										"source-key": "saved-page-model",
+										"page-key": "driver-application",
+										"field-model-name": "firstName"
+									},
 									"custom": {
 										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
@@ -678,6 +690,12 @@
 									"common": {
 										"type": "InputText",
 										"model": "lastName"
+									},
+									"initialize": {
+										"source-from": "STORAGE",
+										"source-key": "saved-page-model",
+										"page-key": "driver-application",
+										"field-model-name": "lastName"
 									},
 									"custom": {
 										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
@@ -709,6 +727,12 @@
 								"type": "InputText",
 								"model": "cellPhoneNumber"
 							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "cellPhoneNumber"
+							},
 							"custom": {
 								"mask": "(###) ###-####"
 							},
@@ -726,6 +750,12 @@
 							"common": {
 								"type": "InputText",
 								"model": "homePhoneNumber"
+							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "homePhoneNumber"
 							},
 							"custom": {
 								"mask": "(###) ###-####"
@@ -745,6 +775,12 @@
 								"type": "InputText",
 								"model": "streetAddress"
 							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "streetAddress"
+							},
 							"custom": {
 								"pattern": "/^.{0,40}$/i"
 							},
@@ -763,6 +799,12 @@
 								"type": "InputDate",
 								"model": "birthDate",
 								"enable": true
+							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "birthDate"
 							},
 							"custom": {
 								"mask": "##/##/####",
@@ -798,6 +840,12 @@
 								"type": "InputText",
 								"model": "city"
 							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "city"
+							},
 							"custom": {
 								"pattern": "/^.{0,40}$/i"
 							},
@@ -814,6 +862,12 @@
 							"common": {
 								"type": "Selector",
 								"model": "state"
+							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "state"
 							},
 							"custom": {
 								"options": "$:selectorCountryList",
@@ -832,6 +886,12 @@
 							"common": {
 								"type": "InputText",
 								"model": "zipCode"
+							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "zipCode"
 							},
 							"custom": {
 								"pattern": "/^.{0,35}$/i"
@@ -865,6 +925,12 @@
 									"container": "--radio-space-evenly"
 								}
 							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "cdlHolder"
+							},
 							"custom": {
 								"options": [
 									{
@@ -888,7 +954,6 @@
 							"text": {
 								"label": "#Do you have a commercial driver's license? (class A)"
 							},
-
 							"attrs": {
 								"component": {
 									"disabled": true
@@ -899,6 +964,12 @@
 							"common": {
 								"type": "Selector",
 								"model": "cdlExperience"
+							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "cdlExperience"
 							},
 							"attrs": {
 								"container": {
@@ -929,6 +1000,12 @@
 									"container": "--radio-space-evenly"
 								}
 							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "drugTest"
+							},
 							"custom": {
 								"options": [
 									{
@@ -955,6 +1032,12 @@
 							"common": {
 								"type": "Checkbox",
 								"model": "agree"
+							},
+							"initialize": {
+								"source-from": "STORAGE",
+								"source-key": "saved-page-model",
+								"page-key": "driver-application",
+								"field-model-name": "agree"
 							},
 							"custom": {
 								"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
