@@ -1,0 +1,11 @@
+{
+	"name": "jsons",
+	"version": "1.0.0",
+	"description": "next-form json files",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/next-form/jsons"
+	},
+	"author": "",
+	"license": "MIT"
+}
