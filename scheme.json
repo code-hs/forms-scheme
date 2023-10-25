@@ -1834,6 +1834,7 @@
 			"components": [
 				{
 					"common": {
+						"enable": false,
 						"type": "TextContainer",
 						"class": {
 							"container": "--center"
@@ -1848,122 +1849,28 @@
 				},
 				{
 					"common": {
-						"type": "LayoutColumns"
-					},
-					"components": [
-						{
-							"common": {
-								"type": "LayoutColumn"
-							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "address_1"
-									},
-									"custom": {
-										"pattern": "/^.{0,40}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "errors.required"
-										}
-									},
-									"text": {
-										"placeholder": "#building, unit, floor, etc",
-										"label": "#Address line 1"
-									}
-								}
-							]
-						},
-						{
-							"common": {
-								"type": "LayoutColumn"
-							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "address_2"
-									},
-									"custom": {
-										"pattern": "/^.{0,40}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "errors.required"
-										}
-									},
-									"text": {
-										"placeholder": "#building, unit, floor, etc",
-										"label": "#Address line 2"
-									}
-								}
-							]
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
 						}
-					]
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#FMCSA Notification of Driver's Rights"
+					}
 				},
-
 				{
 					"common": {
-						"type": "LayoutColumns"
-					},
-					"components": [
-						{
-							"common": {
-								"type": "LayoutColumn"
-							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "address_1"
-									},
-									"custom": {
-										"pattern": "/^.{0,40}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "errors.required"
-										}
-									},
-									"text": {
-										"placeholder": "#building, unit, floor, etc",
-										"label": "#Address line 1"
-									}
-								}
-							]
-						},
-						{
-							"common": {
-								"type": "LayoutColumn"
-							},
-							"components": [
-								{
-									"common": {
-										"type": "InputText",
-										"model": "address_2"
-									},
-									"custom": {
-										"pattern": "/^.{0,40}$/i"
-									},
-									"validation": {
-										"required": true,
-										"texts": {
-											"required": "errors.required"
-										}
-									},
-									"text": {
-										"placeholder": "#building, unit, floor, etc",
-										"label": "#Address line 2"
-									}
-								}
-							]
+						"type": "HtmlContainer",
+						"class": {
+							"container": "--center"
 						}
-					]
+					},
+					"custom": {
+						"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
+					}
 				}
 			]
 		}
