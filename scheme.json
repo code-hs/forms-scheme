@@ -63,7 +63,7 @@
 							"pageId": 4,
 							"position": 4,
 							"enable": true,
-							"title": "#Personal information"
+							"title": "menu.drivers-rights"
 						},
 
 						{
@@ -1067,8 +1067,8 @@
 
 		{
 			"id": 4,
-			"key": "personal-information-text",
-			"description": "Personal information text",
+			"key": "drivers-rights",
+			"description": "FMCSA notification of driver's rights",
 			"components": [
 				{
 					"common": {
@@ -1082,6 +1082,25 @@
 					},
 					"text": {
 						"value": "#FMCSA notification of driver's rights"
+					}
+				},
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"htmlFileName": "fmcsa-notification-of-drivers-rights"
+					}
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm --col-middle"
+						}
+					},
+					"text": {
+						"value": "#Continue"
 					}
 				}
 			]
@@ -1878,39 +1897,6 @@
 					},
 					"text": {
 						"value": "#Complete"
-					}
-				},
-				{
-					"common": {
-						"type": "TextContainer",
-						"class": {
-							"container": "--center"
-						}
-					},
-					"custom": {
-						"tag": "h2"
-					},
-					"text": {
-						"value": "#FMCSA Notification of Driver's Rights"
-					}
-				},
-				{
-					"common": {
-						"type": "HtmlContainer"
-					},
-					"custom": {
-						"htmlFileName": "fmcsa-notification-of-drivers-rights"
-					}
-				},
-				{
-					"common": {
-						"type": "ButtonSubmit",
-						"class": {
-							"container": "col-5 col-5-sm --col-middle"
-						}
-					},
-					"text": {
-						"value": "#Continue"
 					}
 				}
 			]
