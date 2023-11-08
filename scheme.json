@@ -102,7 +102,15 @@
 			"value": [
 				"next-form .fieldset-title p { margin-bottom: 20px; }",
 				"next-form .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
-				"next-form .field-inform-text { font-size: 0.7rem; }"
+				"next-form .field-inform-text { font-size: 0.7rem; }",
+
+				"next-form .instruction {padding: 24px 32px; margin-bottom: 16px; border-radius: 4px;}",
+				"next-form .wdf-app[data-theme='dark'] .instruction {background-color:hsl(210 2% 20% / 1);}",
+				"next-form .wdf-app[data-theme='light'] .instruction {background-color: #f3f3f3;}",
+				"next-form ol {padding-left: 20px; margin-top: 4px;}",
+				"next-form .legalJargon {line-height: 1.6rem; margin-bottom: 20px;}",
+				"next-form ol + .legalJargon {text-indent: 20px;}",
+				"next-form ol li {padding: 4px 0;}"
 			]
 		},
 		"variables": {
@@ -1863,13 +1871,21 @@
 				},
 				{
 					"common": {
-						"type": "HtmlContainer",
-						"class": {
-							"container": "--center"
-						}
+						"type": "HtmlContainer"
 					},
 					"custom": {
-						"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
+						"htmlFileName": "fmcsa-notification-of-drivers-rights"
+					}
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm --col-middle"
+						}
+					},
+					"text": {
+						"value": "#Continue"
 					}
 				}
 			]
