@@ -48,7 +48,7 @@
 							"pageId": 2,
 							"position": 2,
 							"enable": true,
-							"title": "menu.terms"
+							"title": "menu.offer"
 						},
 						{
 							"id": 3,
@@ -107,10 +107,16 @@
 				"next-form .instruction {padding: 24px 32px; margin-bottom: 16px; border-radius: 4px;}",
 				"next-form .wdf-app[data-theme='dark'] .instruction {background-color:hsl(210 2% 20% / 1);}",
 				"next-form .wdf-app[data-theme='light'] .instruction {background-color: #f3f3f3;}",
-				"next-form ol {padding-left: 20px; margin-top: 4px;}",
-				"next-form .legalJargon {line-height: 1.6rem; margin-bottom: 20px;}",
-				"next-form ol + .legalJargon {text-indent: 20px;}",
-				"next-form ol li {padding: 4px 0;}"
+
+				"next-form .form p {line-height: 1.6rem;}",
+				"next-form .legalJargon {margin-bottom: 20px;}",
+
+				"next-form .form ol {padding-left: 20px; margin-top: 4px;}",
+				"next-form .form  ol li {padding: 4px 0;}",
+				"next-form .form ol + .legalJargon {text-indent: 20px;}",
+
+				"next-form .form ul {margin-top: 4px; padding-left: 18px;}",
+				"next-form .form ul li {padding: 4px 0;}"
 			]
 		},
 		"variables": {
@@ -573,8 +579,8 @@
 
 		{
 			"id": 2,
-			"key": "terms",
-			"description": "Terms and Conditions",
+			"key": "offer",
+			"description": "Conditional Offer of Employment",
 			"components": [
 				{
 					"common": {
@@ -587,7 +593,26 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Terms and conditions"
+						"value": "#Conditional Offer of Employment"
+					}
+				},
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"bodyHTML": "<p>Congratulations! You are qualified to drive for Global on condition of completion of the following:</p>\n\n<ul>\n  <li>Drug Screening</li>\n  <li>Global Road Test</li>\n  <li>Moving Violation Report &amp; Drive-A-Check Review</li>\n  <li>Criminal Background Check</li>\n  <li>Pre-Hire Interview</li>\n  <li>New-Hire Orientation</li>\n</ul>"
+					}
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm --col-middle"
+						}
+					},
+					"text": {
+						"value": "#Continue"
 					}
 				}
 			]
