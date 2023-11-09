@@ -1886,7 +1886,7 @@
 			"components": [
 				{
 					"common": {
-						"enable": false,
+						"enable": true,
 						"type": "TextContainer",
 						"class": {
 							"container": "--center"
@@ -1896,7 +1896,44 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Complete"
+						"value": "#Well done"
+					}
+				},
+				{
+					"common": {
+						"type": "TextContainer"
+					},
+					"custom": {
+						"tag": "p"
+					},
+					"text": {
+						"value": "#You've completed all of the necessary tasks for this step in the process. Nice work! As new tasks become available, we'll notify you via email or text message."
+					}
+				},
+
+				{
+					"common": {
+						"type": "ImageContainer",
+						"class": {
+							"container": "flex",
+							"element": "--center"
+						}
+					},
+					"custom": {
+						"src": "/content/img/truck.png",
+						"alt": "truck icon"
+					}
+				},
+
+				{
+					"common": {
+						"type": "TextContainer"
+					},
+					"custom": {
+						"tag": "p"
+					},
+					"text": {
+						"value": "#Feel free to check back as often as you would like. We're excited about the opportunity to have you join our team and help us in \"Delivering Excellence in Transportation!\""
 					}
 				}
 			]
