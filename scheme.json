@@ -104,18 +104,18 @@
 				"next-form .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
 				"next-form .field-inform-text { font-size: 0.7rem; }",
 
-				"next-form .instruction {padding: 24px 32px; margin-bottom: 16px; border-radius: 4px;}",
+				"next-form .instruction {padding: 24px 32px; margin-bottom: 16px; border-radius: 4px; text-align: justify;}",
 				"next-form .wdf-app[data-theme='dark'] .instruction {background-color:hsl(210 2% 20% / 1);}",
 				"next-form .wdf-app[data-theme='light'] .instruction {background-color: #f3f3f3;}",
 
 				"next-form .form p {line-height: 1.6rem;}",
-				"next-form .legalJargon {margin-bottom: 20px;}",
+				"next-form .legalJargon {margin-bottom: 20px; text-align: justify;}",
 
-				"next-form .form ol {padding-left: 20px; margin-top: 4px;}",
-				"next-form .form  ol li {padding: 4px 0;}",
+				"next-form .form ol {padding-left: 20px; margin-top: 4px; line-height: 1.6rem; text-align: justify;}",
+				"next-form .form ol li {padding: 4px 0;}",
 				"next-form .form ol + .legalJargon {text-indent: 20px;}",
 
-				"next-form .form ul {margin-top: 4px; padding-left: 18px;}",
+				"next-form .form ul {margin-top: 4px; padding-left: 18px; line-height: 1.6rem; text-align: justify;}",
 				"next-form .form ul li {padding: 4px 0;}"
 			]
 		},
@@ -569,7 +569,7 @@
 							"container": "col-5 col-5-sm --col-middle"
 						}
 					},
-					"custom": {},
+
 					"text": {
 						"value": "#Submit"
 					}
