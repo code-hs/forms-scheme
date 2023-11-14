@@ -1937,6 +1937,38 @@
 					}
 				}
 			]
+		},
+
+		{
+			"id": 8,
+			"key": "terms",
+			"description": "Terms & Conditions",
+			"components": [
+				{
+					"common": {
+						"enable": true,
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#Terms & Conditions"
+					}
+				},
+
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"htmlFileName": "terms-and-conditions"
+					}
+				}
+			]
 		}
 	]
 }
