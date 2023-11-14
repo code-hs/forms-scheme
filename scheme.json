@@ -1094,6 +1094,22 @@
 				},
 				{
 					"common": {
+						"type": "Checkbox",
+						"model": "agree",
+						"class": {
+							"container": "--text-center"
+						}
+					},
+					"custom": {
+						"bodyHTML": "#I have read and agree to the FMCSA Notification of Driver Rights</a>"
+					},
+					"validation": {
+						"required": true
+					}
+				},
+
+				{
+					"common": {
 						"type": "ButtonSubmit",
 						"class": {
 							"container": "col-5 col-5-sm --col-middle"
