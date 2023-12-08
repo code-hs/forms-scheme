@@ -105,8 +105,8 @@
 				"next-form .field-inform-text { font-size: 0.7rem; }",
 
 				"next-form .instruction {padding: 24px 32px; margin-bottom: 16px; border-radius: 4px; text-align: justify;}",
-				"next-form .wdf-app[data-theme='dark'] .instruction {background-color:hsl(210 2% 20% / 1);}",
-				"next-form .wdf-app[data-theme='light'] .instruction {background-color: #f3f3f3;}",
+				"next-form .nf-app[data-theme='dark'] .instruction {background-color:hsl(210 2% 20% / 1);}",
+				"next-form .nf-app[data-theme='light'] .instruction {background-color: #f3f3f3;}",
 
 				"next-form .form p {line-height: 1.6rem;}",
 				"next-form .legalJargon {margin-bottom: 20px; text-align: justify;}",
