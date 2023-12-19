@@ -1,6 +1,5 @@
 {
 	"config": {
-		"step_by_step": "strict",
 		"modules": [
 			{
 				"name": "auth",
@@ -35,6 +34,7 @@
 				"name": "menu",
 				"enable": true,
 				"config": {
+					"stepMode": true,
 					"list": [
 						{
 							"id": 1,
@@ -1126,7 +1126,7 @@
 			"id": 5,
 			"key": "personal-information",
 			"description": "Personal Information form",
-			"submitActionUrl1": "form/personal-information",
+			"submitActionUrl": "form/personal-information",
 			"components": [
 				{
 					"common": {
