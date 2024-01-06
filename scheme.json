@@ -199,12 +199,12 @@
 						"pattern": "/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/",
 						"texts": {
 							"required": "errors.required",
-							"pattern": "#Please enter a valid email address"
+							"pattern": "validation.pattern.email"
 						}
 					},
 					"text": {
 						"placeholder": "#name@company.com",
-						"label": "#E-mail address"
+						"label": "email"
 					}
 				},
 				{
@@ -226,10 +226,7 @@
 								"tag": "p"
 							},
 							"text": {
-								"value": "#Full legal name (as it appears on your driver's license)"
-							},
-							"styles": {
-								"value": ""
+								"value": "pages.driver-application.fieldset-title"
 							}
 						},
 
@@ -256,7 +253,7 @@
 										}
 									},
 									"text": {
-										"label": "#First name"
+										"label": "firstname"
 									}
 								},
 								{
@@ -274,7 +271,7 @@
 										}
 									},
 									"text": {
-										"label": "#Last name"
+										"label": "lastname"
 									}
 								}
 							]
@@ -303,12 +300,12 @@
 								"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
 								"texts": {
 									"required": "errors.required",
-									"pattern": "#Please enter a valid phone number"
+									"pattern": "validation.pattern.phone"
 								}
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Cell phone number"
+								"label": "pages.driver-application.cell-phone"
 							}
 						},
 						{
@@ -321,13 +318,13 @@
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Home phone number"
+								"label": "pages.driver-application.home-phone"
 							}
 						},
 						{
 							"common": {
 								"type": "InputText",
-								"model": "streetAddress"
+								"model": "address"
 							},
 							"custom": {
 								"pattern": "/^.{0,40}$/i"
@@ -339,8 +336,8 @@
 								}
 							},
 							"text": {
-								"placeholder": "#P.O. box, company name",
-								"label": "#Street address"
+								"placeholder": "pages.driver-application.address-placeholder",
+								"label": "address"
 							}
 						},
 						{
@@ -1119,7 +1116,7 @@
 			"id": 5,
 			"key": "personal-information",
 			"description": "Personal Information form",
-			"submitActionUrl": "form/personal-information",
+			"submitActionUrl-------------": "form/personal-information",
 			"components": [
 				{
 					"common": {
