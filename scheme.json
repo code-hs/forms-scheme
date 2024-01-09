@@ -174,6 +174,7 @@
 			"id": 1,
 			"key": "driver-application",
 			"description": "Driver Application",
+			"submitActionUrl": "form/personal-information",
 			"components": [
 				{
 					"common": {
@@ -348,7 +349,7 @@
 							},
 							"custom": {
 								"mask": "##/##/####",
-								"hint": "#format: mm/dd/yyyy"
+								"hint": "date.hint"
 							},
 							"module": {
 								"minDate": "01/01/1920",
@@ -358,13 +359,13 @@
 								"required": true,
 								"texts": {
 									"required": "errors.required",
-									"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
-									"notValid": "#This is not a valid date."
+									"range": "pages.driver-application.date.range",
+									"notValid": "errors.not-valid-date"
 								}
 							},
 							"text": {
-								"placeholder": "#example: 01/25/1963",
-								"label": "#Date of birth"
+								"placeholder": "pages.driver-application.date.placeholder",
+								"label": "pages.driver-application.date.label"
 							}
 						}
 					]
@@ -392,7 +393,7 @@
 								}
 							},
 							"text": {
-								"label": "#City"
+								"label": "city"
 							}
 						},
 						{
@@ -402,7 +403,7 @@
 							},
 							"custom": {
 								"options": "$:selectorCountryList",
-								"defaultText": "#Select Your state"
+								"defaultText": "state-default"
 							},
 							"validation": {
 								"required": true,
@@ -411,7 +412,7 @@
 								}
 							},
 							"text": {
-								"label": "#State *"
+								"label": "state"
 							}
 						},
 						{
@@ -429,8 +430,7 @@
 								}
 							},
 							"text": {
-								"placeholder": "",
-								"label": "#Zip code"
+								"label": "zip"
 							}
 						}
 					]
@@ -456,7 +456,7 @@
 								"options": [
 									{
 										"value": "yes",
-										"text": "#Yes",
+										"text": "yes",
 										"action": {
 											"type": "SHOW_CONTAINER",
 											"nextSibling": 1
@@ -464,7 +464,7 @@
 									},
 									{
 										"value": "no",
-										"text": "#No",
+										"text": "no",
 										"action": {
 											"type": "HIDE_CONTAINER",
 											"nextSibling": 1
@@ -473,7 +473,7 @@
 								]
 							},
 							"text": {
-								"label": "#Do you have a commercial driver's license? (class A)"
+								"label": "pages.driver-application.commercial-driver-license"
 							},
 							"validation": {
 								"required": true
@@ -487,16 +487,15 @@
 							"attrs": {
 								"container": {
 									"hidden": true
-								},
-								"component": {}
+								}
 							},
 							"custom": {
 								"options": {
-									"LessThan3Months": "#Less than 3 months",
-									"_4To6Months": "#4 to 6 months",
-									"MoreThan6Months": "#More than 6 months "
+									"LessThan3Months": "pages.driver-application.cdl-experience.less-than-3-months",
+									"_4To6Months": "pages.driver-application.cdl-experience.4-to-6-months",
+									"MoreThan6Months": "pages.driver-application.cdl-experience.more-than-6-months"
 								},
-								"defaultText": "#Select Your CDL experience"
+								"defaultText": "pages.driver-application.cdl-experience.default-value"
 							},
 							"validation": {
 								"required": true,
@@ -506,7 +505,7 @@
 								}
 							},
 							"text": {
-								"label": "#CDL experience *"
+								"label": "pages.driver-application.cdl-experience.label"
 							}
 						},
 
@@ -522,16 +521,16 @@
 								"options": [
 									{
 										"value": "yes",
-										"text": "#Yes"
+										"text": "yes"
 									},
 									{
 										"value": "no",
-										"text": "#No"
+										"text": "no"
 									}
 								]
 							},
 							"text": {
-								"label": "#Can you pass a drug test?"
+								"label": "pages.driver-application.drug-test"
 							},
 							"validation": {
 								"required": true
@@ -544,7 +543,7 @@
 								"model": "agree"
 							},
 							"custom": {
-								"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
+								"bodyHTML": "pages.driver-application.agree"
 							},
 							"validation": {
 								"required": true
@@ -560,9 +559,8 @@
 							"container": "col-5 col-5-sm --col-middle"
 						}
 					},
-
 					"text": {
-						"value": "#Submit"
+						"value": "submit"
 					}
 				}
 			]

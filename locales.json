@@ -76,7 +76,22 @@
 				"fieldset-title": "Full legal name (as it appears on your driver's license)",
 				"cell-phone": "Cell phone number",
 				"home-phone": "Home phone number",
-				"address-placeholder": "P.O. box, company name"
+				"address-placeholder": "P.O. box, company name",
+				"date": {
+					"range": "The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
+					"placeholder": "example: 01/25/1963",
+					"label": "Date of birth"
+				},
+				"commercial-driver-license": "Do you have a commercial driver's license? (class A)",
+				"cdl-experience": {
+					"label": "CDL experience",
+					"default-value": "Select Your CDL experience",
+					"less-than-3-months": "Less than 3 months",
+					"4-to-6-months": "4 to 6 months",
+					"more-than-6-months": "More than 6 months"
+				},
+				"drug-test": "Can you pass a drug test?",
+				"agree": "I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
 			},
 			"driver-application-confirm": {
 				"title": "Driver Application confirm"
@@ -85,6 +100,9 @@
 				"employer-#": "Employer #"
 			}
 		},
+		"date": {
+			"hint": "format: mm/dd/yyyy"
+		},
 		"validation": {
 			"pattern": {
 				"email": "Please enter a valid email address",
@@ -92,8 +110,12 @@
 			}
 		},
 		"errors": {
-			"required": "This field is required"
-		}
+			"required": "field is required",
+			"not-valid-date": "Not a valid date"
+		},
+		"state": "State",
+		"state-default": "Select Your state",
+		"zip": "Zip Code"
 	},
 
 	"fr": {
