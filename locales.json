@@ -93,6 +93,9 @@
 				"drug-test": "Can you pass a drug test?",
 				"agree": "I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
 			},
+			"terms": {
+				"title": "Terms & Conditions"
+			},
 			"driver-application-confirm": {
 				"title": "Driver Application confirm"
 			},
