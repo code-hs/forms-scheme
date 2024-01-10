@@ -35,6 +35,7 @@
 				"name": "menu",
 				"config": {
 					"stepMode": true,
+					"stepModeWhitelistPageIds": [8],
 					"list": [
 						{
 							"id": 11,
@@ -54,28 +55,24 @@
 							"position": 3,
 							"title": "menu.confirm"
 						},
-
 						{
 							"id": 14,
 							"pageId": 4,
 							"position": 4,
 							"title": "menu.drivers-rights"
 						},
-
 						{
 							"id": 15,
 							"pageId": 5,
 							"position": 5,
 							"title": "menu.personal"
 						},
-
 						{
 							"id": 16,
 							"pageId": 6,
 							"position": 6,
 							"title": "menu.work-history"
 						},
-
 						{
 							"id": 17,
 							"pageId": 7,
