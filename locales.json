@@ -104,6 +104,10 @@
 			"driver-application-confirm": {
 				"title": "Driver Application confirm"
 			},
+			"drivers-rights": {
+				"title": "FMCSA notification of driver's rights",
+				"agree": "I have read and agree to the FMCSA Notification of Driver Rights"
+			},
 			"work-history": {
 				"employer-#": "Employer #"
 			}

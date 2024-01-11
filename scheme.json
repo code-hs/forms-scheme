@@ -171,7 +171,7 @@
 			"id": 1,
 			"key": "driver-application",
 			"description": "Driver Application",
-			"submitActionUrl": "form/personal-information",
+			"submitActionUrl---1": "form/personal-information",
 			"components": [
 				{
 					"common": {
@@ -1065,7 +1065,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#FMCSA notification of driver's rights"
+						"value": "pages.drivers-rights.title"
 					}
 				},
 				{
@@ -1085,7 +1085,7 @@
 						}
 					},
 					"custom": {
-						"bodyHTML": "#I have read and agree to the FMCSA Notification of Driver Rights</a>"
+						"bodyHTML": "pages.drivers-rights.agree"
 					},
 					"validation": {
 						"required": true
@@ -1100,7 +1100,7 @@
 						}
 					},
 					"text": {
-						"value": "#Continue"
+						"value": "continue"
 					}
 				}
 			]
