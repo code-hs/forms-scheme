@@ -640,7 +640,7 @@
 						"label": "email"
 					},
 					"attrs": {
-						"component": {
+						"element": {
 							"disabled": true
 						}
 					}
@@ -691,7 +691,7 @@
 										"label": "firstname"
 									},
 									"attrs": {
-										"component": {
+										"element": {
 											"disabled": true
 										}
 									}
@@ -711,7 +711,7 @@
 										"label": "lastname"
 									},
 									"attrs": {
-										"component": {
+										"element": {
 											"disabled": true
 										}
 									}
@@ -745,7 +745,7 @@
 								"label": "pages.driver-application.cell-phone"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
@@ -766,7 +766,7 @@
 								"label": "pages.driver-application.home-phone"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
@@ -787,7 +787,7 @@
 								"label": "address"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
@@ -812,7 +812,7 @@
 								"label": "pages.driver-application.date.label"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
@@ -842,7 +842,7 @@
 								"label": "city"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
@@ -865,7 +865,7 @@
 								"label": "state"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
@@ -885,7 +885,7 @@
 								"label": "zip"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
@@ -939,7 +939,7 @@
 								"label": "pages.driver-application.commercial-driver-license"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"readonly": true
 								}
 							}
@@ -959,7 +959,7 @@
 								"container": {
 									"hidden": true
 								},
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							},
@@ -1006,7 +1006,7 @@
 								"label": "pages.driver-application.drug-test"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"readonly": true
 								}
 							}
@@ -1027,7 +1027,7 @@
 								"bodyHTML": "pages.driver-application.agree"
 							},
 							"attrs": {
-								"component": {
+								"element": {
 									"disabled": true
 								}
 							}
