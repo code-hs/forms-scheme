@@ -60,6 +60,7 @@
 		"help": "Help",
 		"next": "Next",
 		"back": "Back",
+		"continue": "Continue",
 
 		"menu": {
 			"driver-application": "Driver Application",
@@ -95,6 +96,10 @@
 			},
 			"terms": {
 				"title": "Terms & Conditions"
+			},
+			"offer": {
+				"title": "Conditional Offer of Employment",
+				"ul-content": "<p>Congratulations! You are qualified to drive for Global on condition of completion of the following:</p>\n\n<ul>\n  <li>Drug Screening</li>\n  <li>Global Road Test</li>\n  <li>Moving Violation Report &amp; Drive-A-Check Review</li>\n  <li>Criminal Background Check</li>\n  <li>Pre-Hire Interview</li>\n  <li>New-Hire Orientation</li>\n</ul>"
 			},
 			"driver-application-confirm": {
 				"title": "Driver Application confirm"
