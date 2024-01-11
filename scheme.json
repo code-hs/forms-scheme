@@ -637,7 +637,7 @@
 					},
 					"text": {
 						"placeholder": "#name@company.com",
-						"label": "#E-mail address"
+						"label": "email"
 					},
 					"attrs": {
 						"component": {
@@ -664,7 +664,7 @@
 								"tag": "p"
 							},
 							"text": {
-								"value": "#Full legal name (as it appears on your driver's license)"
+								"value": "pages.driver-application.fieldset-title"
 							}
 						},
 
@@ -688,7 +688,7 @@
 										"field-model-name": "firstName"
 									},
 									"text": {
-										"label": "#First name"
+										"label": "firstname"
 									},
 									"attrs": {
 										"component": {
@@ -708,7 +708,7 @@
 										"field-model-name": "lastName"
 									},
 									"text": {
-										"label": "#Last name"
+										"label": "lastname"
 									},
 									"attrs": {
 										"component": {
@@ -742,7 +742,7 @@
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Cell phone number"
+								"label": "pages.driver-application.cell-phone"
 							},
 							"attrs": {
 								"component": {
@@ -763,7 +763,7 @@
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Home phone number"
+								"label": "pages.driver-application.home-phone"
 							},
 							"attrs": {
 								"component": {
@@ -774,17 +774,17 @@
 						{
 							"common": {
 								"type": "InputText",
-								"model": "streetAddress"
+								"model": "address"
 							},
 							"initialize": {
 								"source-from": "STORAGE",
 								"source-key": "saved-page-model",
 								"page-key": "driver-application",
-								"field-model-name": "streetAddress"
+								"field-model-name": "address"
 							},
 							"text": {
-								"placeholder": "#P.O. box, company name",
-								"label": "#Street address"
+								"placeholder": "pages.driver-application.address-placeholder",
+								"label": "address"
 							},
 							"attrs": {
 								"component": {
@@ -805,11 +805,11 @@
 							},
 							"custom": {
 								"mask": "##/##/####",
-								"hint": "#format: mm/dd/yyyy"
+								"hint": "date.hint"
 							},
 							"text": {
 								"placeholder": "#example: 01/25/1963",
-								"label": "#Date of birth"
+								"label": "pages.driver-application.date.label"
 							},
 							"attrs": {
 								"component": {
@@ -839,7 +839,7 @@
 								"field-model-name": "city"
 							},
 							"text": {
-								"label": "#City"
+								"label": "city"
 							},
 							"attrs": {
 								"component": {
@@ -862,7 +862,7 @@
 								"options": "$:selectorCountryList"
 							},
 							"text": {
-								"label": "#State *"
+								"label": "state"
 							},
 							"attrs": {
 								"component": {
@@ -882,8 +882,7 @@
 								"field-model-name": "zipCode"
 							},
 							"text": {
-								"placeholder": "",
-								"label": "#Zip code"
+								"label": "zip"
 							},
 							"attrs": {
 								"component": {
@@ -920,7 +919,7 @@
 								"options": [
 									{
 										"value": "yes",
-										"text": "#Yes",
+										"text": "yes",
 										"action": {
 											"type": "SHOW_CONTAINER",
 											"nextSibling": 1
@@ -928,7 +927,7 @@
 									},
 									{
 										"value": "no",
-										"text": "#No",
+										"text": "no",
 										"action": {
 											"type": "HIDE_CONTAINER",
 											"nextSibling": 1
@@ -937,7 +936,7 @@
 								]
 							},
 							"text": {
-								"label": "#Do you have a commercial driver's license? (class A)"
+								"label": "pages.driver-application.commercial-driver-license"
 							},
 							"attrs": {
 								"component": {
@@ -966,14 +965,14 @@
 							},
 							"custom": {
 								"options": {
-									"LessThan3Months": "#Less than 3 months",
-									"_4To6Months": "#4 to 6 months",
-									"MoreThan6Months": "#More than 6 months "
+									"LessThan3Months": "pages.driver-application.cdl-experience.less-than-3-months",
+									"_4To6Months": "pages.driver-application.cdl-experience.4-to-6-months",
+									"MoreThan6Months": "pages.driver-application.cdl-experience.more-than-6-months"
 								},
-								"defaultText": "#Select Your CDL experience"
+								"defaultText": "pages.driver-application.cdl-experience.default-value"
 							},
 							"text": {
-								"label": "#CDL experience *"
+								"label": "pages.driver-application.cdl-experience.label"
 							}
 						},
 
@@ -995,16 +994,16 @@
 								"options": [
 									{
 										"value": "yes",
-										"text": "#Yes"
+										"text": "yes"
 									},
 									{
 										"value": "no",
-										"text": "#No"
+										"text": "no"
 									}
 								]
 							},
 							"text": {
-								"label": "#Can you pass a drug test?"
+								"label": "pages.driver-application.drug-test"
 							},
 							"attrs": {
 								"component": {
@@ -1025,7 +1024,7 @@
 								"field-model-name": "agree"
 							},
 							"custom": {
-								"bodyHTML": "#I have read and agreed with <a href='/job_application#terms' target='_blank'>the terms and conditions.</a>"
+								"bodyHTML": "pages.driver-application.agree"
 							},
 							"attrs": {
 								"component": {
@@ -1043,9 +1042,8 @@
 							"container": "col-5 col-5-sm --col-middle"
 						}
 					},
-					"custom": {},
 					"text": {
-						"value": "#Submit"
+						"value": "submit"
 					}
 				}
 			]
