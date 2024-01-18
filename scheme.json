@@ -36,6 +36,7 @@
 				"config": {
 					"stepMode": true,
 					"stepModeWhitelistPageIds": [8],
+					"hideMenuOnPageIds": [8],
 					"list": [
 						{
 							"id": 11,
