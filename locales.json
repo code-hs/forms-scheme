@@ -184,6 +184,12 @@
 					"over40Feet": "Over 40 feet"
 				},
 				"inform-text": "The information you provide here may be used, and your previous employers will be contacted"
+			},
+			"complete": {
+				"title": "Well done",
+				"complete-text": "Thank you for completing the application. We will contact you shortly.",
+				"text-1": "You've completed all of the necessary tasks for this step in the process. Nice work! As new tasks become available, we'll notify you via email or text message.",
+				"text-2": "Feel free to check back as often as you would like. We're excited about the opportunity to have you join our team and help us in \"Delivering Excellence in Transportation!\""
 			}
 		},
 		"date": {
