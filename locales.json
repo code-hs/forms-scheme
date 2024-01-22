@@ -108,6 +108,30 @@
 				"title": "FMCSA notification of driver's rights",
 				"agree": "I have read and agree to the FMCSA Notification of Driver Rights"
 			},
+			"personal-information": {
+				"title": "Personal information",
+				"add-another-license": "Add another driver's license",
+				"select-state-default": "Select D.L. state",
+				"select-state-label": "Driver's license state",
+				"license-number": "Driver's license number",
+				"expiration-date": {
+					"label": "Expiration date D.L.",
+					"placeholder": "example: 12/25/2000",
+					"range": "The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
+					"not-valid": "This is not a valid date."
+				},
+				"license-type": {
+					"label": "Type/Class",
+					"default-value": "Select type/class",
+					"state": "State",
+					"cdl": "CDL",
+					"clp": "CLP"
+				},
+
+				"is-current-license": "Is this a current license?",
+				"secur-number": "Social security number",
+				"secur-number-pattern": "Please enter a valid social security number"
+			},
 			"work-history": {
 				"employer-#": "Employer #"
 			}

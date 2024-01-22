@@ -1124,7 +1124,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Personal information"
+						"value": "pages.personal-information.title"
 					}
 				},
 				{
@@ -1133,7 +1133,7 @@
 						"model": "driversLicenses"
 					},
 					"text": {
-						"addButton": "#Add another driver's license"
+						"addButton": "pages.personal-information.add-another-license"
 					},
 					"components": [
 						{
@@ -1151,7 +1151,7 @@
 									},
 									"custom": {
 										"options": "$:selectorCountryList",
-										"defaultText": "#Select D.L. state"
+										"defaultText": "pages.personal-information.select-state-default"
 									},
 									"validation": {
 										"required": true,
@@ -1160,7 +1160,7 @@
 										}
 									},
 									"text": {
-										"label": "#Driver's license state *"
+										"label": "pages.personal-information.select-state-label"
 									}
 								},
 								{
@@ -1178,7 +1178,7 @@
 										}
 									},
 									"text": {
-										"label": "#Driver's license number"
+										"label": "pages.personal-information.license-number"
 									}
 								}
 							]
@@ -1199,7 +1199,7 @@
 									},
 									"custom": {
 										"mask": "##/##/####",
-										"hint": "#format: mm/dd/yyyy"
+										"hint": "date.hint"
 									},
 									"module": {
 										"minDate": "01/01/1920",
@@ -1209,13 +1209,13 @@
 										"required": true,
 										"texts": {
 											"required": "errors.required",
-											"range": "#The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
-											"notValid": "#This is not a valid date."
+											"range": "pages.personal-information.expiration-date.range",
+											"notValid": "errors.not-valid-date"
 										}
 									},
 									"text": {
-										"placeholder": "#example: 12/25/2000",
-										"label": "#Expiration date D.L."
+										"placeholder": "pages.personal-information.expiration-date.placeholder",
+										"label": "pages.personal-information.expiration-date.label"
 									}
 								},
 								{
@@ -1225,11 +1225,11 @@
 									},
 									"custom": {
 										"options": {
-											"State": "#State",
-											"CDL": "#CDL",
-											"CLP": "#CLP"
+											"State": "pages.personal-information.license-type.state",
+											"CDL": "pages.personal-information.license-type.cdl",
+											"CLP": "pages.personal-information.license-type.clp"
 										},
-										"defaultText": "#Select type/class"
+										"defaultText": "pages.personal-information.license-type.default-value"
 									},
 									"validation": {
 										"required": true,
@@ -1238,7 +1238,7 @@
 										}
 									},
 									"text": {
-										"label": "#Type/Class *"
+										"label": "pages.personal-information.license-type.label"
 									}
 								}
 							]
@@ -1254,7 +1254,7 @@
 								}
 							},
 							"custom": {
-								"bodyHTML": "#Is this a current license?",
+								"bodyHTML": "pages.personal-information.is-current-license",
 								"actions": {
 									"check": {
 										"action": {
@@ -1284,12 +1284,12 @@
 						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
 						"texts": {
 							"required": "errors.required",
-							"pattern": "#Please enter a valid social security number"
+							"pattern": "pages.personal-information.secur-number-pattern"
 						}
 					},
 					"text": {
 						"placeholder": "#123-45-6789",
-						"label": "#Social security number"
+						"label": "pages.personal-information.secur-number"
 					}
 				},
 
@@ -1301,7 +1301,7 @@
 						}
 					},
 					"text": {
-						"value": "#Submit"
+						"value": "submit"
 					}
 				}
 			]
