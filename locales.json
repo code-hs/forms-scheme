@@ -133,11 +133,69 @@
 				"secur-number-pattern": "Please enter a valid social security number"
 			},
 			"work-history": {
-				"employer-#": "Employer #"
+				"employer-#": "Employer #",
+				"title": "Work history",
+				"work-early-here": "Have you ever been employed as a company driver or independent contractor for Truck Global?",
+				"school": "Have you ever been to any truck driving school in the last 5 years?",
+				"fail-dot": "Have you ever failed or refused a DOT drug screen?",
+				"history-title": "Please provide the last 10 years of work history",
+				"but-add-employer": "Add another employer",
+				"company": "Company name",
+				"job": "Job title",
+				"start-date": {
+					"label": "Start date",
+					"placeholder": "example: 12/25/2000"
+				},
+				"end-date": {
+					"label": "End date",
+					"placeholder": "example: 12/25/2000"
+				},
+				"address1-placeholder": "street, P.O. box, company",
+				"address1-label": "Address line 1",
+				"address2-placeholder": "building, unit, floor, etc",
+				"address2-label": "Address line 2",
+				"reasonForLeaving": {
+					"label": "Reason for leaving",
+					"default-value": "Select Your reason",
+					"LaidOff": "Laid off",
+					"LeaveOfAbsense": "Leave of absense",
+					"OutOfBusiness": "Out of business",
+					"PresentEmployer": "Present employer",
+					"Quit": "Quit",
+					"Reassigned": "Reassigned",
+					"Relocation": "Relocation",
+					"Retired": "Retired",
+					"Terminated": "Terminated",
+					"TermServiceEnd": "Term service end"
+				},
+				"isDrivingJob": "Did you operate a commercial motor vehicle for this job?",
+				"typeOfEquipment": {
+					"label": "Type of equipment You operated",
+					"default-value": "Select equipment type",
+					"StraightTruck": "Straight Truck",
+					"TractorAndSemiTrailers": "Tractor and Semi Trailers",
+					"TractorAndTwoTrailers": "Tractor and Two Trailers",
+					"Other": "Other"
+				},
+				"FMCSR": "Were you subject to the FMCSR?",
+				"trailer-length": {
+					"label": "Trailer length",
+					"under40Feet": "Under 40 feet",
+					"over40Feet": "Over 40 feet"
+				},
+				"inform-text": "The information you provide here may be used, and your previous employers will be contacted"
 			}
 		},
 		"date": {
-			"hint": "format: mm/dd/yyyy"
+			"hint": "format: mm/dd/yyyy",
+			"range-out": "The date falls outside of the acceptable range.",
+			"not-valid": "Not a valid date",
+			"range": {
+				"error": {
+					"start": "Start date can't be bigger than finish date.",
+					"end": "Finish date can't be smaller than start date."
+				}
+			}
 		},
 		"validation": {
 			"pattern": {
@@ -146,12 +204,12 @@
 			}
 		},
 		"errors": {
-			"required": "field is required",
-			"not-valid-date": "Not a valid date"
+			"required": "field is required"
 		},
 		"state": "State",
 		"state-default": "Select Your state",
-		"zip": "Zip Code"
+		"zip": "Zip Code",
+		"description": "Description"
 	},
 
 	"fr": {

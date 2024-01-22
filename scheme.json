@@ -358,7 +358,7 @@
 								"texts": {
 									"required": "errors.required",
 									"range": "pages.driver-application.date.range",
-									"notValid": "errors.not-valid-date"
+									"notValid": "date.not-valid"
 								}
 							},
 							"text": {
@@ -809,7 +809,7 @@
 								"hint": "date.hint"
 							},
 							"text": {
-								"placeholder": "#example: 01/25/1963",
+								"placeholder": "pages.driver-application.date.placeholder",
 								"label": "pages.driver-application.date.label"
 							},
 							"attrs": {
@@ -1210,7 +1210,7 @@
 										"texts": {
 											"required": "errors.required",
 											"range": "pages.personal-information.expiration-date.range",
-											"notValid": "errors.not-valid-date"
+											"notValid": "date.not-valid"
 										}
 									},
 									"text": {
@@ -1323,7 +1323,7 @@
 						"tag": "h2"
 					},
 					"text": {
-						"value": "#Work history"
+						"value": "pages.work-history.title"
 					}
 				},
 				{
@@ -1339,16 +1339,16 @@
 						"options": [
 							{
 								"value": "yes",
-								"text": "#Yes"
+								"text": "yes"
 							},
 							{
 								"value": "no",
-								"text": "#No"
+								"text": "no"
 							}
 						]
 					},
 					"text": {
-						"label": "#Have you ever been employed as a company driver or independent contractor for Truck Global?"
+						"label": "pages.work-history.work-early-here"
 					}
 				},
 				{
@@ -1364,16 +1364,16 @@
 						"options": [
 							{
 								"value": "yes",
-								"text": "#Yes"
+								"text": "yes"
 							},
 							{
 								"value": "no",
-								"text": "#No"
+								"text": "no"
 							}
 						]
 					},
 					"text": {
-						"label": "#Have you ever been to any truck driving school in the last 5 years?"
+						"label": "pages.work-history.school"
 					}
 				},
 				{
@@ -1389,16 +1389,16 @@
 						"options": [
 							{
 								"value": "yes",
-								"text": "#Yes"
+								"text": "yes"
 							},
 							{
 								"value": "no",
-								"text": "#No"
+								"text": "no"
 							}
 						]
 					},
 					"text": {
-						"label": "#Have you ever failed or refused a DOT drug screen?"
+						"label": "pages.work-history.fail-dot"
 					}
 				},
 				{
@@ -1412,7 +1412,7 @@
 						"tag": "p"
 					},
 					"text": {
-						"value": "#Please provide the last 10 years of work history"
+						"value": "pages.work-history.history-title"
 					}
 				},
 				{
@@ -1425,7 +1425,7 @@
 						"addIndex": true
 					},
 					"text": {
-						"addButton": "#Add another employer"
+						"addButton": "pages.work-history.but-add-employer"
 					},
 					"components": [
 						{
@@ -1451,7 +1451,7 @@
 										}
 									},
 									"text": {
-										"label": "#Company name"
+										"label": "pages.work-history.company"
 									}
 								},
 
@@ -1470,7 +1470,7 @@
 										}
 									},
 									"text": {
-										"label": "#Job title"
+										"label": "pages.work-history.job"
 									}
 								}
 							]
@@ -1491,11 +1491,11 @@
 									},
 									"custom": {
 										"mask": "##/##/####",
-										"hint": "#format: mm/dd/yyyy",
+										"hint": "date.hint",
 										"workTogether": {
 											"selfIdentify": "START",
 											"purposeModel": "endDate",
-											"validateText": "#Start date can't be bigger than finish date."
+											"validateText": "date.range.error.start"
 										}
 									},
 									"module": {
@@ -1505,13 +1505,13 @@
 										"required": true,
 										"texts": {
 											"required": "errors.required",
-											"range": "#The date falls outside of the acceptable range.",
-											"notValid": "#This is not a valid date."
+											"range": "date.range-out",
+											"notValid": "date.not-valid"
 										}
 									},
 									"text": {
-										"placeholder": "#example: 12/25/2000",
-										"label": "#Start date"
+										"placeholder": "pages.work-history.start-date.placeholder",
+										"label": "pages.work-history.start-date.label"
 									}
 								},
 								{
@@ -1521,11 +1521,11 @@
 									},
 									"custom": {
 										"mask": "##/##/####",
-										"hint": "#format: mm/dd/yyyy",
+										"hint": "date.hint",
 										"workTogether": {
 											"selfIdentify": "END",
 											"purposeModel": "startDate",
-											"validateText": "#Finish date can't be smaller than start date"
+											"validateText": "date.range.error.end"
 										}
 									},
 									"module": {
@@ -1535,13 +1535,13 @@
 										"required": true,
 										"texts": {
 											"required": "errors.required",
-											"range": "#The date falls outside of the acceptable range.",
-											"notValid": "#This is not a valid date."
+											"range": "date.range-out",
+											"notValid": "date.not-valid"
 										}
 									},
 									"text": {
-										"placeholder": "#example: 12/25/2000",
-										"label": "#End date"
+										"placeholder": "pages.work-history.end-date.placeholder",
+										"label": "pages.work-history.end-date.label"
 									}
 								}
 							]
@@ -1570,7 +1570,7 @@
 										}
 									},
 									"text": {
-										"label": "#City"
+										"label": "city"
 									}
 								},
 								{
@@ -1580,7 +1580,7 @@
 									},
 									"custom": {
 										"options": "$:selectorCountryList",
-										"defaultText": "#Select Your state"
+										"defaultText": "state-default"
 									},
 									"validation": {
 										"required": true,
@@ -1589,7 +1589,7 @@
 										}
 									},
 									"text": {
-										"label": "#State *"
+										"label": "state"
 									}
 								},
 								{
@@ -1607,8 +1607,7 @@
 										}
 									},
 									"text": {
-										"placeholder": "",
-										"label": "#Zip code"
+										"label": "zip"
 									}
 								}
 							]
@@ -1637,8 +1636,8 @@
 										}
 									},
 									"text": {
-										"placeholder": "#street, P.O. box, company",
-										"label": "#Address line 1"
+										"placeholder": "pages.work-history.address1-placeholder",
+										"label": "pages.work-history.address1-label"
 									}
 								},
 								{
@@ -1656,8 +1655,8 @@
 										}
 									},
 									"text": {
-										"placeholder": "#building, unit, floor, etc",
-										"label": "#Address line 2"
+										"placeholder": "pages.work-history.address2-placeholder",
+										"label": "pages.work-history.address2-label"
 									}
 								}
 							]
@@ -1672,7 +1671,7 @@
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
-								"label": "#Phone number"
+								"label": "phone"
 							},
 							"validation": {
 								"required": true,
@@ -1692,7 +1691,7 @@
 								"pattern": "/^.{0,320}$/i"
 							},
 							"text": {
-								"label": "#Description"
+								"label": "description"
 							},
 							"validation": {
 								"required": true,
@@ -1708,18 +1707,18 @@
 							},
 							"custom": {
 								"options": {
-									"LaidOff": "#Laid off",
-									"LeaveOfAbsense": "#Leave of absense",
-									"OutOfBusiness": "#Out of business",
-									"PresentEmployer": "#Present employer",
-									"Quit": "#Quit",
-									"Reassigned": "#Reassigned",
-									"Relocation": "#Relocation",
-									"Retired": "#Retired",
-									"Terminated": "#Terminated",
-									"TermServiceEnd": "#Term service end"
+									"LaidOff": "pages.work-history.reasonForLeaving.LaidOff",
+									"LeaveOfAbsense": "pages.work-history.reasonForLeaving.LeaveOfAbsense",
+									"OutOfBusiness": "pages.work-history.reasonForLeaving.OutOfBusiness",
+									"PresentEmployer": "pages.work-history.reasonForLeaving.PresentEmployer",
+									"Quit": "pages.work-history.reasonForLeaving.Quit",
+									"Reassigned": "pages.work-history.reasonForLeaving.Reassigned",
+									"Relocation": "pages.work-history.reasonForLeaving.Relocation",
+									"Retired": "pages.work-history.reasonForLeaving.Retired",
+									"Terminated": "pages.work-history.reasonForLeaving.Terminated",
+									"TermServiceEnd": "pages.work-history.reasonForLeaving.TermServiceEnd"
 								},
-								"defaultText": "#Select Your reason"
+								"defaultText": "pages.work-history.reasonForLeaving.default-value"
 							},
 							"validation": {
 								"required": true,
@@ -1728,7 +1727,7 @@
 								}
 							},
 							"text": {
-								"label": "#Reason for leaving *"
+								"label": "pages.work-history.reasonForLeaving.label"
 							}
 						},
 						{
@@ -1744,7 +1743,7 @@
 								"options": [
 									{
 										"value": "yes",
-										"text": "#Yes",
+										"text": "yes",
 										"action": {
 											"type": "SHOW_CONTAINER",
 											"nextSibling": 1
@@ -1752,7 +1751,7 @@
 									},
 									{
 										"value": "no",
-										"text": "#No",
+										"text": "no",
 										"action": {
 											"type": "HIDE_CONTAINER",
 											"nextSibling": 1
@@ -1761,7 +1760,7 @@
 								]
 							},
 							"text": {
-								"label": "#Did you operate a commercial motor vehicle for this job?"
+								"label": "pages.work-history.isDrivingJob"
 							}
 						},
 						{
@@ -1780,12 +1779,12 @@
 									},
 									"custom": {
 										"options": {
-											"StraightTruck": "#Straight Truck",
-											"TractorAndSemiTrailers": "#Tractor and Semi Trailers",
-											"TractorAndTwoTrailers": "#Tractor and Two Trailers",
-											"Other": "#Other"
+											"StraightTruck": "pages.work-history.typeOfEquipment.StraightTruck",
+											"TractorAndSemiTrailers": "pages.work-history.typeOfEquipment.TractorAndSemiTrailers",
+											"TractorAndTwoTrailers": "pages.work-history.typeOfEquipment.TractorAndTwoTrailers",
+											"Other": "pages.work-history.typeOfEquipment.Other"
 										},
-										"defaultText": "#Select equipment type"
+										"defaultText": "pages.work-history.typeOfEquipment.default-value"
 									},
 									"validation": {
 										"required": true,
@@ -1795,7 +1794,7 @@
 										}
 									},
 									"text": {
-										"label": "#Type of equipment You operated *"
+										"label": "pages.work-history.typeOfEquipment.label"
 									}
 								},
 								{
@@ -1811,16 +1810,16 @@
 										"options": [
 											{
 												"value": "under40Feet",
-												"text": "#Under 40 feet"
+												"text": "pages.work-history.trailer-length.under40Feet"
 											},
 											{
 												"value": "over40Feet",
-												"text": "#Over 40 feet"
+												"text": "pages.work-history.trailer-length.over40Feet"
 											}
 										]
 									},
 									"text": {
-										"label": "#Trailer length?"
+										"label": "pages.work-history.trailer-length.label"
 									}
 								},
 								{
@@ -1836,16 +1835,16 @@
 										"options": [
 											{
 												"value": "yes",
-												"text": "#Yes"
+												"text": "yes"
 											},
 											{
 												"value": "no",
-												"text": "#No"
+												"text": "no"
 											}
 										]
 									},
 									"text": {
-										"label": "#Were you subject to the FMCSR?"
+										"label": "pages.work-history.FMCSR"
 									}
 								},
 								{
@@ -1859,7 +1858,7 @@
 										"tag": "p"
 									},
 									"text": {
-										"value": "#The information you provide here may be used, and your previous employers will be contacted"
+										"value": "pages.work-history.inform-text"
 									}
 								}
 							]
@@ -1874,7 +1873,7 @@
 						}
 					},
 					"text": {
-						"value": "#Submit"
+						"value": "submit"
 					}
 				}
 			]
