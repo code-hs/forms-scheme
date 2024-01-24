@@ -278,7 +278,8 @@
 		"feedback": "Retour d'information",
 		"help": "Aide",
 		"next": "Suivant",
-		"back": "Retour"
+		"back": "Retour",
+		"continue": "Continuer"
 	},
 
 	"de": {
@@ -341,7 +342,43 @@
 		"feedback": "Feedback",
 		"help": "Hilfe",
 		"next": "Weiter",
-		"back": "Zurück"
+		"back": "Zurück",
+		"continue": "Fortsetzen",
+
+		"menu": {
+			"driver-application": "Fahrerbewerbung",
+			"offer": "Angebot",
+			"confirm": "Bestätigen",
+			"drivers-rights": "Fahrer Rechte",
+			"personal": "Persönliche Informationen",
+			"work-history": "Beruflicher Werdegang",
+			"complete": "Vervollständigen"
+		},
+		"pages": {
+			"driver-application": {
+				"title": "Fahrerbewerbung",
+				"fieldset-title": "Vollständiger gesetzlicher Name (wie er auf Ihrem Führerschein erscheint)",
+				"cell-phone": "Handynummer",
+				"home-phone": "Hausnummer",
+				"address-placeholder": "Postfach, Firmenname",
+
+				"date": {
+					"range": "Das Datum liegt außerhalb des akzeptablen Bereichs. Von 01/01/1920 bis 01/01/2005",
+					"placeholder": "Beispiel: 25.01.1963",
+					"label": "Geburtsdatum"
+				},
+				"commercial-driver-license": "Haben Sie einen gewerblichen Führerschein? (Klasse A)",
+				"cdl-experience": {
+					"label": "CDL-Erfahrung",
+					"default-value": "Wählen Sie Ihre CDL-Erfahrung",
+					"less-than-3-months": "Weniger als 3 Monate",
+					"4-to-6-months": "4 bis 6 Monate",
+					"more-than-6-months": "Mehr als 6 Monate"
+				},
+				"drug-test": "Können Sie einen Drogentest bestehen?",
+				"agree": "Ich habe die <a href='/job_application#terms' target='_blank'>Nutzungsbedingungen</a> gelesen und akzeptiert."
+			}
+		}
 	},
 	"ua": {
 		"add": "Додати",
@@ -403,7 +440,8 @@
 		"feedback": "Відгук",
 		"help": "Допомога",
 		"next": "Далі",
-		"back": "Назад"
+		"back": "Назад",
+		"continue": "Продовжити"
 	},
 	"ru": {
 		"add": "Добавить",
@@ -465,7 +503,8 @@
 		"feedback": "Обратная связь",
 		"help": "Помощь",
 		"next": "Далее",
-		"back": "Назад"
+		"back": "Назад",
+		"continue": "Продолжить"
 	},
 	"cn": {
 		"add": "添加",
@@ -527,7 +566,8 @@
 		"feedback": "反馈",
 		"help": "帮助",
 		"next": "下一个",
-		"back": "后退"
+		"back": "后退",
+		"continue": "继续"
 	},
 	"es": {
 		"add": "Añadir",
@@ -589,7 +629,8 @@
 		"feedback": "Comentarios",
 		"help": "Ayuda",
 		"next": "Siguiente",
-		"back": "Atrás"
+		"back": "Atrás",
+		"continue": "Continuar"
 	},
 	"jp": {
 		"add": "追加",
@@ -651,7 +692,8 @@
 		"feedback": "フィードバック",
 		"help": "ヘルプ",
 		"next": "次へ",
-		"back": "戻る"
+		"back": "戻る",
+		"continue": "続ける"
 	},
 	"it": {
 		"add": "Aggiungi",
@@ -713,7 +755,8 @@
 		"feedback": "Feedback",
 		"help": "Aiuto",
 		"next": "Avanti",
-		"back": "Indietro"
+		"back": "Indietro",
+		"continue": "Continua"
 	},
 	"pt": {
 		"add": "Adicionar",
@@ -775,6 +818,7 @@
 		"feedback": "Feedback",
 		"help": "Ajuda",
 		"next": "Próximo",
-		"back": "Voltar"
+		"back": "Voltar",
+		"continue": "Continuar"
 	}
 }

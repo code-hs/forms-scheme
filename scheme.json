@@ -88,7 +88,18 @@
 		"apiBaseUrl": "http://localhost:8081/api/",
 		"localization": {
 			"defaultLang": "en",
-			"availableLangs": ["en", "fr", "ua", "ru"]
+			"availableLangs": [
+				"en",
+				"fr",
+				"de",
+				"ua",
+				"ru",
+				"cn",
+				"es",
+				"jp",
+				"it",
+				"pt"
+			]
 		},
 		"styles": {
 			"value": [
