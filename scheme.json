@@ -20,7 +20,9 @@
 					"locales": {
 						"relations": {
 							"ua": "uk",
-							"fr": "fr"
+							"fr": "fr",
+							"cn": "zh-CN",
+							"jp": "ja"
 						}
 					},
 					"forEachField": {
