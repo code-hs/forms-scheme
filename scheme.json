@@ -1216,7 +1216,7 @@
 									},
 									"module": {
 										"minDate": "01/01/1920",
-										"maxDate": "01/01/2005"
+										"maxDate": "01/01/2080"
 									},
 									"validation": {
 										"required": true,
