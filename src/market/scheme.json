@@ -1,0 +1,205 @@
+{
+	"config": {
+		"modules": [
+			{
+				"name": "datepicker",
+				"enable": true,
+				"config": {
+					"locales": {
+						"relations": {
+							"ua": "uk",
+							"fr": "fr",
+							"cn": "zh-CN",
+							"jp": "ja"
+						}
+					},
+					"forEachField": {
+						"format": "mm/dd/yyyy",
+						"autohide": true,
+						"todayHighlight": true
+					}
+				}
+			},
+
+			{
+				"name": "menu",
+				"enable": false,
+				"config": {
+					"stepMode": true,
+					"list": [
+						{
+							"id": 11,
+							"pageId": 1,
+							"position": 1,
+							"title": "menu.driver-application"
+						},
+						{
+							"id": 12,
+							"pageId": 2,
+							"position": 2,
+							"title": "menu.offer"
+						},
+						{
+							"id": 13,
+							"pageId": 3,
+							"position": 3,
+							"title": "menu.confirm"
+						},
+						{
+							"id": 14,
+							"pageId": 4,
+							"position": 4,
+							"title": "menu.drivers-rights"
+						},
+						{
+							"id": 15,
+							"pageId": 5,
+							"position": 5,
+							"title": "menu.personal"
+						},
+						{
+							"id": 16,
+							"pageId": 6,
+							"position": 6,
+							"title": "menu.work-history"
+						},
+						{
+							"id": 17,
+							"pageId": 7,
+							"position": 7,
+							"enable": true,
+							"title": "menu.complete"
+						}
+					]
+				}
+			}
+		],
+		"apiBaseUrl": "http://localhost:8081/api/",
+		"localization": {
+			"defaultLang": "en",
+			"availableLangs": [
+				"en",
+				"fr",
+				"de",
+				"ua",
+				"ru",
+				"cn",
+				"es",
+				"jp",
+				"it",
+				"pt"
+			]
+		},
+		"styles": {
+			"value": [
+				"next-form .fieldset-title p { margin-bottom: 20px; }",
+				"next-form .bordered-block { border: 1px solid #565656; border-radius: 6px; padding: 10px; padding-bottom: 0px; margin-bottom: 20px; }",
+				"next-form .field-inform-text { font-size: 0.7rem; }",
+
+				"next-form .instruction {padding: 24px 32px; margin-bottom: 16px; border-radius: 4px; text-align: justify;}",
+				"next-form .nf-app[data-theme='dark'] .instruction {background-color:hsl(210 2% 20% / 1);}",
+				"next-form .nf-app[data-theme='light'] .instruction {background-color: #f3f3f3;}",
+
+				"next-form .form p {line-height: 1.6rem;}",
+				"next-form .legalJargon {margin-bottom: 20px; text-align: justify;}",
+
+				"next-form .form ol {padding-left: 20px; margin-top: 4px; line-height: 1.6rem; text-align: justify;}",
+				"next-form .form ol li {padding: 4px 0;}",
+				"next-form .form ol + .legalJargon {text-indent: 20px;}",
+
+				"next-form .form ul {margin-top: 4px; padding-left: 18px; line-height: 1.6rem; text-align: justify;}",
+				"next-form .form ul li {padding: 4px 0;}"
+			]
+		},
+		"variables": {
+			"selectorCountryList": {
+				"AL": "#Alabama",
+				"AK": "#Alaska",
+				"AZ": "#Arizona",
+				"AR": "#Arkansas",
+				"CA": "#California",
+				"CO": "#Colorado",
+				"CT": "#Connecticut",
+				"DE": "#Delaware",
+				"DC": "#District Of Columbia",
+				"FL": "#Florida",
+				"GA": "#Georgia",
+				"HI": "#Hawaii",
+				"ID": "#Idaho",
+				"IL": "#Illinois",
+				"IN": "#Indiana",
+				"IA": "#Iowa",
+				"KS": "#Kansas",
+				"KY": "#Kentucky",
+				"LA": "#Louisiana",
+				"ME": "#Maine",
+				"MD": "#Maryland",
+				"MA": "#Massachusetts",
+				"MI": "#Michigan",
+				"MN": "#Minnesota",
+				"MS": "#Mississippi",
+				"MO": "#Missouri",
+				"MT": "#Montana",
+				"NE": "#Nebraska",
+				"NV": "#Nevada",
+				"NH": "#New Hampshire",
+				"NJ": "#New Jersey",
+				"NM": "#New Mexico",
+				"NY": "#New York",
+				"NC": "#North Carolina",
+				"ND": "#North Dakota",
+				"OH": "#Ohio",
+				"OK": "#Oklahoma",
+				"OR": "#Oregon",
+				"PA": "#Pennsylvania",
+				"RI": "#Rhode Island",
+				"SC": "#South Carolina",
+				"SD": "#South Dakota",
+				"TN": "#Tennessee",
+				"TX": "#Texas",
+				"UT": "#Utah",
+				"VT": "#Vermont",
+				"VA": "#Virginia",
+				"WA": "#Washington",
+				"WV": "#West Virginia",
+				"WI": "#Wisconsin",
+				"WY": "#Wyoming"
+			}
+		}
+	},
+	"pages": [
+		{
+			"id": 1,
+			"key": "main",
+			"description": "Conditional Offer of Employment",
+			"components": [
+				{
+					"common": {
+						"enable": true,
+						"type": "TextContainer",
+						"class": {
+							"container": "--center"
+						}
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "#text title"
+					}
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-3 col-3-sm --col-middle"
+						}
+					},
+					"text": {
+						"value": "continue"
+					}
+				}
+			]
+		}
+	]
+}
