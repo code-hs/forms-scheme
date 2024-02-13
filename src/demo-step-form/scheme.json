@@ -185,7 +185,6 @@
 			"id": 1,
 			"key": "driver-application",
 			"description": "Driver Application",
-			"submitActionUrl---1": "form/personal-information",
 			"components": [
 				{
 					"common": {
@@ -1124,7 +1123,6 @@
 			"id": 5,
 			"key": "personal-information",
 			"description": "Personal Information form",
-			"submitActionUrl-------------": "form/personal-information",
 			"components": [
 				{
 					"common": {
