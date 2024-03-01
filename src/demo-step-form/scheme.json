@@ -206,6 +206,9 @@
 						"type": "InputEmail",
 						"model": "email"
 					},
+					"initialize": {
+						"mode": "self"
+					},
 					"validation": {
 						"required": true,
 						"pattern": "/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/",
@@ -258,6 +261,9 @@
 									"custom": {
 										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
+									"initialize": {
+										"mode": "self"
+									},
 									"validation": {
 										"required": true,
 										"texts": {
@@ -275,6 +281,9 @@
 									},
 									"custom": {
 										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
+									},
+									"initialize": {
+										"mode": "self"
 									},
 									"validation": {
 										"required": true,
@@ -307,6 +316,9 @@
 							"custom": {
 								"mask": "(###) ###-####"
 							},
+							"initialize": {
+								"mode": "self"
+							},
 							"validation": {
 								"required": true,
 								"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
@@ -328,6 +340,9 @@
 							"custom": {
 								"mask": "(###) ###-####"
 							},
+							"initialize": {
+								"mode": "self"
+							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
 								"label": "pages.driver-application.home-phone"
@@ -340,6 +355,9 @@
 							},
 							"custom": {
 								"pattern": "/^.{0,40}$/i"
+							},
+							"initialize": {
+								"mode": "self"
 							},
 							"validation": {
 								"required": true,
@@ -360,6 +378,9 @@
 							"custom": {
 								"mask": "##/##/####",
 								"hint": "date.hint"
+							},
+							"initialize": {
+								"mode": "self"
 							},
 							"module": {
 								"minDate": "01/01/1920",
@@ -396,6 +417,9 @@
 							"custom": {
 								"pattern": "/^.{0,40}$/i"
 							},
+							"initialize": {
+								"mode": "self"
+							},
 							"validation": {
 								"required": true,
 								"texts": {
@@ -415,6 +439,9 @@
 								"options": "$:selectorCountryList",
 								"defaultText": "state-default"
 							},
+							"initialize": {
+								"mode": "self"
+							},
 							"validation": {
 								"required": true,
 								"texts": {
@@ -432,6 +459,9 @@
 							},
 							"custom": {
 								"pattern": "/^.{0,35}$/i"
+							},
+							"initialize": {
+								"mode": "self"
 							},
 							"validation": {
 								"required": true,
@@ -482,6 +512,9 @@
 									}
 								]
 							},
+							"initialize": {
+								"mode": "self"
+							},
 							"text": {
 								"label": "pages.driver-application.commercial-driver-license"
 							},
@@ -506,6 +539,9 @@
 									"MoreThan6Months": "pages.driver-application.cdl-experience.more-than-6-months"
 								},
 								"defaultText": "pages.driver-application.cdl-experience.default-value"
+							},
+							"initialize": {
+								"mode": "self"
 							},
 							"validation": {
 								"required": true,
@@ -539,6 +575,9 @@
 									}
 								]
 							},
+							"initialize": {
+								"mode": "self"
+							},
 							"text": {
 								"label": "pages.driver-application.drug-test"
 							},
@@ -554,6 +593,9 @@
 							},
 							"custom": {
 								"bodyHTML": "pages.driver-application.agree"
+							},
+							"initialize": {
+								"mode": "self"
 							},
 							"validation": {
 								"required": true
@@ -1100,6 +1142,9 @@
 					"custom": {
 						"bodyHTML": "pages.drivers-rights.agree"
 					},
+					"initialize": {
+						"mode": "self"
+					},
 					"validation": {
 						"required": true
 					}
@@ -1142,6 +1187,9 @@
 					"common": {
 						"type": "MultiBox",
 						"model": "driversLicenses"
+					},
+					"initialize": {
+						"mode": "self"
 					},
 					"text": {
 						"addButton": "pages.personal-information.add-another-license"
@@ -1290,6 +1338,9 @@
 					"custom": {
 						"mask": "###-##-####"
 					},
+					"initialize": {
+						"mode": "self"
+					},
 					"validation": {
 						"required": true,
 						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
@@ -1358,6 +1409,9 @@
 							}
 						]
 					},
+					"initialize": {
+						"mode": "self"
+					},
 					"text": {
 						"label": "pages.work-history.work-early-here"
 					}
@@ -1383,6 +1437,9 @@
 							}
 						]
 					},
+					"initialize": {
+						"mode": "self"
+					},
 					"text": {
 						"label": "pages.work-history.school"
 					}
@@ -1407,6 +1464,9 @@
 								"text": "no"
 							}
 						]
+					},
+					"initialize": {
+						"mode": "self"
 					},
 					"text": {
 						"label": "pages.work-history.fail-dot"
@@ -1434,6 +1494,9 @@
 					"custom": {
 						"title": "pages.work-history.employer-#",
 						"addIndex": true
+					},
+					"initialize": {
+						"mode": "self"
 					},
 					"text": {
 						"addButton": "pages.work-history.but-add-employer"
