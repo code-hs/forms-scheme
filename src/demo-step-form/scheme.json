@@ -685,10 +685,13 @@
 						"model": "email"
 					},
 					"initialize": {
-						"source-from": "STORAGE",
-						"source-key": "saved-page-model",
-						"page-key": "driver-application",
-						"field-model-name": "email"
+						"mode": "custom",
+						"custom": {
+							"source-from": "STORAGE",
+							"source-key": "saved-page-model",
+							"page-key": "driver-application",
+							"field-model-name": "email"
+						}
 					},
 					"text": {
 						"placeholder": "#name@company.com",
@@ -737,10 +740,13 @@
 										"model": "firstName"
 									},
 									"initialize": {
-										"source-from": "STORAGE",
-										"source-key": "saved-page-model",
-										"page-key": "driver-application",
-										"field-model-name": "firstName"
+										"mode": "custom",
+										"custom": {
+											"source-from": "STORAGE",
+											"source-key": "saved-page-model",
+											"page-key": "driver-application",
+											"field-model-name": "firstName"
+										}
 									},
 									"text": {
 										"label": "firstname"
@@ -757,10 +763,13 @@
 										"model": "lastName"
 									},
 									"initialize": {
-										"source-from": "STORAGE",
-										"source-key": "saved-page-model",
-										"page-key": "driver-application",
-										"field-model-name": "lastName"
+										"mode": "custom",
+										"custom": {
+											"source-from": "STORAGE",
+											"source-key": "saved-page-model",
+											"page-key": "driver-application",
+											"field-model-name": "lastName"
+										}
 									},
 									"text": {
 										"label": "lastname"
@@ -790,10 +799,13 @@
 								"model": "cellPhoneNumber"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "cellPhoneNumber"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "cellPhoneNumber"
+								}
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
@@ -811,10 +823,13 @@
 								"model": "homePhoneNumber"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "homePhoneNumber"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "homePhoneNumber"
+								}
 							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
@@ -832,10 +847,13 @@
 								"model": "address"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "address"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "address"
+								}
 							},
 							"text": {
 								"placeholder": "pages.driver-application.address-placeholder",
@@ -853,10 +871,13 @@
 								"model": "birthDate"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "birthDate"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "birthDate"
+								}
 							},
 							"custom": {
 								"mask": "##/##/####",
@@ -888,10 +909,13 @@
 								"model": "city"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "city"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "city"
+								}
 							},
 							"text": {
 								"label": "city"
@@ -908,10 +932,13 @@
 								"model": "state"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "state"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "state"
+								}
 							},
 							"custom": {
 								"options": "$:selectorCountryList"
@@ -931,10 +958,13 @@
 								"model": "zipCode"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "zipCode"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "zipCode"
+								}
 							},
 							"text": {
 								"label": "zip"
@@ -965,10 +995,13 @@
 								}
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "cdlHolder"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "cdlHolder"
+								}
 							},
 							"custom": {
 								"options": [
@@ -1005,10 +1038,13 @@
 								"model": "cdlExperience"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "cdlExperience"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "cdlExperience"
+								}
 							},
 							"attrs": {
 								"container": {
@@ -1040,10 +1076,13 @@
 								}
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "drugTest"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "drugTest"
+								}
 							},
 							"custom": {
 								"options": [
@@ -1073,10 +1112,13 @@
 								"model": "agree"
 							},
 							"initialize": {
-								"source-from": "STORAGE",
-								"source-key": "saved-page-model",
-								"page-key": "driver-application",
-								"field-model-name": "agree"
+								"mode": "custom",
+								"custom": {
+									"source-from": "STORAGE",
+									"source-key": "saved-page-model",
+									"page-key": "driver-application",
+									"field-model-name": "agree"
+								}
 							},
 							"custom": {
 								"bodyHTML": "pages.driver-application.agree"
