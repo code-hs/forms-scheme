@@ -3,7 +3,6 @@
 		"modules": [
 			{
 				"name": "datepicker",
-				"enable": true,
 				"config": {
 					"locales": {
 						"relations": {
@@ -67,7 +66,6 @@
 							"id": 17,
 							"pageId": 7,
 							"position": 7,
-							"enable": true,
 							"title": "menu.complete"
 						}
 					]
@@ -175,7 +173,6 @@
 			"components": [
 				{
 					"common": {
-						"enable": true,
 						"type": "TextContainer",
 						"class": {
 							"container": "--center"
@@ -190,9 +187,45 @@
 				},
 				{
 					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"bodyHTML": "#<div class='form-check form-switch'>\n  <input class='form-check-input' type='checkbox' role='switch' id='flexSwitchCheckDefault'>\n  <label class='form-check-label' for='flexSwitchCheckDefault'>Default switch checkbox input</label>\n</div>"
+					}
+				},
+
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"bodyHTML": "#<div class=\"dropdown\">\n  <a class=\"btn btn-secondary dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n    Dropdown link\n  </a>\n\n  <ul class=\"dropdown-menu\">\n    <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n    <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n    <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n  </ul>\n</div>"
+					}
+				},
+
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"bodyHTML": "#\n<div class=\"spinner-border text-primary\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-secondary\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-success\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-danger\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-warning\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-info\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-light\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-dark\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>"
+					}
+				},
+
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"bodyHTML": "#<input class=\"js-choice\" id=\"choices-text-remove-button\" type=\"text\" value=\"preset-1,preset-2\"          placeholder=\"Enter something\" />"
+					}
+				},
+
+				{
+					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-3 col-3-sm --col-middle"
+							"container": "col-3 col-5-sm --col-middle"
 						}
 					},
 					"text": {
