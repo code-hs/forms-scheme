@@ -217,7 +217,7 @@
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"bodyHTML": "#<input class=\"js-choice\" id=\"choices-text-remove-button\" type=\"text\" value=\"preset-1,preset-2\"          placeholder=\"Enter something\" />"
+						"bodyHTML": "#<input class='js-choice' id='choices-text-remove-button' type='text' value='preset-1,preset-2' placeholder='Enter something' />"
 					}
 				},
 
