@@ -555,7 +555,6 @@
 
 						{
 							"common": {
-								"enable": false,
 								"type": "Radiobuttons",
 								"model": "drugTest",
 								"class": {
@@ -588,8 +587,7 @@
 						{
 							"common": {
 								"type": "Checkbox",
-								"model": "agree",
-								"enable": false
+								"model": "agree"
 							},
 							"custom": {
 								"bodyHTML": "pages.driver-application.agree"
