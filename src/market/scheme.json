@@ -190,34 +190,7 @@
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"bodyHTML": "#<div class='form-check form-switch'>\n  <input class='form-check-input' type='checkbox' role='switch' id='flexSwitchCheckDefault'>\n  <label class='form-check-label' for='flexSwitchCheckDefault'>Default switch checkbox input</label>\n</div>"
-					}
-				},
-
-				{
-					"common": {
-						"type": "HtmlContainer"
-					},
-					"custom": {
-						"bodyHTML": "#<div class=\"dropdown\">\n  <a class=\"btn btn-secondary dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n    Dropdown link\n  </a>\n\n  <ul class=\"dropdown-menu\">\n    <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n    <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n    <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n  </ul>\n</div>"
-					}
-				},
-
-				{
-					"common": {
-						"type": "HtmlContainer"
-					},
-					"custom": {
-						"bodyHTML": "#<input class='js-choice' data-common-model='starter-choice' type='text' value='111' placeholder='Enter something' />"
-					}
-				},
-
-				{
-					"common": {
-						"type": "HtmlContainer"
-					},
-					"custom": {
-						"bodyHTML": "#\n<div class=\"spinner-border text-primary\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-secondary\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-success\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-danger\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-warning\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-info\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-light\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>\n<div class=\"spinner-border text-dark\" role=\"status\">\n  <span class=\"visually-hidden\">Loading...</span>\n</div>"
+						"bodyHTML": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox'> \n\tDefault switch checkbox input\n</label>\t\n</div>"
 					}
 				},
 
@@ -247,10 +220,8 @@
 										"type": "InputText",
 										"model": "firstName"
 									},
-									"custom": {
-										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
-									},
 									"validation": {
+										"required": true,
 										"texts": {
 											"required": "errors.required"
 										}
@@ -265,7 +236,7 @@
 										"type": "HtmlContainer"
 									},
 									"custom": {
-										"bodyHTML": "#<input class='js-choice' data-common-model='my-choice-in-multibox' type='text' value='preset-1, preset-2' placeholder='Enter something' />"
+										"bodyHTML": "#<input class='js-choice' data-common-model='my-choice-in-multibox' type='text' value='default value' placeholder='Enter something' />"
 									}
 								}
 							]
