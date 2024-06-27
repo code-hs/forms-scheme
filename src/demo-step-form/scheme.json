@@ -374,8 +374,7 @@
 								"model": "birthDate"
 							},
 							"custom": {
-								"mask": "##/##/####",
-								"hint": "date.hint"
+								"mask": "##/##/####"
 							},
 							"initialize": {
 								"mode": "self"
@@ -394,7 +393,8 @@
 							},
 							"text": {
 								"placeholder": "pages.driver-application.date.placeholder",
-								"label": "pages.driver-application.date.label"
+								"label": "pages.driver-application.date.label",
+								"hint": "date.hint"
 							}
 						}
 					]
@@ -878,12 +878,12 @@
 								}
 							},
 							"custom": {
-								"mask": "##/##/####",
-								"hint": "date.hint"
+								"mask": "##/##/####"
 							},
 							"text": {
 								"placeholder": "pages.driver-application.date.placeholder",
-								"label": "pages.driver-application.date.label"
+								"label": "pages.driver-application.date.label",
+								"hint": "date.hint"
 							},
 							"attrs": {
 								"element": {
@@ -1297,8 +1297,7 @@
 										"model": "expirationDate"
 									},
 									"custom": {
-										"mask": "##/##/####",
-										"hint": "date.hint"
+										"mask": "##/##/####"
 									},
 									"module": {
 										"minDate": "01/01/1920",
@@ -1314,7 +1313,8 @@
 									},
 									"text": {
 										"placeholder": "pages.personal-information.expiration-date.placeholder",
-										"label": "pages.personal-information.expiration-date.label"
+										"label": "pages.personal-information.expiration-date.label",
+										"hint": "date.hint"
 									}
 								},
 								{
@@ -1605,7 +1605,6 @@
 									},
 									"custom": {
 										"mask": "##/##/####",
-										"hint": "date.hint",
 										"workTogether": {
 											"selfIdentify": "START",
 											"purposeModel": "endDate",
@@ -1625,7 +1624,8 @@
 									},
 									"text": {
 										"placeholder": "pages.work-history.start-date.placeholder",
-										"label": "pages.work-history.start-date.label"
+										"label": "pages.work-history.start-date.label",
+										"hint": "date.hint"
 									}
 								},
 								{
@@ -1635,7 +1635,6 @@
 									},
 									"custom": {
 										"mask": "##/##/####",
-										"hint": "date.hint",
 										"workTogether": {
 											"selfIdentify": "END",
 											"purposeModel": "startDate",
@@ -1655,7 +1654,8 @@
 									},
 									"text": {
 										"placeholder": "pages.work-history.end-date.placeholder",
-										"label": "pages.work-history.end-date.label"
+										"label": "pages.work-history.end-date.label",
+										"hint": "date.hint"
 									}
 								}
 							]
