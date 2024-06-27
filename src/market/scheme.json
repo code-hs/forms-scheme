@@ -185,12 +185,13 @@
 						"value": "#text title"
 					}
 				},
+
 				{
 					"common": {
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"bodyHTML": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox'> \n\tDefault switch checkbox input\n</label>\t\n</div>"
+						"bodyHTML": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox-main'> \n\t checkbox 11 \n</label>\t\n</div>"
 					}
 				},
 
@@ -211,10 +212,19 @@
 							"common": {
 								"type": "LayoutContainer",
 								"class": {
-									"container": "g-2-cols"
+									"container": "g-3-cols"
 								}
 							},
 							"components": [
+								{
+									"common": {
+										"type": "HtmlContainer"
+									},
+									"custom": {
+										"bodyHTML": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox'> \n\t checkbox \n</label>\t\n</div>"
+									}
+								},
+
 								{
 									"common": {
 										"type": "InputText",
@@ -236,7 +246,7 @@
 										"type": "HtmlContainer"
 									},
 									"custom": {
-										"bodyHTML": "#<input class='js-choice' data-common-model='my-choice-in-multibox' type='text' value='default value' placeholder='Enter something' />"
+										"bodyHTML": "#<input class='js-choice' data-common-model='my-choice-in-multibox' type='text' value='default value' placeholder='Enter something' /> <script> console.log('123') </script>"
 									}
 								}
 							]
