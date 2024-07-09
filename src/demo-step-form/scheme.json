@@ -2032,9 +2032,11 @@
 							"element": "--center"
 						}
 					},
-					"custom": {
-						"src": "/content/img/truck.png",
-						"alt": "truck icon"
+					"attrs": {
+						"element": {
+							"src": "/content/img/truck.png",
+							"alt": "truck icon"
+						}
 					}
 				},
 
