@@ -1801,7 +1801,6 @@
 								"model": "description"
 							},
 							"custom": {
-								"rows": 5,
 								"pattern": "/^.{0,320}$/i"
 							},
 							"text": {
@@ -1811,6 +1810,11 @@
 								"required": true,
 								"texts": {
 									"required": "errors.required"
+								}
+							},
+							"attrs": {
+								"element": {
+									"rows": 5
 								}
 							}
 						},
