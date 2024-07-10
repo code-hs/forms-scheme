@@ -256,11 +256,11 @@
 										"type": "InputText",
 										"model": "firstName"
 									},
-									"custom": {
-										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
-									},
 									"initialize": {
 										"mode": "self"
+									},
+									"restrict": {
+										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
 									"validation": {
 										"required": true,
@@ -277,7 +277,7 @@
 										"type": "InputText",
 										"model": "lastName"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
 									},
 									"initialize": {
@@ -311,11 +311,11 @@
 								"type": "InputText",
 								"model": "cellPhoneNumber"
 							},
-							"custom": {
-								"mask": "(###) ###-####"
-							},
 							"initialize": {
 								"mode": "self"
+							},
+							"restrict": {
+								"mask": "(###) ###-####"
 							},
 							"validation": {
 								"required": true,
@@ -335,7 +335,7 @@
 								"type": "InputText",
 								"model": "homePhoneNumber"
 							},
-							"custom": {
+							"restrict": {
 								"mask": "(###) ###-####"
 							},
 							"initialize": {
@@ -351,11 +351,11 @@
 								"type": "InputText",
 								"model": "address"
 							},
-							"custom": {
-								"pattern": "/^.{0,40}$/i"
-							},
 							"initialize": {
 								"mode": "self"
+							},
+							"restrict": {
+								"pattern": "/^.{0,40}$/i"
 							},
 							"validation": {
 								"required": true,
@@ -373,15 +373,15 @@
 								"type": "InputDate",
 								"model": "birthDate"
 							},
-							"custom": {
-								"mask": "##/##/####"
-							},
 							"initialize": {
 								"mode": "self"
 							},
 							"module": {
 								"minDate": "01/01/1920",
 								"maxDate": "01/01/2005"
+							},
+							"restrict": {
+								"mask": "##/##/####"
 							},
 							"validation": {
 								"required": true,
@@ -412,11 +412,11 @@
 								"type": "InputText",
 								"model": "city"
 							},
-							"custom": {
-								"pattern": "/^.{0,40}$/i"
-							},
 							"initialize": {
 								"mode": "self"
+							},
+							"restrict": {
+								"pattern": "/^.{0,40}$/i"
 							},
 							"validation": {
 								"required": true,
@@ -455,11 +455,11 @@
 								"type": "InputText",
 								"model": "zipCode"
 							},
-							"custom": {
-								"pattern": "/^.{0,35}$/i"
-							},
 							"initialize": {
 								"mode": "self"
+							},
+							"restrict": {
+								"pattern": "/^.{0,35}$/i"
 							},
 							"validation": {
 								"required": true,
@@ -877,7 +877,7 @@
 									"field-model-name": "birthDate"
 								}
 							},
-							"custom": {
+							"restrict": {
 								"mask": "##/##/####"
 							},
 							"text": {
@@ -1267,7 +1267,7 @@
 										"type": "InputText",
 										"model": "number"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^.{0,20}$/"
 									},
 									"validation": {
@@ -1296,12 +1296,12 @@
 										"type": "InputDate",
 										"model": "expirationDate"
 									},
-									"custom": {
-										"mask": "##/##/####"
-									},
 									"module": {
 										"minDate": "01/01/1920",
 										"maxDate": "01/01/2080"
+									},
+									"restrict": {
+										"mask": "##/##/####"
 									},
 									"validation": {
 										"required": true,
@@ -1375,11 +1375,11 @@
 							"container": "col-9 col-8-sm --col-middle"
 						}
 					},
-					"custom": {
-						"mask": "###-##-####"
-					},
 					"initialize": {
 						"mode": "self"
+					},
+					"restrict": {
+						"mask": "###-##-####"
 					},
 					"validation": {
 						"required": true,
@@ -1555,7 +1555,7 @@
 										"type": "InputText",
 										"model": "companyName"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^.{0,99}$/i"
 									},
 									"validation": {
@@ -1574,7 +1574,7 @@
 										"type": "InputText",
 										"model": "jobTitle"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^.{0,40}$/i"
 									},
 									"validation": {
@@ -1604,7 +1604,6 @@
 										"model": "startDate"
 									},
 									"custom": {
-										"mask": "##/##/####",
 										"workTogether": {
 											"selfIdentify": "START",
 											"purposeModel": "endDate",
@@ -1613,6 +1612,9 @@
 									},
 									"module": {
 										"minDate": "01/01/1920"
+									},
+									"restrict": {
+										"mask": "##/##/####"
 									},
 									"validation": {
 										"required": true,
@@ -1634,7 +1636,6 @@
 										"model": "endDate"
 									},
 									"custom": {
-										"mask": "##/##/####",
 										"workTogether": {
 											"selfIdentify": "END",
 											"purposeModel": "startDate",
@@ -1643,6 +1644,9 @@
 									},
 									"module": {
 										"minDate": "01/01/1920"
+									},
+									"restrict": {
+										"mask": "##/##/####"
 									},
 									"validation": {
 										"required": true,
@@ -1674,7 +1678,7 @@
 										"type": "InputText",
 										"model": "city"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^.{0,40}$/i"
 									},
 									"validation": {
@@ -1711,7 +1715,7 @@
 										"type": "InputText",
 										"model": "zipCode"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^.{0,35}$/i"
 									},
 									"validation": {
@@ -1740,7 +1744,7 @@
 										"type": "InputText",
 										"model": "address_1"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^.{0,40}$/i"
 									},
 									"validation": {
@@ -1759,7 +1763,7 @@
 										"type": "InputText",
 										"model": "address_2"
 									},
-									"custom": {
+									"restrict": {
 										"pattern": "/^.{0,40}$/i"
 									},
 									"validation": {
@@ -1780,12 +1784,12 @@
 								"type": "InputText",
 								"model": "phoneNumber"
 							},
-							"custom": {
-								"mask": "(###) ###-####"
-							},
 							"text": {
 								"placeholder": "#(555) 555-5555",
 								"label": "phone"
+							},
+							"restrict": {
+								"mask": "(###) ###-####"
 							},
 							"validation": {
 								"required": true,
@@ -1800,11 +1804,11 @@
 								"type": "Textarea",
 								"model": "description"
 							},
-							"custom": {
-								"pattern": "/^.{0,320}$/i"
-							},
 							"text": {
 								"label": "description"
+							},
+							"restrict": {
+								"pattern": "/^.{0,320}$/i"
 							},
 							"validation": {
 								"required": true,
