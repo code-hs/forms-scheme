@@ -47,7 +47,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -130,7 +130,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-3 col-5-sm --col-middle"
+							"container": "col-3 col-5-sm m-auto"
 						}
 					},
 					"text": {

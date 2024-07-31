@@ -188,7 +188,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -478,7 +478,7 @@
 					"common": {
 						"type": "LayoutContainer",
 						"class": {
-							"container": "col-7 col-9-sm --col-middle"
+							"container": "col-7 col-9-sm m-auto"
 						}
 					},
 					"components": [
@@ -606,7 +606,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm --col-middle"
+							"container": "col-5 col-5-sm m-auto"
 						}
 					},
 					"text": {
@@ -625,7 +625,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -647,7 +647,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm --col-middle"
+							"container": "col-5 col-5-sm m-auto"
 						}
 					},
 					"text": {
@@ -666,7 +666,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -980,7 +980,7 @@
 					"common": {
 						"type": "LayoutContainer",
 						"class": {
-							"container": "col-7 col-9-sm --col-middle"
+							"container": "col-7 col-9-sm m-auto"
 						}
 					},
 					"components": [
@@ -1134,7 +1134,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm --col-middle"
+							"container": "col-5 col-5-sm m-auto"
 						}
 					},
 					"text": {
@@ -1153,7 +1153,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -1176,7 +1176,7 @@
 						"type": "Checkbox",
 						"model": "agree",
 						"class": {
-							"container": "--text-center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -1194,7 +1194,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm --col-middle"
+							"container": "col-5 col-5-sm m-auto"
 						}
 					},
 					"text": {
@@ -1213,7 +1213,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -1348,7 +1348,7 @@
 								"type": "Checkbox",
 								"model": "currentLicense",
 								"class": {
-									"container": "col-6 --col-middle",
+									"container": "col-6 m-auto",
 									"element": "checkbox-only-one-active"
 								}
 							},
@@ -1372,7 +1372,7 @@
 						"type": "InputText",
 						"model": "socialSecurityNumber",
 						"class": {
-							"container": "col-9 col-8-sm --col-middle"
+							"container": "col-9 col-8-sm m-auto"
 						}
 					},
 					"initialize": {
@@ -1399,7 +1399,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm --col-middle"
+							"container": "col-5 col-5-sm m-auto"
 						}
 					},
 					"text": {
@@ -1418,7 +1418,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -1433,7 +1433,7 @@
 						"type": "Radiobuttons",
 						"model": "hasBeenCreDriver",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm m-auto"
 						}
 					},
 					"custom": {
@@ -1461,7 +1461,7 @@
 						"type": "Radiobuttons",
 						"model": "hasTruckDrivingSchool",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm m-auto"
 						}
 					},
 					"custom": {
@@ -1489,7 +1489,7 @@
 						"type": "Radiobuttons",
 						"model": "hasFailedDrugScreen",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
+							"container": "--radio-space-evenly col-9 col-10-sm m-auto"
 						}
 					},
 					"custom": {
@@ -1516,7 +1516,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -1857,7 +1857,7 @@
 								"type": "Radiobuttons",
 								"model": "isDrivingJob",
 								"class": {
-									"container": "--radio-space-evenly col-9 col-10-sm --col-middle"
+									"container": "--radio-space-evenly col-9 col-10-sm m-auto"
 								}
 							},
 							"custom": {
@@ -1889,7 +1889,7 @@
 							"common": {
 								"type": "LayoutContainer",
 								"class": {
-									"container": "col-9 col-10-sm --col-middle"
+									"container": "col-9 col-10-sm m-auto"
 								}
 							},
 
@@ -1991,7 +1991,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm --col-middle"
+							"container": "col-5 col-5-sm m-auto"
 						}
 					},
 					"text": {
@@ -2010,7 +2010,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
@@ -2037,7 +2037,7 @@
 						"type": "ImageContainer",
 						"class": {
 							"container": "flex",
-							"element": "--center"
+							"element": "m-auto"
 						}
 					},
 					"attrs": {
@@ -2071,7 +2071,7 @@
 					"common": {
 						"type": "TextContainer",
 						"class": {
-							"container": "--center"
+							"container": "t-center"
 						}
 					},
 					"custom": {
