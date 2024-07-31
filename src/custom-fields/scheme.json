@@ -130,7 +130,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-3 col-5-sm m-auto"
+							"container": "col-3 col-5-sm m-middle"
 						}
 					},
 					"text": {

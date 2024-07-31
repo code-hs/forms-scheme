@@ -478,7 +478,7 @@
 					"common": {
 						"type": "LayoutContainer",
 						"class": {
-							"container": "col-7 col-9-sm m-auto"
+							"container": "col-7 col-9-sm m-middle"
 						}
 					},
 					"components": [
@@ -606,7 +606,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm m-auto"
+							"container": "col-5 col-5-sm m-middle"
 						}
 					},
 					"text": {
@@ -647,7 +647,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm m-auto"
+							"container": "col-5 col-5-sm m-middle"
 						}
 					},
 					"text": {
@@ -980,7 +980,7 @@
 					"common": {
 						"type": "LayoutContainer",
 						"class": {
-							"container": "col-7 col-9-sm m-auto"
+							"container": "col-7 col-9-sm m-middle"
 						}
 					},
 					"components": [
@@ -1134,7 +1134,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm m-auto"
+							"container": "col-5 col-5-sm m-middle"
 						}
 					},
 					"text": {
@@ -1194,7 +1194,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm m-auto"
+							"container": "col-5 col-5-sm m-middle"
 						}
 					},
 					"text": {
@@ -1348,7 +1348,7 @@
 								"type": "Checkbox",
 								"model": "currentLicense",
 								"class": {
-									"container": "col-6 m-auto",
+									"container": "col-6 m-middle",
 									"element": "checkbox-only-one-active"
 								}
 							},
@@ -1372,7 +1372,7 @@
 						"type": "InputText",
 						"model": "socialSecurityNumber",
 						"class": {
-							"container": "col-9 col-8-sm m-auto"
+							"container": "col-9 col-8-sm m-middle"
 						}
 					},
 					"initialize": {
@@ -1399,7 +1399,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm m-auto"
+							"container": "col-5 col-5-sm m-middle"
 						}
 					},
 					"text": {
@@ -1433,7 +1433,7 @@
 						"type": "Radiobuttons",
 						"model": "hasBeenCreDriver",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm m-auto"
+							"container": "--radio-space-evenly col-9 col-10-sm m-middle"
 						}
 					},
 					"custom": {
@@ -1461,7 +1461,7 @@
 						"type": "Radiobuttons",
 						"model": "hasTruckDrivingSchool",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm m-auto"
+							"container": "--radio-space-evenly col-9 col-10-sm m-middle"
 						}
 					},
 					"custom": {
@@ -1489,7 +1489,7 @@
 						"type": "Radiobuttons",
 						"model": "hasFailedDrugScreen",
 						"class": {
-							"container": "--radio-space-evenly col-9 col-10-sm m-auto"
+							"container": "--radio-space-evenly col-9 col-10-sm m-middle"
 						}
 					},
 					"custom": {
@@ -1857,7 +1857,7 @@
 								"type": "Radiobuttons",
 								"model": "isDrivingJob",
 								"class": {
-									"container": "--radio-space-evenly col-9 col-10-sm m-auto"
+									"container": "--radio-space-evenly col-9 col-10-sm m-middle"
 								}
 							},
 							"custom": {
@@ -1889,7 +1889,7 @@
 							"common": {
 								"type": "LayoutContainer",
 								"class": {
-									"container": "col-9 col-10-sm m-auto"
+									"container": "col-9 col-10-sm m-middle"
 								}
 							},
 
@@ -1991,7 +1991,7 @@
 					"common": {
 						"type": "ButtonSubmit",
 						"class": {
-							"container": "col-5 col-5-sm m-auto"
+							"container": "col-5 col-5-sm m-middle"
 						}
 					},
 					"text": {
@@ -2037,7 +2037,7 @@
 						"type": "ImageContainer",
 						"class": {
 							"container": "flex",
-							"element": "m-auto"
+							"element": "m-middle"
 						}
 					},
 					"attrs": {
