@@ -40,7 +40,7 @@
 	"pages": [
 		{
 			"id": 1,
-			"key": "main",
+			"key": "custom-fields",
 			"description": "demo custom fields",
 			"components": [
 				{
