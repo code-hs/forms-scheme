@@ -41,7 +41,7 @@
 		{
 			"id": 1,
 			"key": "main",
-			"description": "Conditional Offer of Employment",
+			"description": "demo custom fields",
 			"components": [
 				{
 					"common": {
@@ -135,6 +135,48 @@
 					},
 					"text": {
 						"value": "continue"
+					}
+				}
+			]
+		},
+		{
+			"id": 2,
+			"key": "elements-in-html",
+			"description": "elements in html",
+			"components": [
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"bodyHTML": "#<span> test text 1 </span> renderElement(datepickerBirth) <span> test text 2 </span>"
+					}
+				},
+				{
+					"common": {
+						"type": "InputDate",
+						"model": "expirationDate",
+						"renderInHTML": true
+					},
+					"module": {
+						"minDate": "01/01/1920",
+						"maxDate": "01/01/2080"
+					},
+					"restrict": {
+						"mask": "##/##/####"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required",
+							"range": "pages.personal-information.expiration-date.range",
+							"notValid": "date.not-valid"
+						}
+					},
+					"text": {
+						"placeholder": "pages.personal-information.expiration-date.placeholder",
+						"label": "pages.personal-information.expiration-date.label",
+						"hint": "date.hint"
 					}
 				}
 			]
