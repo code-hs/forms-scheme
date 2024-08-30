@@ -63,6 +63,7 @@
 		"continue": "Continue",
 
 		"pages": {},
+
 		"date": {
 			"hint": "format: mm/dd/yyyy",
 			"range-out": "The date falls outside of the acceptable range.",
@@ -74,6 +75,12 @@
 				}
 			}
 		},
+		"birthDate": {
+			"range": "The date falls outside of the acceptable range. From 01/01/1920 to 01/01/2005",
+			"placeholder": "example: 01/25/1963",
+			"label": "Date of birth"
+		},
+
 		"validation": {
 			"pattern": {}
 		},

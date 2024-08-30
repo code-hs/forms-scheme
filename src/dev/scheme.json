@@ -139,6 +139,7 @@
 				}
 			]
 		},
+
 		{
 			"id": 2,
 			"key": "elements-in-html",
@@ -155,12 +156,15 @@
 				{
 					"common": {
 						"type": "InputDate",
-						"model": "expirationDate",
-						"renderInHTML": true
+						"model": "birthDate",
+						"renderInHTMLTag": "datepickerBirth"
+					},
+					"initialize": {
+						"mode": "self"
 					},
 					"module": {
 						"minDate": "01/01/1920",
-						"maxDate": "01/01/2080"
+						"maxDate": "01/01/2005"
 					},
 					"restrict": {
 						"mask": "##/##/####"
@@ -169,13 +173,13 @@
 						"required": true,
 						"texts": {
 							"required": "errors.required",
-							"range": "pages.personal-information.expiration-date.range",
+							"range": "birthDate.range",
 							"notValid": "date.not-valid"
 						}
 					},
 					"text": {
-						"placeholder": "pages.personal-information.expiration-date.placeholder",
-						"label": "pages.personal-information.expiration-date.label",
+						"placeholder": "birthDate.placeholder",
+						"label": "birthDate.label",
 						"hint": "date.hint"
 					}
 				}
