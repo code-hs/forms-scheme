@@ -62,7 +62,11 @@
 		"back": "Back",
 		"continue": "Continue",
 
-		"pages": {},
+		"pages": {
+			"dev": {
+				"html-content-1": "<span> test text 1 en </span> renderElement(datepickerBirth) <span> test text 2 en </span> renderElement(datepickerBirth2) <span> test text 3 en </span>"
+			}
+		},
 
 		"date": {
 			"hint": "format: mm/dd/yyyy",
@@ -150,7 +154,20 @@
 		"help": "Aide",
 		"next": "Suivant",
 		"back": "Retour",
-		"continue": "Continuer"
+		"continue": "Continuer",
+		"pages": {
+			"dev": {
+				"html-content-1": "<span> test text 1 fr </span> renderElement(datepickerBirth) <span> test text 2 fr </span> renderElement(datepickerBirth2) <span> test text 3 fr </span>"
+			}
+		},
+		"birthDate": {
+			"range": "La date est en dehors de la plage acceptable. Du 01/01/1920 au 01/01/2005",
+			"placeholder": "exemple: 25/01/1963",
+			"label": "Date de naissance"
+		},
+		"date": {
+			"hint": "format: mm/dd/yyyy"
+		}
 	},
 
 	"de": {
