@@ -1,0 +1,5 @@
+{
+	"": "<span> test text 1 (all langs) </span> renderElement(datepickerBirth) <span> test text 2 (all langs) </span> renderElement(datepickerBirth2) <span> test text 3 (all langs) </span>",
+	"fr": "<span> test text 1 (fr) </span> renderElement(datepickerBirth) <span> test text 2 (fr) </span> renderElement(datepickerBirth2) <span> test text 3 (fr) </span>",
+	"en": "<span> test text 1 (en) </span> renderElement(datepickerBirth) <span> test text 2 (en) </span> renderElement(datepickerBirth2) <span> test text 3 (en) </span>"
+}
