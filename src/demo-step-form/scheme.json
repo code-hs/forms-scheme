@@ -1168,7 +1168,7 @@
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"htmlFileName": "fmcsa-notification-of-drivers-rights"
+						"downloadFileName": "fmcsa-notification-of-drivers-rights"
 					}
 				},
 				{
@@ -2087,7 +2087,7 @@
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"htmlFileName": "terms-and-conditions"
+						"downloadFileName": "terms-and-conditions"
 					}
 				}
 			]
