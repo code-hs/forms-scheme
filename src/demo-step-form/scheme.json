@@ -640,7 +640,7 @@
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"bodyHTML": "pages.offer.ul-content"
+						"htmlContent": "pages.offer.ul-content"
 					}
 				},
 				{

@@ -63,7 +63,7 @@
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"bodyHTML": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox-main'> \n\t checkbox 11 \n</label>\t\n</div>"
+						"htmlContent": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox-main'> \n\t checkbox 11 \n</label>\t\n</div>"
 					}
 				},
 
@@ -93,7 +93,7 @@
 										"type": "HtmlContainer"
 									},
 									"custom": {
-										"bodyHTML": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox'> \n\t checkbox \n</label>\t\n</div>"
+										"htmlContent": "#<div class='form-check form-switch'> \n<label class='form-check-label'>\n\t<input class='form-check-input' type='checkbox' role='switch' data-common-model='my-custom-checkbox'> \n\t checkbox \n</label>\t\n</div>"
 									}
 								},
 
@@ -118,7 +118,7 @@
 										"type": "HtmlContainer"
 									},
 									"custom": {
-										"bodyHTML": "#<input class='js-choice' data-common-model='my-choice-in-multibox' type='text' value='default value' placeholder='Enter something' /> <script> console.log('123') </script>"
+										"htmlContent": "#<input class='js-choice' data-common-model='my-choice-in-multibox' type='text' value='default value' placeholder='Enter something' />"
 									}
 								}
 							]
