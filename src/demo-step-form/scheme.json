@@ -590,7 +590,7 @@
 								"model": "agree"
 							},
 							"custom": {
-								"bodyHTML": "pages.driver-application.agree"
+								"htmlContent": "pages.driver-application.agree"
 							},
 							"initialize": {
 								"mode": "self"
@@ -1119,7 +1119,7 @@
 								}
 							},
 							"custom": {
-								"bodyHTML": "pages.driver-application.agree"
+								"htmlContent": "pages.driver-application.agree"
 							},
 							"attrs": {
 								"element": {
@@ -1180,7 +1180,7 @@
 						}
 					},
 					"custom": {
-						"bodyHTML": "pages.drivers-rights.agree"
+						"htmlContent": "pages.drivers-rights.agree"
 					},
 					"initialize": {
 						"mode": "self"
@@ -1353,7 +1353,7 @@
 								}
 							},
 							"custom": {
-								"bodyHTML": "pages.personal-information.is-current-license",
+								"htmlContent": "pages.personal-information.is-current-license",
 								"actions": {
 									"check": {
 										"action": {
