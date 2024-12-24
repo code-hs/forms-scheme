@@ -18,6 +18,26 @@
 						"todayHighlight": true
 					}
 				}
+			},
+
+			{
+				"name": "menu",
+				"config": {
+					"list": [
+						{
+							"id": 1,
+							"pageId": 1,
+							"position": 1,
+							"title": "#custom-fields"
+						},
+						{
+							"id": 2,
+							"pageId": 2,
+							"position": 2,
+							"title": "#elements-in-html"
+						}
+					]
+				}
 			}
 		],
 		"apiBaseUrl": "http://localhost:8081/api/",
@@ -147,18 +167,9 @@
 			"components": [
 				{
 					"common": {
-						"enable": false,
-						"type": "HtmlContainer"
-					},
-					"custom": {
-						"bodyHTML": "pages.dev.html-content-1"
-					}
-				},
-				{
-					"common": {
 						"type": "InputDate",
 						"model": "birthDate",
-						"renderInHTMLTag": "datepickerBirth"
+						"renderInHTMLTag": "datepicker-birth"
 					},
 					"initialize": {
 						"mode": "self"
@@ -189,7 +200,7 @@
 					"common": {
 						"type": "InputDate",
 						"model": "birthDate2",
-						"renderInHTMLTag": "datepickerBirth2"
+						"renderInHTMLTag": "datepicker-birth2"
 					},
 					"initialize": {
 						"mode": "self"
@@ -215,13 +226,22 @@
 						"hint": "date.hint"
 					}
 				},
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"htmlContent": "pages.dev.html-content-1"
+					}
+				},
 
 				{
 					"common": {
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"htmlFileName": "render-element-ex-1"
+						"downloadFileName": "render-element-ex-2",
+						"htmlContent22": "#<div class=\"login-form\">\n\t\t\t<div class=\"field\">\n\t\t\t\t<span class=\"label\">datepicker Birth </span>\n\t\t\t\t<div class=\"input\"> <div data-render-tag=\"datepicker-birth\"> </div> </div>\n\t\t\t</div>\n\n\t\t\t<div class=\"field\">\n\t\t\t\t<span class=\"label\">datepicker Birth 2</span>\n\t\t\t\t<div class=\"input\"> <div data-render-tag=\"datepicker-birth2\"> </div> </div>\n\t\t\t</div>\n\t\t</div>"
 					}
 				},
 
