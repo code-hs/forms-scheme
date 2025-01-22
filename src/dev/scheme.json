@@ -226,14 +226,6 @@
 						"hint": "date.hint"
 					}
 				},
-				{
-					"common": {
-						"type": "HtmlContainer"
-					},
-					"custom": {
-						"htmlContent": "pages.dev.html-content-1"
-					}
-				},
 
 				{
 					"common": {
