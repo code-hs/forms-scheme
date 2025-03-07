@@ -249,6 +249,219 @@
 					}
 				}
 			]
+		},
+		{
+			"id": 3,
+			"key": "validation",
+			"components": [
+				{
+					"common": {
+						"type": "InputText",
+						"model": "firstName"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"restrict": {
+						"pattern": "/^[a-zа-я_ ]{0,28}$/i"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "firstname"
+					}
+				},
+				{
+					"common": {
+						"type": "InputText",
+						"model": "lastName"
+					},
+					"restrict": {
+						"pattern": "/^[a-zа-я_ ]{0,28}$/i"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "lastname"
+					}
+				},
+				{
+					"common": {
+						"type": "Checkbox",
+						"model": "agree",
+						"class": {
+							"container": "t-center"
+						}
+					},
+					"custom": {
+						"htmlContent": "#agree"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"validation": {
+						"required": true
+					}
+				},
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "drugTest",
+						"class": {
+							"container": "--radio-space-evenly"
+						}
+					},
+					"custom": {
+						"options": [
+							{
+								"value": "yes",
+								"text": "yes"
+							},
+							{
+								"value": "no",
+								"text": "no"
+							}
+						]
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"text": {
+						"label": "#drug-test"
+					},
+					"validation": {
+						"required": true
+					}
+				},
+
+				{
+					"common": {
+						"type": "InputDate",
+						"model": "birthDate"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"module": {
+						"minDate": "01/01/1920",
+						"maxDate": "01/01/2005"
+					},
+					"restrict": {
+						"mask": "##/##/####"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required",
+							"range": "birthDate.range",
+							"notValid": "date.not-valid"
+						}
+					},
+					"text": {
+						"placeholder": "birthDate.placeholder",
+						"label": "birthDate.label",
+						"hint": "date.hint"
+					}
+				},
+
+				{
+					"common": {
+						"type": "LayoutContainer",
+						"class": {
+							"container": "g-2-cols"
+						}
+					},
+					"components": [
+						{
+							"common": {
+								"type": "InputDate",
+								"model": "startDate"
+							},
+							"custom": {
+								"workTogether": {
+									"selfIdentify": "START",
+									"purposeModel": "endDate",
+									"validateText": "date.range.error.start"
+								}
+							},
+							"module": {
+								"minDate": "01/01/1920"
+							},
+							"restrict": {
+								"mask": "##/##/####"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "errors.required",
+									"range": "date.range-out",
+									"notValid": "date.not-valid"
+								}
+							},
+							"text": {
+								"placeholder": "#example: 12/25/2000",
+								"label": "#start-date.label",
+								"hint": "date.hint"
+							}
+						},
+						{
+							"common": {
+								"type": "InputDate",
+								"model": "endDate"
+							},
+							"custom": {
+								"workTogether": {
+									"selfIdentify": "END",
+									"purposeModel": "startDate",
+									"validateText": "date.range.error.end"
+								}
+							},
+							"module": {
+								"minDate": "01/01/1920"
+							},
+							"restrict": {
+								"mask": "##/##/####"
+							},
+							"validation": {
+								"required": true,
+								"texts": {
+									"required": "errors.required",
+									"range": "date.range-out",
+									"notValid": "date.not-valid"
+								}
+							},
+							"text": {
+								"placeholder": "#example: 12/25/2000",
+								"label": "#end-date.label",
+								"hint": "date.hint"
+							}
+						}
+					]
+				},
+
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm m-middle"
+						}
+					},
+					"text": {
+						"value": "submit"
+					}
+				}
+			]
 		}
 	]
 }
