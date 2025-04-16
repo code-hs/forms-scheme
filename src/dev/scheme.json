@@ -452,6 +452,77 @@
 
 				{
 					"common": {
+						"type": "Radiobuttons",
+						"model": "isDrivingJob",
+						"class": {
+							"container": "--radio-space-evenly col-9 col-10-sm m-middle"
+						}
+					},
+					"custom": {
+						"defaultValue": "yes",
+						"options": [
+							{
+								"value": "yes",
+								"text": "yes",
+								"action": {
+									"type": "SHOW_CONTAINER",
+									"nextSibling": 1
+								}
+							},
+							{
+								"value": "no",
+								"text": "no",
+								"action": {
+									"type": "HIDE_CONTAINER",
+									"nextSibling": 1
+								}
+							}
+						]
+					},
+					"text": {
+						"label": "pages.work-history.isDrivingJob"
+					}
+				},
+
+				{
+					"common": {
+						"type": "LayoutContainer",
+						"class": {
+							"container": "col-9 col-10-sm m-middle"
+						}
+					},
+
+					"components": [
+						{
+							"common": {
+								"type": "Selector",
+								"model": "typeOfEquipment"
+							},
+							"custom": {
+								"options": {
+									"StraightTruck": "pages.work-history.typeOfEquipment.StraightTruck",
+									"TractorAndSemiTrailers": "pages.work-history.typeOfEquipment.TractorAndSemiTrailers",
+									"TractorAndTwoTrailers": "pages.work-history.typeOfEquipment.TractorAndTwoTrailers",
+									"Other": "pages.work-history.typeOfEquipment.Other"
+								},
+								"defaultText": "pages.work-history.typeOfEquipment.default-value"
+							},
+							"validation": {
+								"required": true,
+								"requiredOnlyIfVisible": true,
+								"texts": {
+									"required": "errors.required"
+								}
+							},
+							"text": {
+								"label": "pages.work-history.typeOfEquipment.label"
+							}
+						}
+					]
+				},
+
+				{
+					"common": {
 						"type": "ButtonSubmit",
 						"class": {
 							"container": "col-5 col-5-sm m-middle"
