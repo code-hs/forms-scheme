@@ -232,8 +232,7 @@
 						"type": "HtmlContainer"
 					},
 					"custom": {
-						"downloadFileName": "render-element-ex-2",
-						"htmlContent22": "#<div class=\"login-form\">\n\t\t\t<div class=\"field\">\n\t\t\t\t<span class=\"label\">datepicker Birth </span>\n\t\t\t\t<div class=\"input\"> <div data-render-tag=\"datepicker-birth\"> </div> </div>\n\t\t\t</div>\n\n\t\t\t<div class=\"field\">\n\t\t\t\t<span class=\"label\">datepicker Birth 2</span>\n\t\t\t\t<div class=\"input\"> <div data-render-tag=\"datepicker-birth2\"> </div> </div>\n\t\t\t</div>\n\t\t</div>"
+						"downloadFileName": "render-element-ex-2"
 					}
 				},
 
