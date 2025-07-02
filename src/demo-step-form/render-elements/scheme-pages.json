@@ -1,0 +1,603 @@
+{
+	"pages-backup": [
+		{
+			"id": 21,
+			"key": "render-elements-form-1",
+			"components": [
+				{
+					"common": {
+						"type": "InputEmail",
+						"model": "email",
+						"renderInHTMLTag": "email-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"validation": {
+						"required": true,
+						"pattern": "/^[^\\s()<>@,;:\\/]+@\\w[\\w\\.-]+\\.[a-z]{2,}$/i",
+						"texts": {
+							"required": "errors.required",
+							"pattern": "validation.pattern.email"
+						}
+					},
+					"text": {
+						"placeholder": "#name@company.com",
+						"label": "email"
+					}
+				},
+
+				{
+					"common": {
+						"type": "InputText",
+						"model": "firstName",
+						"renderInHTMLTag": "firstName-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"restrict": {
+						"pattern": "/^[a-zа-я_ ]{0,28}$/i"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "firstname"
+					}
+				},
+				{
+					"common": {
+						"type": "InputText",
+						"model": "lastName",
+						"renderInHTMLTag": "lastName-tag"
+					},
+					"restrict": {
+						"pattern": "/^[a-zа-я_ ]{0,28}$/i"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "lastname"
+					}
+				},
+
+				{
+					"common": {
+						"type": "InputText",
+						"model": "cellPhoneNumber",
+						"renderInHTMLTag": "cellPhoneNumber-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"restrict": {
+						"mask": "(###) ###-####"
+					},
+					"validation": {
+						"required": true,
+						"pattern": "/^\\(\\d{3}\\) \\d{3}-\\d{4}$/",
+						"texts": {
+							"required": "errors.required",
+							"pattern": "validation.pattern.phone"
+						}
+					},
+					"text": {
+						"placeholder": "#(555) 555-5555",
+						"label": "pages.driver-application.cell-phone"
+					}
+				},
+				{
+					"common": {
+						"type": "InputText",
+						"model": "homePhoneNumber",
+						"renderInHTMLTag": "homePhoneNumber-tag"
+					},
+					"restrict": {
+						"mask": "(###) ###-####"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"text": {
+						"placeholder": "#(555) 555-5555",
+						"label": "pages.driver-application.home-phone"
+					}
+				},
+				{
+					"common": {
+						"type": "InputText",
+						"model": "address",
+						"renderInHTMLTag": "address-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"restrict": {
+						"pattern": "/^.{0,40}$/i"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"placeholder": "pages.driver-application.address-placeholder",
+						"label": "address"
+					}
+				},
+				{
+					"common": {
+						"type": "InputDate",
+						"model": "birthDate",
+						"renderInHTMLTag": "birthDate-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"module": {
+						"minDate": "01/01/1920",
+						"maxDate": "01/01/2005"
+					},
+					"restrict": {
+						"mask": "##/##/####"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required",
+							"range": "pages.driver-application.date.range",
+							"notValid": "date.not-valid"
+						}
+					},
+					"text": {
+						"placeholder": "pages.driver-application.date.placeholder",
+						"label": "pages.driver-application.date.label",
+						"hint": "date.hint"
+					}
+				},
+
+				{
+					"common": {
+						"type": "InputText",
+						"model": "city",
+						"renderInHTMLTag": "city-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"restrict": {
+						"pattern": "/^.{0,40}$/i"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "city"
+					}
+				},
+				{
+					"common": {
+						"type": "Selector",
+						"model": "state",
+						"renderInHTMLTag": "state-tag"
+					},
+					"custom": {
+						"options": "$:selectorCountryList",
+						"defaultText": "state-default"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "state"
+					}
+				},
+				{
+					"common": {
+						"type": "InputText",
+						"model": "zipCode",
+						"renderInHTMLTag": "zipCode-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"restrict": {
+						"pattern": "/^.{0,35}$/i"
+					},
+					"validation": {
+						"required": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "zip"
+					}
+				},
+
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "cdlHolder",
+						"renderInHTMLTag": "cdlHolder-tag",
+						"class": {
+							"container": "--radio-space-evenly"
+						}
+					},
+					"custom": {
+						"options": [
+							{
+								"value": "yes",
+								"text": "yes",
+								"action": {
+									"type": "SHOW_CONTAINER",
+									"container": ".js-show-by-cdl-holder"
+								}
+							},
+							{
+								"value": "no",
+								"text": "no",
+								"action": {
+									"type": "HIDE_CONTAINER",
+									"container": ".js-show-by-cdl-holder"
+								}
+							}
+						]
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"text": {
+						"label": "pages.driver-application.commercial-driver-license"
+					},
+					"validation": {
+						"required": true
+					}
+				},
+				{
+					"common": {
+						"type": "Selector",
+						"model": "cdlExperience",
+						"renderInHTMLTag": "cdlExperience-tag",
+						"class": {
+							"container": "js-show-by-cdl-holder"
+						}
+					},
+					"attrs": {
+						"container": {
+							"hidden": true
+						}
+					},
+					"custom": {
+						"options": {
+							"LessThan3Months": "pages.driver-application.cdl-experience.less-than-3-months",
+							"_4To6Months": "pages.driver-application.cdl-experience.4-to-6-months",
+							"MoreThan6Months": "pages.driver-application.cdl-experience.more-than-6-months"
+						},
+						"defaultText": "pages.driver-application.cdl-experience.default-value"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"validation": {
+						"required": true,
+						"requiredOnlyIfVisible": true,
+						"texts": {
+							"required": "errors.required"
+						}
+					},
+					"text": {
+						"label": "pages.driver-application.cdl-experience.label"
+					}
+				},
+
+				{
+					"common": {
+						"type": "Radiobuttons",
+						"model": "drugTest",
+						"renderInHTMLTag": "drugTest-tag",
+						"class": {
+							"container": "--radio-space-evenly"
+						}
+					},
+					"custom": {
+						"options": [
+							{
+								"value": "yes",
+								"text": "yes"
+							},
+							{
+								"value": "no",
+								"text": "no"
+							}
+						]
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"text": {
+						"label": "pages.driver-application.drug-test"
+					},
+					"validation": {
+						"required": true
+					}
+				},
+
+				{
+					"common": {
+						"type": "Checkbox",
+						"model": "agree",
+						"renderInHTMLTag": "agree-tag"
+					},
+					"custom": {
+						"htmlContent": "pages.driver-application.agree"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"validation": {
+						"required": true
+					}
+				},
+				{
+					"common": {
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm m-middle"
+						},
+						"renderInHTMLTag": "submit-tag"
+					},
+					"text": {
+						"value": "submit"
+					}
+				},
+
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"downloadFileName": "page-1"
+					}
+				}
+			]
+		},
+		{
+			"id": 22,
+			"key": "render-elements-form-2",
+			"components": [
+				{
+					"common": {
+						"type": "TextContainer",
+						"class": {
+							"container": "t-center"
+						}
+					},
+					"custom": {
+						"tag": "h2"
+					},
+					"text": {
+						"value": "pages.personal-information.title"
+					}
+				},
+
+				{
+					"common": {
+						"type": "MultiBox",
+						"model": "driversLicenses",
+						"renderInHTMLTag": "driversLicenses-tag"
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"text": {
+						"addButton": "pages.personal-information.add-another-license"
+					},
+					"components": [
+						{
+							"common": {
+								"type": "LayoutContainer",
+								"class": {
+									"container": "g-2-cols"
+								}
+							},
+							"components": [
+								{
+									"common": {
+										"type": "Selector",
+										"model": "licenseState"
+									},
+									"custom": {
+										"options": "$:selectorCountryList",
+										"defaultText": "pages.personal-information.select-state-default"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "errors.required"
+										}
+									},
+									"text": {
+										"label": "pages.personal-information.select-state-label"
+									}
+								},
+								{
+									"common": {
+										"type": "InputText",
+										"model": "number"
+									},
+									"restrict": {
+										"pattern": "/^.{0,20}$/"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "errors.required"
+										}
+									},
+									"text": {
+										"label": "pages.personal-information.license-number"
+									}
+								}
+							]
+						},
+
+						{
+							"common": {
+								"type": "LayoutContainer",
+								"class": {
+									"container": "g-2-cols"
+								}
+							},
+							"components": [
+								{
+									"common": {
+										"type": "InputDate",
+										"model": "expirationDate"
+									},
+									"module": {
+										"minDate": "01/01/1920",
+										"maxDate": "01/01/2080"
+									},
+									"restrict": {
+										"mask": "##/##/####"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "errors.required",
+											"range": "pages.personal-information.expiration-date.range",
+											"notValid": "date.not-valid"
+										}
+									},
+									"text": {
+										"placeholder": "pages.personal-information.expiration-date.placeholder",
+										"label": "pages.personal-information.expiration-date.label",
+										"hint": "date.hint"
+									}
+								},
+								{
+									"common": {
+										"type": "Selector",
+										"model": "licenseType"
+									},
+									"custom": {
+										"options": {
+											"State": "pages.personal-information.license-type.state",
+											"CDL": "pages.personal-information.license-type.cdl",
+											"CLP": "pages.personal-information.license-type.clp"
+										},
+										"defaultText": "pages.personal-information.license-type.default-value"
+									},
+									"validation": {
+										"required": true,
+										"texts": {
+											"required": "errors.required"
+										}
+									},
+									"text": {
+										"label": "pages.personal-information.license-type.label"
+									}
+								}
+							]
+						},
+
+						{
+							"common": {
+								"type": "Checkbox",
+								"model": "currentLicense",
+								"class": {
+									"container": "col-6 m-middle",
+									"element": "checkbox-only-one-active"
+								}
+							},
+							"custom": {
+								"htmlContent": "pages.personal-information.is-current-license",
+								"actions": {
+									"check": {
+										"action": {
+											"type": "UNCHECK_ANOTHERS",
+											"container": ".checkbox-only-one-active"
+										}
+									}
+								}
+							}
+						}
+					]
+				},
+
+				{
+					"common": {
+						"type": "InputText",
+						"model": "socialSecurityNumber",
+						"renderInHTMLTag": "socialSecurityNumber-tag",
+						"class": {
+							"container": "col-9 col-8-sm m-middle"
+						}
+					},
+					"initialize": {
+						"mode": "self"
+					},
+					"restrict": {
+						"mask": "###-##-####"
+					},
+					"validation": {
+						"required": true,
+						"pattern": "/^\\d{3}-\\d{2}-\\d{4}$/",
+						"texts": {
+							"required": "errors.required",
+							"pattern": "pages.personal-information.secur-number-pattern"
+						}
+					},
+					"text": {
+						"placeholder": "#123-45-6789",
+						"label": "pages.personal-information.secur-number"
+					}
+				},
+
+				{
+					"common": {
+						"renderInHTMLTag": "currentLicense-ButtonSubmit",
+						"type": "ButtonSubmit",
+						"class": {
+							"container": "col-5 col-5-sm m-middle"
+						}
+					},
+					"text": {
+						"value": "submit"
+					}
+				},
+
+				{
+					"common": {
+						"type": "HtmlContainer"
+					},
+					"custom": {
+						"downloadFileName": "page-2"
+					}
+				}
+			]
+		}
+	]
+}
