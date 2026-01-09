@@ -61,6 +61,13 @@
 		"next": "Next",
 		"back": "Back",
 		"continue": "Continue",
+		
+		
+		"send": "Send",
+		"state": "State",
+		"state-default": "Select Your state",
+		"zip": "Zip Code",
+		"description": "Description",
 
 		"menu": {
 			"driver-application": "Driver Application",
@@ -212,10 +219,20 @@
 		"errors": {
 			"required": "field is required"
 		},
-		"state": "State",
-		"state-default": "Select Your state",
-		"zip": "Zip Code",
-		"description": "Description"
+
+		"auth": {
+			"no-otp": "No OTP?",
+			"try-again": "Try again in",
+			"resend": "Resend OTP",
+			"enter-otp": "Enter the One-Time Password, we sent to your email",
+			"authorization": "Authorization",
+			"back-to-login": "back to login",
+			"errors": {
+				"code-is-incorrect": "The entered code is incorrect. Please try again.",
+				"server-connect": "Unable to connect to the server. Please try again later.",
+				"unexpected-error": "An unexpected error occurred. Please try again later."
+			}
+		}
 	},
 
 	"fr": {

@@ -2,8 +2,11 @@
 	"config": {
 		"modules": [
 			{
+				"enable": true,
 				"name": "auth",
-				"enable": false
+				"config": {
+					"method": "email-otp"
+				}
 			},
 			{
 				"name": "sign",
@@ -85,7 +88,7 @@
 				}
 			}
 		],
-		"apiBaseUrl": "http://localhost:8081/api/",
+		"apiBaseUrl": "https://form-submit.iform.workers.dev/",
 		"localization": {
 			"defaultLang": "en",
 			"availableLangs": [
@@ -183,6 +186,7 @@
 			"id": 1,
 			"key": "driver-application",
 			"description": "Driver Application",
+			"submitActionUrl": "schemas/projects/85f2b10b49f501170c89973cfb782c1e/submit",
 			"components": [
 				{
 					"common": {
