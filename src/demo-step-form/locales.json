@@ -61,13 +61,47 @@
 		"next": "Next",
 		"back": "Back",
 		"continue": "Continue",
-		
-		
+
 		"send": "Send",
 		"state": "State",
 		"state-default": "Select Your state",
 		"zip": "Zip Code",
 		"description": "Description",
+
+		"auth": {
+			"no-otp": "No OTP?",
+			"try-again": "Try again in",
+			"resend": "Resend OTP",
+			"enter-otp": "Enter the One-Time Password, we sent to your email",
+			"authorization": "Authorization",
+			"back-to-login": "back to login",
+			"errors": {
+				"code-is-incorrect": "The entered code is incorrect. Please try again.",
+				"server-connect": "Unable to connect to the server. Please try again later.",
+				"unexpected-error": "An unexpected error occurred. Please try again later."
+			}
+		},
+
+		"date": {
+			"hint": "format: mm/dd/yyyy",
+			"range-out": "The date falls outside of the acceptable range.",
+			"not-valid": "Not a valid date",
+			"range": {
+				"error": {
+					"start": "Start date can't be bigger than finish date.",
+					"end": "Finish date can't be smaller than start date."
+				}
+			}
+		},
+		"validation": {
+			"pattern": {
+				"email": "Please enter a valid email address",
+				"phone": "Please enter a valid phone number"
+			}
+		},
+		"errors": {
+			"required": "field is required"
+		},
 
 		"menu": {
 			"driver-application": "Driver Application",
@@ -197,40 +231,6 @@
 				"complete-text": "Thank you for completing the application. We will contact you shortly.",
 				"text-1": "You've completed all of the necessary tasks for this step in the process. Nice work! As new tasks become available, we'll notify you via email or text message.",
 				"text-2": "Feel free to check back as often as you would like. We're excited about the opportunity to have you join our team and help us in \"Delivering Excellence in Transportation!\""
-			}
-		},
-		"date": {
-			"hint": "format: mm/dd/yyyy",
-			"range-out": "The date falls outside of the acceptable range.",
-			"not-valid": "Not a valid date",
-			"range": {
-				"error": {
-					"start": "Start date can't be bigger than finish date.",
-					"end": "Finish date can't be smaller than start date."
-				}
-			}
-		},
-		"validation": {
-			"pattern": {
-				"email": "Please enter a valid email address",
-				"phone": "Please enter a valid phone number"
-			}
-		},
-		"errors": {
-			"required": "field is required"
-		},
-
-		"auth": {
-			"no-otp": "No OTP?",
-			"try-again": "Try again in",
-			"resend": "Resend OTP",
-			"enter-otp": "Enter the One-Time Password, we sent to your email",
-			"authorization": "Authorization",
-			"back-to-login": "back to login",
-			"errors": {
-				"code-is-incorrect": "The entered code is incorrect. Please try again.",
-				"server-connect": "Unable to connect to the server. Please try again later.",
-				"unexpected-error": "An unexpected error occurred. Please try again later."
 			}
 		}
 	},
