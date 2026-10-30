@@ -265,7 +265,7 @@
 										"mode": "self"
 									},
 									"restrict": {
-										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
+										"pattern": "/^[a-z_ ]{0,28}$/i"
 									},
 									"validation": {
 										"required": true,
@@ -283,7 +283,7 @@
 										"model": "lastName"
 									},
 									"restrict": {
-										"pattern": "/^[a-zа-я_ ]{0,28}$/i"
+										"pattern": "/^[a-z_ ]{0,28}$/i"
 									},
 									"initialize": {
 										"mode": "self"
@@ -1147,13 +1147,13 @@
 					}
 				}
 			]
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit"
 		},
 
 		{
 			"id": 4,
 			"key": "drivers-rights",
 			"description": "FMCSA notification of driver's rights",
+			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit",
 			"components": [
 				{
 					"common": {
@@ -1207,14 +1207,14 @@
 						"value": "continue"
 					}
 				}
-			],
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit"
+			]
 		},
 
 		{
 			"id": 5,
 			"key": "personal-information",
 			"description": "Personal Information form",
+			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit",
 			"components": [
 				{
 					"common": {
@@ -1413,14 +1413,14 @@
 						"value": "submit"
 					}
 				}
-			],
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit"
+			]
 		},
 
 		{
 			"id": 6,
 			"key": "work-history",
 			"description": "work history",
+			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit",
 			"components": [
 				{
 					"common": {
@@ -2006,8 +2006,7 @@
 						"value": "submit"
 					}
 				}
-			],
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit"
+			]
 		},
 
 		{
