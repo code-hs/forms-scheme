@@ -187,7 +187,7 @@
 			"id": 1,
 			"key": "driver-application",
 			"description": "Driver Application",
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit",
+			"submitActionUrl": "schemas/projects/06ade21d99cc44659fb5c857d0ed0b62/submit",
 			"components": [
 				{
 					"common": {
@@ -1153,7 +1153,7 @@
 			"id": 4,
 			"key": "drivers-rights",
 			"description": "FMCSA notification of driver's rights",
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit",
+			"submitActionUrl": "schemas/projects/06ade21d99cc44659fb5c857d0ed0b62/submit",
 			"components": [
 				{
 					"common": {
@@ -1214,7 +1214,7 @@
 			"id": 5,
 			"key": "personal-information",
 			"description": "Personal Information form",
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit",
+			"submitActionUrl": "schemas/projects/06ade21d99cc44659fb5c857d0ed0b62/submit",
 			"components": [
 				{
 					"common": {
@@ -1420,7 +1420,7 @@
 			"id": 6,
 			"key": "work-history",
 			"description": "work history",
-			"submitActionUrl": "schemas/projects/bf859c32fcae428f9bec9d4c2d1b5069/submit",
+			"submitActionUrl": "schemas/projects/06ade21d99cc44659fb5c857d0ed0b62/submit",
 			"components": [
 				{
 					"common": {
